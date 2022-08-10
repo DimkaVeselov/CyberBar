@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'Fifaks 1.0 dev1';
+	src:
+		url('/fonts/Fifaks10Dev1.ttf') format('truetype'),
+		url('/fonts/Fifaks10Dev1.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
