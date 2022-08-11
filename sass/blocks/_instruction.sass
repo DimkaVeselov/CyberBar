@@ -1,20 +1,20 @@
+@import ../base/_mixins.sass
+
 .instruction
+	position: relative
 	background-color: $main-color
 	padding-top: 240px
-	height: 100vh
+	height: 100%
 	&__wrap-text
 		position: relative
-		width: 34vw
+		width: 40vw
 		margin: 0 auto
 		h2
-			text-align: left
-			font-family: 'Inter', sans-serif
-			font-weight: 400
+			@include Inter
 			font-size: 5vw
 			color: #fff
 			span
-				font-family: 'Fifaks 1.0 dev1', sans-serif
-				font-weight: 400
+				@include Fifaks
 				font-size: 5vw
 				vertical-align: bottom
 				color: #FAE838
@@ -23,3 +23,110 @@
 			top: 4vw
 			left: 33vw
 			width: 10vw
+
+.instruction__step
+	position: relative
+	display: flex
+	img
+		position: absolute
+		left: 19vw
+		top: 5vw
+		width: 17vw
+		&::before
+			content: ''
+			box-shadow: 15px 15px 5px rgba(250,232,56, 0.5 )
+	&-wrap
+		width: 100%
+		height: 100vh
+		display: flex
+		justify-content: center
+		gap: 4vw
+		margin-top: 115px
+
+.instruction__step-card
+	display: flex
+	width: 15vw
+	height: 18vw
+	background: #fae838
+	border-radius: 5%
+
+.black
+	background: #151515
+	color: #fff
+
+.first
+	position: relative
+	align-self: start
+	flex-direction: column
+	.number
+		position: relative
+		width: 5.5vw
+		height: 4.5vw
+		margin: 1vw 3vw 3vw 2vw
+		background-color: #151515
+		border-radius: 15%
+		p
+			position: absolute
+			left: 1vw
+			top: 0.5vw
+			color: #fff
+			@include Fifaks
+	.subtitle
+		@include Inter
+		padding: 0 3vw 3vw 2vw
+	img
+		position: absolute
+		width: 8vw
+		top: 14vw
+		left: 6vw
+
+.second
+	position: relative
+	align-self: end
+	flex-direction: column
+	margin-bottom: 9vw
+	.number
+		position: relative
+		width: 5.5vw
+		height: 4.5vw
+		margin: 1vw 3vw 3vw 2vw
+		background-color: #fff
+		border-radius: 15%
+		p
+			position: absolute
+			left: 1vw
+			top: 0.5vw
+			@include Fifaks
+	.subtitle
+		@include Inter
+		padding: 0 4vw 3vw 0vw
+	img
+		position: absolute
+		width: 11vw
+		left: 5vw
+		top: 8vw
+
+.third
+	align-self: center
+	flex-direction: column
+	margin-bottom: 13vw
+	.number
+		position: relative
+		width: 5.5vw
+		height: 4.5vw
+		margin: 1vw 3vw 3vw 2vw
+		background-color: #FAE838
+		border-radius: 15%
+		p
+			position: absolute
+			left: 1vw
+			top: 0.5vw
+			@include Fifaks
+	.subtitle
+		@include Inter
+		padding: 0 2vw 3vw 2vw
+	img
+		position: absolute
+		width: 6vw
+		left: 8vw
+		top: 25vw
