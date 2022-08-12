@@ -1,0 +1,80 @@
+.order
+	position: relative
+	background-color: $main-color
+	padding-top: 10%
+	&::before
+		content: ""
+		display: block
+		position: absolute
+		top: 38vw
+		left: 45vw
+		width: 11vw
+		height: 11vw
+		background: url(../img/chocolate.png) no-repeat
+		background-size: 11vw
+	&::after
+		content: ""
+		display: block
+		position: absolute
+		top: 85vw
+		left: 42vw
+		width: 20vw
+		height: 11vw
+		background: url(../img/smile-order.png) no-repeat
+		background-size: 21vw
+		z-index: 1
+	&__title
+		@include Inter
+		width: 100%
+		color: #fff
+		text-align: center
+		font-size: 5vw
+		margin-bottom: 47px
+		span
+			@include Fifaks
+			color: #FAE838
+			font-size: 6vw
+			vertical-align: bottom
+	&__card-wrap
+		width: 100%
+		display: flex
+		flex-direction: column
+		align-items: center
+	&__card
+		width: 57vw
+		height: 25vw
+		display: flex
+		justify-content: center
+		align-items: center
+		gap: 15vw
+		border-width: 1px 0
+		border-style: solid
+		border-color: rgba(111, 111, 111, .2)
+		div
+			height: 20vw
+			display: flex
+			flex-direction: column
+			align-items: flex-end
+			justify-content: center
+		img
+			width: 20vw
+			height: 20vw
+			object-fit: cover
+		p
+			@include Inter
+			color: #fff
+			font-size: 2vw
+		button
+			@include Inter
+			width: 7vw
+			height: 5vw
+			font-size: 1.5vw
+			font-weight: 600
+			color: #000
+			background-color: #fae838
+			border-radius: 20%
+			margin: 3vw 5vw 0 0
+			transition: .4s
+			&:hover
+				cursor: pointer
+				box-shadow: 0px 5.19896px 15.39791px rgba(241, 224, 59, 0.25), 5px 41.9895px 83.9791px rgba(241, 224, 59, 0.25)

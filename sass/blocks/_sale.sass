@@ -1,0 +1,80 @@
+.sale
+	position: relative
+	height: 55vw
+	background-color: $main-color
+	&::before
+		content: ""
+		position: absolute
+		display: block
+		width: 30vw
+		height: 30vw
+		top: 17vw
+		background: url(../img/smile-money.png) no-repeat
+		background-size: 30vw 30vw
+	&::after
+		content: ""
+		position: absolute
+		display: block
+		width: 30vw
+		height: 30vw
+		top: -0.9vw
+		right: 0.1vw
+		background: url(../img/smile-exploding.png) no-repeat
+		background-size: 30vw 30vw
+	&__wrap
+		display: flex
+		width: 100vw
+		height: 100%
+		justify-content: space-evenly
+		align-items: center
+	&__app
+		width: 30vw
+		display: flex
+		flex-direction: column
+		h2
+			@include Fifaks
+			color: $second-color
+			font-size: 5vw
+			width: 30vw
+			margin-bottom: 18px
+		p
+			@include Inter
+			color: #fff
+			width: 22vw
+			margin-bottom: 40px
+		&-block
+			width: 30vw
+			display: flex
+			a
+				width: 10vw
+				height: 2vw
+				margin-right: 1vw
+				position: relative
+				z-index: 1
+				img
+					width: 10vw
+	&__phone
+		width: 20vw
+		span
+			@include Fifaks
+			background: conic-gradient(from 196.91deg at 50% 50%, #FFFFFF 0deg, #000000 45deg, #FFFFFF 90deg, #000000 135deg, #FFFFFF 180deg, #000000 225deg, #FFFFFF 270deg, #000000 315deg, #FFFFFF 360deg), conic-gradient(from 196.91deg at 50% 50%, #FFFFFF 0deg, #000000 45deg, #FFFFFF 90deg, #000000 135deg, #FFFFFF 180deg, #000000 225deg, #FFFFFF 270deg, #000000 315deg, #FFFFFF 360deg), radial-gradient(100% 100% at 100% 0%, #78FFF1 0%, #D0DEFF 20%, #DF97DF 40%, #97EBBE 60%, #F1FCAF 80%, #C2E3F1 100%)
+			background-clip: text
+			text-fill-color: transparent
+			background-blend-mode: screen, difference, normal
+			position: relative
+			opacity: .5
+			transform: rotate(-19.12deg)
+			&::before
+				content: ""
+				position: absolute
+				display: block
+				width: 33vw
+				height: 33vw
+				left: 2.5vw
+				top: 13vw
+				background: url(../img/woooow.png) no-repeat
+				background-size: 33vw 33vw
+		img
+			width: 23vw
+			position: relative
+			z-index: 1
