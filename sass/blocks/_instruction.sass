@@ -1,9 +1,7 @@
-@import ../base/_mixins.sass
-
 .instruction
 	position: relative
 	background-color: $main-color
-	padding-top: 240px
+	padding-top: 15%
 	height: 100%
 	&__wrap-text
 		position: relative
@@ -15,13 +13,13 @@
 			color: #fff
 			span
 				@include Fifaks
-				font-size: 5vw
+				font-size: 6vw
 				vertical-align: bottom
 				color: #FAE838
 		img
 			position: absolute
-			top: 4vw
-			left: 33vw
+			top: 7vw
+			left: 37vw
 			width: 10vw
 
 .instruction__step
@@ -30,14 +28,11 @@
 	img
 		position: absolute
 		left: 19vw
-		top: 5vw
+		top: 0
 		width: 17vw
-		&::before
-			content: ''
-			box-shadow: 15px 15px 5px rgba(250,232,56, 0.5 )
 	&-wrap
 		width: 100%
-		height: 100vh
+		height: 50vw
 		display: flex
 		justify-content: center
 		gap: 4vw
@@ -84,7 +79,7 @@
 	position: relative
 	align-self: end
 	flex-direction: column
-	margin-bottom: 9vw
+	margin-bottom: 10%
 	.number
 		position: relative
 		width: 5.5vw
@@ -99,6 +94,7 @@
 			@include Fifaks
 	.subtitle
 		@include Inter
+		text-align: center
 		padding: 0 4vw 3vw 0vw
 	img
 		position: absolute
@@ -107,9 +103,10 @@
 		top: 8vw
 
 .third
+	position: relative
 	align-self: center
 	flex-direction: column
-	margin-bottom: 13vw
+	margin-bottom: 50%
 	.number
 		position: relative
 		width: 5.5vw
@@ -129,4 +126,4 @@
 		position: absolute
 		width: 6vw
 		left: 8vw
-		top: 25vw
+		top: 11vw

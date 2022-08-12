@@ -6,6 +6,7 @@
 
 .header__nav
 	width: 100%
+	position: absolute
 	display: flex
 	justify-content: flex-end
 	padding: 70px 236px 0 0
@@ -18,20 +19,25 @@
 			width: 13vw
 
 .header__content
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-direction: column
 	width: 100%
-	margin: 0 auto
+	height: 100%
 	&-cup
-		width: auto
+		width: 100vw
+		display: flex
+		align-items: flex-end
+		justify-content: center
+		img
+			width: 17vw
+			margin-right: 10vw
+	&-sandwich
+		width: 100vw
 		display: flex
 		align-items: flex-end
 		justify-content: space-evenly
-		img
-			width: 17vw
-	&-sandwich
-		width: auto
-		display: flex
-		align-items: flex-end
-		justify-content: space-between
 		margin: 0 9vw
 		img
 			width: 22vw
