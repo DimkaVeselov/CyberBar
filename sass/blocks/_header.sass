@@ -30,22 +30,24 @@
 		display: flex
 		align-items: flex-end
 		justify-content: center
-		img
+		.cup
 			width: 17vw
-			margin-right: 10vw
+			margin-right: 5vw
 	&-sandwich
 		width: 100vw
 		display: flex
 		align-items: flex-end
 		justify-content: space-evenly
 		margin: 0 9vw
-		img
-			width: 22vw
 	&-text
-			@include Fifaks
-			color: #FAE737
-			font-size: 18vw
-			letter-spacing: 0.079em
-			line-height: 112%
-			text-shadow: 0px -4.35354px 97.9546px #A0A337, 0px 39.0128px 468.154px #EBE213
-			margin-right: 10vw
+		@include Fifaks
+		color: #FAE737
+		font-size: 18vw
+		letter-spacing: 0.079em
+		line-height: 112%
+		text-shadow: 0px -4.35354px 97.9546px #A0A337, 0px 39.0128px 468.154px #EBE213
+		margin-right: 5vw
+		.left_animation
+			animation: left 3s easy-in-out infinite
+		.right_animation
+			animation: right 3s infinite

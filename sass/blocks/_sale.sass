@@ -56,24 +56,27 @@
 	&__phone
 		width: 20vw
 		span
-			@include Fifaks
-			background: conic-gradient(from 196.91deg at 50% 50%, #FFFFFF 0deg, #000000 45deg, #FFFFFF 90deg, #000000 135deg, #FFFFFF 180deg, #000000 225deg, #FFFFFF 270deg, #000000 315deg, #FFFFFF 360deg), conic-gradient(from 196.91deg at 50% 50%, #FFFFFF 0deg, #000000 45deg, #FFFFFF 90deg, #000000 135deg, #FFFFFF 180deg, #000000 225deg, #FFFFFF 270deg, #000000 315deg, #FFFFFF 360deg), radial-gradient(100% 100% at 100% 0%, #78FFF1 0%, #D0DEFF 20%, #DF97DF 40%, #97EBBE 60%, #F1FCAF 80%, #C2E3F1 100%)
-			background-clip: text
-			text-fill-color: transparent
-			background-blend-mode: screen, difference, normal
 			position: relative
-			opacity: .5
-			transform: rotate(-19.12deg)
 			&::before
 				content: ""
 				position: absolute
 				display: block
-				width: 33vw
+				width: 35vw
 				height: 33vw
-				left: 2.5vw
-				top: 13vw
+				left: 1vw
+				bottom: 0vw
 				background: url(../img/woooow.png) no-repeat
-				background-size: 33vw 33vw
+				background-size: 35vw 31vw
+			&::after
+				content: ""
+				position: absolute
+				display: block
+				width: 20vw
+				height: 20vw
+				left: -13vw
+				top: -13vw
+				background: url(../img/woooooow_left.png) no-repeat
+				background-size: 20vw 20vw
 		img
 			width: 23vw
 			position: relative
