@@ -1,6 +1,5 @@
 .sale
 	position: relative
-	height: 55vw
 	background-color: $main-color
 	&::before
 		content: ""
@@ -15,22 +14,22 @@
 		content: ""
 		position: absolute
 		display: block
-		width: 30vw
-		height: 30vw
-		top: -0.9vw
-		right: 0.1vw
+		width: 29vw
+		height: 29vw
+		top: 11px
+		right: 0
 		background: url(../img/smile-exploding.png) no-repeat
-		background-size: 30vw 30vw
+		background-size: 29vw 29vw
 	&__wrap
 		display: flex
-		width: 100vw
-		height: 100%
+		width: 100%
 		justify-content: space-evenly
 		align-items: center
 	&__app
 		width: 30vw
 		display: flex
 		flex-direction: column
+		margin: 10% 0
 		h2
 			@include Fifaks
 			color: $second-color
@@ -52,32 +51,32 @@
 				position: relative
 				z-index: 1
 				img
-					width: 10vw
+					width: 100%
 	&__phone
 		width: 20vw
-		span
-			position: relative
-			&::before
-				content: ""
-				position: absolute
-				display: block
-				width: 35vw
-				height: 33vw
-				left: 1vw
-				bottom: 0vw
-				background: url(../img/woooow.png) no-repeat
-				background-size: 35vw 31vw
-			&::after
-				content: ""
-				position: absolute
-				display: block
-				width: 20vw
-				height: 20vw
-				left: -13vw
-				top: -13vw
-				background: url(../img/woooooow_left.png) no-repeat
-				background-size: 20vw 20vw
-		img
-			width: 23vw
-			position: relative
-			z-index: 1
+		position: relative
+		margin: 10% 0
+		&::before
+			content: ""
+			position: absolute
+			display: block
+			width: 41vw
+			height: 33vw
+			left: -4.7vw
+			bottom: 0vw
+			background: url(../img/woooow.png) no-repeat
+			background-size: 41vw 33vw
+		&::after
+			content: ""
+			position: absolute
+			display: block
+			width: 18vw
+			height: 16vw
+			right: 14vw
+			bottom: 5vw
+			background: url(../img/woooooow_left.png) no-repeat
+			background-size: 18vw 16vw
+	img
+		width: 100%
+		position: relative
+		z-index: 1
