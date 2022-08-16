@@ -22,6 +22,7 @@
 					border-radius: 10%
 					box-shadow: 0px 5px 20px rgba(250, 231, 55, 0.5)
 					transform: rotate(-15.60deg)
+					z-index: 1
 				&::before
 					content: ""
 					display: block
@@ -33,20 +34,28 @@
 					background-image: url(/icon/beverage_box.svg)
 					background-size: 4vw 4vw
 					background-repeat: no-repeat
-					z-index: 1
+					z-index: 2
 			.first-text
+				position: relative
 				@include Fifaks
 				text-align: left
 				font-size: 13vw
 				padding: 5vw 2vw 0 48vw
-				&.animate
-				&::after
+				z-index: 999
+				transition: 6s
+				transform: translateX(80vw)
+				&.active
+					transform: translateX(0)
+				&_border
 					content: ''
 					display: block
 					position: absolute
 					right: 0
-					width: 68vw
+					width: 0
 					border-bottom: 8px solid #F9DC2C
+					transition: 3s
+					&.active
+						width: 68vw
 			.sandwich_mini
 				display: block
 				position: relative
@@ -63,6 +72,7 @@
 					border-radius: 10%
 					box-shadow: 0px 5px 20px rgba(250, 231, 55, 0.5)
 					transform: rotate(15.07deg)
+					z-index: 1
 				&::before
 					content: ''
 					display: block
@@ -74,20 +84,29 @@
 					background-image: url(/icon/sandwich_mini.svg)
 					background-size: 4vw 4vw
 					background-repeat: no-repeat
-					z-index: 1
+					z-index: 2
 			.second-text
+				position: relative
 				@include Fifaks
 				color: #fff
 				text-align: left
 				font-size: 13vw
 				padding: 0 27vw
-				&::after
+				z-index: 999
+				transform: translateX(-80vw)
+				transition: 6s
+				&.active
+					transform: translateX(0)
+				&_border
 					content: ''
 					display: block
 					position: absolute
 					left: 0
-					width: 50vw
+					width: 0
 					border-bottom: 8px solid #fff
+					transition: 3s
+					&.active
+						width: 50vw
 			.bubble_tea
 				display: block
 				position: relative
@@ -104,6 +123,7 @@
 					border-radius: 10%
 					box-shadow: 0px 5px 20px rgba(250, 231, 55, 0.5)
 					transform: rotate(-15.41deg)
+					z-index: 1
 				&::before
 					content: ''
 					display: block
@@ -115,16 +135,25 @@
 					background-image: url(/icon/bubble_tea.svg)
 					background-size: 4vw 4vw
 					background-repeat: no-repeat
-					z-index: 1
+					z-index: 2
 			.third-text
+				position: relative
 				@include Fifaks
 				font-size: 13vw
 				text-align: right
 				padding: 0 13vw
-				&::after
+				z-index: 999
+				transform: translateX(80vw)
+				transition: 6s
+				&.active
+					transform: translateX(0)
+				&_border
 					content: ''
 					display: block
 					position: absolute
 					right: 0
-					width: 58vw
+					width: 0
 					border-bottom: 8px solid #F9DC2C
+					transition: 3s
+					&.active
+						width: 58vw
