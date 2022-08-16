@@ -1,41 +1,31 @@
-window.addEventListener('scroll', function () {
-	const left = document.querySelector('.left_animation');
-	const right = document.querySelector('.right_animation');
-	const down = document.querySelector('.down_animation');
-	const up = document.querySelector('.up_animation');
-	const sandwich = document.querySelector('.sandwich_animation');
-	const cup = document.querySelector('.cup_animation');
+const animItems = document.querySelectorAll('.animate');
 
-	const observer = new IntersectionObserver((entries) => {
-		entries.forEach((entry) => {
-			if (
-				typeof getCurrentAnimationPreference === 'function' && !getCurrentAnimationPreference()
-			) {
-				return;
+if (animItems.length > 0) {
+	window.addEventListener('scroll', animOnScroll);
+	function animOnScroll() {
+		for (let index = 0; index < animItems.length; index++) {
+			const animItem = animItems[index];
+			const animItemHeight = animItem.offsetHeight;
+			const animItemOffset = offset(animItem).top;
+			const animStart = 4;
+
+			let animItemPoint = window.innerHeight - animItemHeight / animStart;
+
+			if (animItemHeight > window.innerHeight) {
+				animItemPoint = window.innerHeight - window.innerHeight / animStart;
 			}
 
-			if (entry.isIntersecting) {
-				left.classList.add('.left');
-				right.classList.add('.right');
-				down.classList.add('.down');
-				up.classList.add('.up');
-				sandwich.classList.add('.sandwich');
-				cup.classList.add('.cup');
-
-				console.log('да');
-				return;
-			} else {
-				left.classList.remove('.left');
-				right.classList.remove('.right');
-				down.classList.remove('.down');
-				up.classList.remove('.up');
-				sandwich.classList.remove('.sandwich');
-				cup.classList.remove('.cup');
-
-				console.log('нет');
+			if ((window.scrollY > animItemOffset - animItemPoint) && window.scrollY < (animItemOffset + animItemHeight)) {
+				animItem.classList.add('active');
 			}
-		});
-	});
+				animItem.classList.remove('active');
+		}
+	}
 
-	observer.observe(document.querySelector('.target'));
-})();
+	function offset(el) {
+		const rect = el.getBoundingClientRect(),
+			scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+		return { top: rect.top + scrollTop };
+	}
+	animOnScroll();
+}
