@@ -28,19 +28,21 @@
 		justify-content: center
 		.left_animation
 			@include Fifaks
+			display: block
 			color: #FAE737
 			font-size: 18vw
 			letter-spacing: 0.079em
 			line-height: 112%
 			text-shadow: 0px -4.35354px 97.9546px #A0A337, 0px 39.0128px 468.154px #EBE213
 			margin-right: 5vw
-			.active
-				animation: left
+			transition: 4s
+			&.active
+				transform: translateX(-80vw)
+				opacity: 0
 		.cup
 			width: 17vw
 			margin-right: 5vw
-			.active
-				animation: left
+			&.active
 	&-sandwich
 		display: flex
 		align-items: flex-end
@@ -53,8 +55,9 @@
 			line-height: 112%
 			text-shadow: 0px -4.35354px 97.9546px #A0A337, 0px 39.0128px 468.154px #EBE213
 			margin-right: 5vw
-			.active
-				animation: right
+			&.active
+				animation-name: right
+				animation-duration: 1s
 		.sandwich
 			width: 23vw
 			.active
