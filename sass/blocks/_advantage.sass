@@ -1,5 +1,6 @@
 .advantage
 	background-color: $main-color
+	position: relative
 	&__wrap
 		position: relative
 		padding-bottom: 10vw
@@ -36,26 +37,18 @@
 					background-repeat: no-repeat
 					z-index: 2
 			.first-text
-				position: relative
 				@include Fifaks
 				text-align: left
 				font-size: 13vw
 				padding: 5vw 2vw 0 48vw
 				z-index: 999
-				transition: 6s
-				transform: translateX(80vw)
-				&.active
-					transform: translateX(0)
 				&_border
+					width: 72vw
 					content: ''
 					display: block
 					position: absolute
 					right: 0
-					width: 0
 					border-bottom: 8px solid #F9DC2C
-					transition: 3s
-					&.active
-						width: 68vw
 			.sandwich_mini
 				display: block
 				position: relative
@@ -86,27 +79,19 @@
 					background-repeat: no-repeat
 					z-index: 2
 			.second-text
-				position: relative
 				@include Fifaks
 				color: #fff
 				text-align: left
 				font-size: 13vw
 				padding: 0 27vw
 				z-index: 999
-				transform: translateX(-80vw)
-				transition: 6s
-				&.active
-					transform: translateX(0)
 				&_border
 					content: ''
 					display: block
 					position: absolute
 					left: 0
-					width: 0
+					width: 47vw
 					border-bottom: 8px solid #fff
-					transition: 3s
-					&.active
-						width: 50vw
 			.bubble_tea
 				display: block
 				position: relative
@@ -137,23 +122,15 @@
 					background-repeat: no-repeat
 					z-index: 2
 			.third-text
-				position: relative
 				@include Fifaks
 				font-size: 13vw
 				text-align: right
 				padding: 0 13vw
 				z-index: 999
-				transform: translateX(80vw)
-				transition: 6s
-				&.active
-					transform: translateX(0)
 				&_border
 					content: ''
 					display: block
 					position: absolute
 					right: 0
-					width: 0
+					width: 52vw
 					border-bottom: 8px solid #F9DC2C
-					transition: 3s
-					&.active
-						width: 58vw
