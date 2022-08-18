@@ -73,30 +73,48 @@
 			&.active
 				transform: rotate(200deg) scale(80, 80) translate(-3.28vw, 0.99999vw)
 @media screen and ( max-width: 1400px	)
-	.header__content
-		top: 20%
-@media screen and ( max-width: 900px	)
-	.header__content
-		top: 30%
-@media screen and ( max-width: 500px	)
-	.header__content
-		width: 85vw
-		top: 25%
-		align-items: flex-start
-		&-cup
-			width: 82vw
-			margin-bottom: 15vw
-		.cup
-			top: 20vw
-			left: 0vw
-			width: 25vw
-			&.active
-				top: -75vw
-		&-sandwich
-			flex-direction: column-reverse
-			align-items: center
-			.right_animation
-				text-align: right
-				width: 75vw
+	.header__wrap
+		height: 125vw
+		.header__content
+			top: 20%
+
 			.sandwich
-				width: 45vw
+				&.active
+					transform: rotate(200deg) scale(100, 100) translate(-3.28vw, 0.99999vw)
+@media screen and ( max-width: 900px	)
+	.header__wrap
+		height: 150vw
+		.header__content
+			top: 30%
+
+			.sandwich
+				&.active
+					transform: rotate(200deg) scale(135, 135) translate(-3.28vw, 0.99999vw)
+@media screen and ( max-width: 500px	)
+	.header__wrap
+		height: 350vw
+
+		.header__content
+			width: 85vw
+			top: 30%
+			align-items: flex-start
+			&-cup
+				width: 82vw
+				margin-bottom: 15vw
+			.cup
+				top: 20vw
+				left: 0vw
+				width: 25vw
+				&.active
+					top: -75vw
+					left: 80vw
+			&-sandwich
+				flex-direction: column-reverse
+				align-items: center
+				.right_animation
+					text-align: right
+					width: 75vw
+				.sandwich
+					width: 45vw
+					&.active
+						transform: rotate(200deg) scale(145, 145) translate(-6.28vw, 1.99999vw)
