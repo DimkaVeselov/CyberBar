@@ -1,76 +1,65 @@
 // init controller
-var controller = new ScrollMagic.Controller({
+const controller = new ScrollMagic.Controller({
 	globalSceneOptions: {
-		triggerHook: 'onLeave'
+		triggerHook: 'onLeave',
 	},
 });
 
 // HEADER
 //scene left animationText
 
-var leftTween = new TweenLite.to('.left_animation', 1, {
-	transform: 'translateX(-80vw)',
-	easing: 'easeInOutSine',
-	opacity: 0
-});
+const leftTween = new TweenLite.to('.left_animation');
 
-var leftAnimationText = new ScrollMagic.Scene({
+const leftAnimationText = new ScrollMagic.Scene({
 	triggerElement: '.triger_one',
-	duration: 100
+	offset: 50,
 })
 	.setTween(leftTween)
 	.setClassToggle('.left_animation', 'active')
-	// .addIndicators({ name: '1 - add a class' }) // add indicators (requires plugin)
+	.addIndicators({ name: 'text - add a class' }) // add indicators (requires plugin)
 	.addTo(controller);
 
 //scene cup animation
 
-var cupTween = new TweenLite.to('.cup', 1, {
-	transform: 'translateX(50deg) translateY(50deg)',
-	rotate: '240deg',
-	delay: 1
+const cupTween = new TweenLite.to('.cup', {
+	delay: 2,
 });
 
-var cupAnimation = new ScrollMagic.Scene({
+const cupAnimation = new ScrollMagic.Scene({
 	triggerElement: '.triger_one',
-	duration: 800,
+	offset: 450,
 })
 	.setTween(cupTween)
 	.setClassToggle('.cup', 'active')
+	.addIndicators({ name: 'cup - add a class' }) // add indicators (requires plugin)
 	.addTo(controller);
 
 //scene sandwich animation
 
-var sandwichTwin = new TweenLite.to('.sandwich', 2, {
-	transform: 'translateX(20vw) translateY(20vw) scale(20)',
-	easing: 'easeInOutSine',
-	delay: 2,
-	rotate: '240deg'
+const sandwichTwin = new TweenLite.to('.sandwich', {
+	delay: 4,
 });
 
-var sandwichAnimation = new ScrollMagic.Scene({
+const sandwichAnimation = new ScrollMagic.Scene({
 	triggerElement: '.triger_one',
-	duration: 600
+	duration: '115%',
+	offset: 800,
 })
 	.setTween(sandwichTwin)
 	.setClassToggle('.sandwich', 'active')
-	// .addIndicators({ name: '2 - add a class' }) // add indicators (requires plugin)
+	.addIndicators({ name: 'sandwich - add a class' }) // add indicators (requires plugin)
 	.addTo(controller);
 
 //scene right animationText
 
-var rightTween = new TweenLite.to('.right_animation', 1, {
-	transform: 'translateX(80vw)',
-	easing: 'easeInOutSine',
-	opacity: 0
-});
+const rightTween = new TweenLite.to('.right_animation');
 
-var rightAnimationText = new ScrollMagic.Scene({
+const rightAnimationText = new ScrollMagic.Scene({
 	triggerElement: '.triger_one',
-	duration: 100
+	offset: 0,
 })
 	.setTween(rightTween)
-	.setClassToggle('.left_animation', 'active')
+	.setClassToggle('.right_animation', 'active')
 	.addTo(controller);
 
 // CONTENT
