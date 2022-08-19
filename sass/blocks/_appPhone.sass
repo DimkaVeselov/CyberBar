@@ -3,17 +3,29 @@
 	position: relative
 	z-index: 999
 	&-wrap
+		position: relative
+		top: -20vw
 		display: flex
+		align-content: center
 		justify-content: center
 		align-items: center
-		height: 100vh
+		height: 60vh
 	&-img
 		display: flex
 		justify-content: center
-		align-items: center
-		transition: 4s
-		img
-			display: block
-			max-width: 70%
-			max-height: 100%
-			object-fit: cover
+		position: relative
+		transition: .5s
+		.first_phone
+			width: 24vw
+			object-fit: contain
+		.second_phone
+			max-width: 29vw
+			object-fit: contain
+			padding-top: 14vw
+			padding-bottom: 7vw
+		.third_phone
+			width: 24vw
+			object-fit: contain
+
+@media screen and ( max-width: 500px	)
+
