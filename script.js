@@ -1,83 +1,69 @@
-// init controller
-const headerController = new ScrollMagic.Controller({
-	globalSceneOptions: {
-		triggerHook: 'onLeave',
+gsap.registerPlugin(ScrollTrigger);
+
+//HEADER
+
+ScrollTrigger.create({
+	trigger: '.header__wrap',
+	start: '50vw',
+	end: '250%',
+	markers: true,
+	toggleClass: {
+		targets: '.left_animation, .right_animation ',
+		className: 'active',
 	},
 });
 
-// HEADER
-//scene left animationText
-
-const leftTween = new TweenMax.to('.left_animation');
-
-const leftAnimationText = new ScrollMagic.Scene({
-	triggerElement: '.triger_one',
-	offset: 50,
-})
-	.setTween(leftTween)
-	.setClassToggle('.left_animation', 'active')
-	.addTo(headerController);
-
-//scene cup animation
-
-const cupTween = new TweenMax.to('.cup', {
-	delay: 2,
-});
-
-const cupAnimation = new ScrollMagic.Scene({
-	triggerElement: '.triger_one',
-	offset: 300,
-})
-	.setTween(cupTween)
-	.setClassToggle('.cup', 'active')
-	.addTo(headerController);
-
-//scene sandwich animation
-
-const sandwichTwin = new TweenMax.to('.sandwich', 2);
-
-const sandwichAnimation = new ScrollMagic.Scene({
-	triggerElement: '.triger_one',
-	duration: '225%',
-	offset: 400,
-})
-	.setTween(sandwichTwin)
-	.setClassToggle('.sandwich', 'active')
-	// .addIndicators({ name: 'sandwich - add a class' }) // add indicators (requires plugin)
-	.addTo(headerController);
-
-//scene right animationText
-
-const rightTween = new TweenMax.to('.right_animation');
-
-const rightAnimationText = new ScrollMagic.Scene({
-	triggerElement: '.triger_one',
-	offset: 0,
-})
-	.setTween(rightTween)
-	.setClassToggle('.right_animation', 'active')
-	.addTo(headerController);
-
-// CONTENT
-
-const contentPhoneController = new ScrollMagic.Controller({
-	globalSceneOptions: {
-		triggerHook: 'onEnter',
-		duration: '520%',
-		offset: 300
+ScrollTrigger.create({
+	trigger: '.header__wrap',
+	start: '75vw',
+	end: '250%',
+	// markers: true,
+	toggleClass: {
+		targets: '.cup ',
+		className: 'active',
 	},
 });
 
-const upPhoneScroll = new ScrollMagic.Scene({
-	triggerElement: '.content',
-})
-	.setTween('.up_phone', { y: '350%', ease: Linear.easeNone })
-	// .addIndicators({ name: 'phone 1' }) // add indicators (requires plugin)
-	.addTo(contentPhoneController);
+ScrollTrigger.create({
+	trigger: '.header__wrap',
+	start: '175vw',
+	end: '250%',
+	// markers: true,
+	toggleClass: {
+		targets: '.sandwich ',
+		className: 'active',
+	},
+});
 
-const downPhoneScroll = new ScrollMagic.Scene({
-	triggerElement: '.content',
-})
-	.setTween('.down_phone', { y: '-650%', ease: Linear.easeNone })
-	// .addIndicators({ name: 'phone 2' }) // add indicators (requires plugin)
-	.addTo(contentPhoneController);
+//CONTENT
+
+//PHONE
+
+const upPhone = gsap.timeline();
+
+upPhone.fromTo('.down_phone', { y: 0 }, { y: '125%' });
+
+ScrollTrigger.create({
+	animation: upPhone,
+	trigger: '.phone__app',
+	start: 'top center',
+	end: '150% center',
+	scrub: true,
+	// markers: true,
+});
+
+const downPhone = gsap.timeline();
+
+downPhone.fromTo('.up_phone', { y: 0 }, { y: '-150%' });
+
+ScrollTrigger.create({
+	animation: downPhone,
+	trigger: '.phone__app',
+	start: 'top center',
+	end: '150% center',
+	scrub: true,
+	// markers: true,
+});
+
+//TEXT
+

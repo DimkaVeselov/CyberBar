@@ -1,31 +1,50 @@
 .phone__app
 	background-color: #F1E03B
 	position: relative
-	z-index: 999
+	z-index: 99
+	height: 100%
 	&-wrap
 		position: relative
-		top: -20vw
+		top: 0
 		display: flex
 		align-content: center
 		justify-content: center
 		align-items: center
-		height: 60vh
-	&-img
-		display: flex
-		justify-content: center
-		position: relative
-		transition: .5s
-		.first_phone
-			width: 24vw
-			object-fit: contain
-		.second_phone
-			max-width: 29vw
-			object-fit: contain
-			padding-top: 14vw
-			padding-bottom: 7vw
-		.third_phone
-			width: 24vw
-			object-fit: contain
+		.first__phone
+			display: flex
+			justify-content: center
+			transition: 1.5s
+			&-img
+				width: 24vw
+				object-fit: contain
+		.second__phone
+			display: flex
+			justify-content: center
+			transition: 1.5s
+			margin: -22vw 0 45vw 0
+			&-img
+				width: 29vw
+				object-fit: contain
+		.third__phone
+			display: flex
+			justify-content: center
+			transition: 1.5s
+			&-img
+				width: 24vw
+				object-fit: contain
 
 @media screen and ( max-width: 500px	)
-
+	.phone__app-wrap
+		flex-direction: column
+		top: 0
+		.first__phone
+			margin-top: 50vh
+			&-img
+				width: 50vw
+		.second__phone
+			&-img
+				width: 59vw
+		.third__phone
+			margin-bottom: 50vh
+			&-img
+				width: 50vw
