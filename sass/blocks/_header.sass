@@ -32,9 +32,10 @@
 			line-height: 112%
 			text-shadow: 0px -4.35354px 97.9546px #A0A337, 0px 39.0128px 468.154px #EBE213
 			margin-right: 5vw
-			transition: .5s
+			transition: 1s
 			&.active
 				transform: translateX(-100vw)
+				opacity: 0
 		.cup
 			position: absolute
 			top: 2vw
@@ -43,6 +44,7 @@
 			width: 19vw
 			margin-right: 5vw
 			transition: .5s
+			animation-delay: 2s
 			&.active
 				transform: rotate(360deg)
 				opacity: 0
@@ -59,14 +61,16 @@
 			letter-spacing: 0.079em
 			line-height: 112%
 			text-shadow: 0px -4.35354px 97.9546px #A0A337, 0px 39.0128px 468.154px #EBE213
-			transition: .5s
+			transition: 1s
 			&.active
 				transform: translateX(80vw)
+				opacity: 0
 		.sandwich
 			width: 23vw
 			transition: 1.5s
 			margin-right: 8vw
 			transition: 600ms
+			animation-delay: 4s
 			&.active
 				transform: rotate(200deg) scale(80, 80) translate(-3.28vw, 0.99999vw)
 @media screen and ( max-width: 1400px	)
