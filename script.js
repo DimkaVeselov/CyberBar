@@ -1,5 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
-const mm = gsap.matchMedia();
+const mm = window.gsap.matchMedia();
 
 //MEDIA 501px
 mm.add('(min-width: 501px)', () => {
@@ -44,7 +44,11 @@ mm.add('(min-width: 501px)', () => {
 	const upPhone = gsap.timeline();
 	const downPhone = gsap.timeline();
 
-	upPhone.fromTo('.down_phone', { y: '-25%' }, { y: '150%', easy: Power3.easeOut });
+	upPhone.fromTo(
+		'.down_phone',
+		{ y: 0, easy: Power3.easeOut },
+		{ y: '-150%' }
+	);
 
 	ScrollTrigger.create({
 		animation: upPhone,
@@ -55,7 +59,11 @@ mm.add('(min-width: 501px)', () => {
 		// markers: true,
 	});
 
-	downPhone.fromTo('.up_phone', { y: '25%' }, { y: '-150%', easy: Power3.easeOut });
+	downPhone.fromTo(
+		'.up_phone',
+		{ y: 0, easy: Power3.easeOut },
+		{ y: '150%' }
+	);
 
 	ScrollTrigger.create({
 		animation: downPhone,
@@ -74,20 +82,20 @@ mm.add('(min-width: 501px)', () => {
 
 	right.fromTo(
 		'.first-text, .sandwich_mini, .third-text',
-		{ x: '150%' },
-		{ x: '-100%', easy: Power3.easeOut }
+		{ x: '150%', easy: Power3.easeOut },
+		{ x: '-100%' }
 	);
 
 	left.fromTo(
 		'.beverage_box, .second-text, .bubble_tea',
-		{ x: '-150%' },
-		{ x: '100%', easy: Power3.easeOut }
+		{ x: '-150%', easy: Power3.easeOut },
+		{ x: '100%' }
 	);
 
 	border.fromTo(
 		'.first-text_border, .second-text_border, .third-text_border',
-		{ width: 0 },
-		{ width: '100vw', easy: Power3.easeOut }
+		{ width: 0, easy: Power3.easeOut },
+		{ width: '100vw' }
 	);
 
 	ScrollTrigger.create({
@@ -116,10 +124,11 @@ mm.add('(min-width: 501px)', () => {
 		scrub: true,
 		// markers: true,
 	});
+	return;
 });
 
 //MEDIA 500px
-mm.add('(max-width: 500px)', () => {
+mm.add('(max-width: 501px)', () => {
 	//HEADER
 	ScrollTrigger.create({
 		trigger: '.header__wrap',
@@ -160,7 +169,7 @@ mm.add('(max-width: 500px)', () => {
 	const upPhone = gsap.timeline();
 	const downPhone = gsap.timeline();
 
-	upPhone.fromTo('.down_phone', { y: 0 }, { y: '70%', easy: Power3.easeOut });
+	upPhone.fromTo('.down_phone', { y: 0, easy: Power3.easeOut }, { y: '70%'});
 
 	ScrollTrigger.create({
 		animation: upPhone,
@@ -171,7 +180,7 @@ mm.add('(max-width: 500px)', () => {
 		// markers: true,
 	});
 
-	downPhone.fromTo('.up_phone', { y: 0 }, { y: '-70%', easy: Power3.easeOut });
+	downPhone.fromTo('.up_phone', { y: 0, easy: Power3.easeOut }, { y: '-70%'});
 
 	ScrollTrigger.create({
 		animation: downPhone,
@@ -189,46 +198,47 @@ mm.add('(max-width: 500px)', () => {
 
 	right.fromTo(
 		'.first-text, .sandwich_mini, .third-text',
-		{ x: '150%', opacity: 0 },
-		{ x: '-100%', opacity: 1, easy: Power3.easeOut }
+		{ x: 0, easy: Power3.easeOut },
+		{ x: '-100%' }
 	);
 
 	left.fromTo(
 		'.beverage_box, .second-text, .bubble_tea',
-		{ x: '-150%', opacity: 0 },
-		{ x: '100%', opacity: 1, easy: Power3.easeOut }
+		{ x: 0, easy: Power3.easeOut },
+		{ x: '100%' }
 	);
 
 	border.fromTo(
 		'.first-text_border, .second-text_border, .third-text_border',
-		{ width: 0, opacity: 0 },
-		{ width: '100vw', opacity: 1, easy: Power3.easeOut }
+		{ width: 0, easy: Power3.easeOut },
+		{ width: '100vw' }
 	);
 
 	ScrollTrigger.create({
 		animation: right,
 		trigger: '.advantage',
 		start: 'top center',
-		end: '150% bottom',
+		end: 'bottom center',
 		scrub: true,
-		markers: true,
+		// markers: true,
 	});
 
 	ScrollTrigger.create({
 		animation: left,
 		trigger: '.advantage',
 		start: 'top center',
-		end: '150% bottom',
+		end: 'bottom center',
 		scrub: true,
-		markers: true,
+		// markers: true,
 	});
 
 	ScrollTrigger.create({
 		animation: border,
 		trigger: '.advantage',
 		start: 'top center',
-		end: '150% bottom',
+		end: 'bottom center',
 		scrub: true,
-		markers: true,
+		// markers: true,
 	});
+	return;
 });

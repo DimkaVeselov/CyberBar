@@ -1,12 +1,16 @@
 .advantage
 	background-color: #000
-	height: 100%
+	height: 100vh
 	position: relative
 	z-index: 99
+	scroll-behavior: smooth
 	&__wrap
+		width: 100%
+		position: absolute
+		margin-top: 10%
 		&-text
 			position: relative
-			padding: 35px 0 35px 0
+			padding: 0 0 35px 0
 			color: $second-color
 			.beverage_box
 				display: block
@@ -137,3 +141,6 @@
 					right: 0
 					bottom: 30px
 					border-bottom: .5vw solid #F9DC2C
+@media screen and ( max-width: 500px	)
+	.advantage__wrap
+		top: 20%
