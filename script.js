@@ -82,13 +82,13 @@ mm.add('(min-width: 501px)', () => {
 
 	right.fromTo(
 		'.first-text, .sandwich_mini, .third-text',
-		{ x: '150%', easy: Power3.easeOut },
+		{ x: '100%', easy: Power3.easeOut },
 		{ x: '-100%' }
 	);
 
 	left.fromTo(
 		'.beverage_box, .second-text, .bubble_tea',
-		{ x: '-150%', easy: Power3.easeOut },
+		{ x: '-100%', easy: Power3.easeOut },
 		{ x: '100%' }
 	);
 
