@@ -2,7 +2,7 @@
 	background-color: #F1E03B
 	position: relative
 	z-index: 99
-	height: 100%
+	height: 100vh
 	&-wrap
 		position: relative
 		top: 0
@@ -13,22 +13,21 @@
 		.first__phone
 			display: flex
 			justify-content: center
-			transition: 1.5s
+			transition: .5s
 			&-img
 				width: 24vw
 				object-fit: contain
 		.second__phone
 			display: flex
 			justify-content: center
-			transition: 1.5s
-			margin: -22vw 0 45vw 0
+			transition: .5s
 			&-img
 				width: 29vw
 				object-fit: contain
 		.third__phone
 			display: flex
 			justify-content: center
-			transition: 1.5s
+			transition: .5s
 			&-img
 				width: 24vw
 				object-fit: contain
@@ -36,15 +35,22 @@
 @media screen and ( max-width: 500px	)
 	.phone__app-wrap
 		flex-direction: column
-		top: 0
+		top: -2%
 		.first__phone
-			margin-top: 50vh
+			order: 2
+			z-index: 2
 			&-img
-				width: 50vw
+				width: 55vw
 		.second__phone
+			order: 1
+			z-index: 1
+			transition: 1s
 			&-img
-				width: 59vw
+				width: 60vw
 		.third__phone
-			margin-bottom: 50vh
+			order: 3
+			z-index: 3
+			padding-bottom: 185vw
 			&-img
-				width: 50vw
+				width: 60vw
+				padding-bottom: 185vw
