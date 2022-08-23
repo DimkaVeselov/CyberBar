@@ -1,13 +1,15 @@
 .header__wrap
 	background-color: $main-color
-	height: 100vw
+	height: 100vh
 	overflow: hidden
+	scroll-behavior: smooth
 
 .header__nav
 	width: 100%
 	display: flex
 	justify-content: flex-end
 	padding: 3vw 15vw 0 0
+	position: relative
 	&-block
 		width: 16vw
 		img
@@ -16,6 +18,7 @@
 .header__content
 	position: fixed
 	left: 10vw
+	// margin-top: 8vw
 	display: flex
 	align-items: center
 	justify-content: center
@@ -72,10 +75,6 @@
 			animation-delay: 4s
 			&.active
 				transform: rotate(200deg) scale(80, 80) translate(-3.28vw, 0.99999vw)
-@media screen and ( min-width: 501px	)
-	.sandwich
-		&.active
-			transform: rotate(200deg) scale(110, 110) translate(-3.28vw, 0.99999vw)
 @media screen and ( max-width: 500px	)
 	.header__wrap
 		height: 100vh
@@ -87,7 +86,7 @@
 					width: 22vw
 		.header__content
 			width: 85vw
-			top: 8%
+			top: 20%
 			align-items: flex-end
 			&-cup
 				width: 82vw
