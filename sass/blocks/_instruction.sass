@@ -3,6 +3,7 @@
 	background-color: $main-color
 	z-index: 99
 	height: 100%
+	overflow-x: hidden
 	&__wrap-text
 		position: relative
 		width: 40vw
@@ -134,3 +135,81 @@
 		left: 8vw
 		top: 11vw
 		z-index: 1
+@media screen and ( max-width: 500px	)
+	.instruction__wrap-text
+		width: 76vw
+		h2
+			font-size: 9vw
+			span
+				font-size: 11vw
+		.smile
+			top: 26vw
+			left: 55vw
+			width: 14vw
+		.bottle
+			top: 71vw
+			left: 20vw
+			width: 45vw
+
+	.instruction__step-wrap
+		height: 100vh
+		gap: 0
+		.first
+			width: 47vw
+			height: 27vh
+			left: 28vw
+			.number
+				width: 19vw
+				height: 14vw
+				p
+					font-size: 11vw
+					left: 5vw
+					top: 2vw
+			.subtitle
+				font-size: 4vw
+				padding: 0 4vw 0vw 4vw
+			img
+				width: 21vw
+				top: 43vw
+				left: 22vw
+		.second
+			width: 47vw
+			height: 55vw
+			right: 17vw
+			.number
+				width: 20vw
+				height: 15vw
+				margin: 3vw 3vw 3vw 3vw
+				p
+					left: 5vw
+					top: 2vw
+					font-size: 11vw
+			.subtitle
+				font-size: 5vw
+				padding: 2vw 9vw 0vw 0vw
+			img
+				width: 34vw
+				left: 18vw
+				top: 25vw
+		.third
+			width: 47vw
+			height: 55vw
+			right: 29vw
+			top: 10vw
+			margin: 0
+			.number
+				width: 20vw
+				height: 15vw
+				margin: 3vw 3vw 3vw 3vw
+				p
+					left: 4.5vw
+					top: 2vw
+					font-size: 12vw
+			.subtitle
+				font-weight: 400
+				font-size: 4vw
+				padding: 0 5vw 0vw 3vw
+			img
+				width: 19vw
+				left: 25vw
+				top: 34vw
