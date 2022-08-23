@@ -2,7 +2,7 @@ gsap.registerPlugin(ScrollTrigger);
 const mm = gsap.matchMedia();
 
 //MEDIA 501px
-mm.add('(min-width: 501px', () => {
+mm.add('(min-width: 501px)', () => {
 	//HEADER
 	ScrollTrigger.create({
 		trigger: '.header__wrap',
@@ -119,7 +119,7 @@ mm.add('(min-width: 501px', () => {
 });
 
 //MEDIA 500px
-mm.add('(max-width: 500px', () => {
+mm.add('(max-width: 500px)', () => {
 	//HEADER
 	ScrollTrigger.create({
 		trigger: '.header__wrap',
