@@ -6,11 +6,12 @@
 	display: flex
 	flex-direction: column
 	scroll-behavior: smooth
-	padding: 20vw 0 0 0
 	&__wrap-content
 		display: flex
-		width: 100%
 	.first-text_wrap
+		display: flex
+		position: absolute
+		top: 20%
 		.beverage_box
 			display: flex
 			position: relative
@@ -42,7 +43,6 @@
 				background-repeat: no-repeat
 				z-index: 2
 		.advantage__subtitle
-			position: relative
 			display: flex
 			.first-text
 				display: flex
@@ -56,12 +56,13 @@
 					display: flex
 					width: 0vw
 					content: ''
-					display: block
-					position: absolute
 					right: 0
 					top: 100%
 					border-bottom: .5vw solid #F9DC2C
 	.second-text_wrap
+		display: flex
+		position: absolute
+		top: 35%
 		.sandwich_mini
 			display: flex
 			position: relative
@@ -92,11 +93,8 @@
 				background-repeat: no-repeat
 				z-index: 2
 		.advantage__subtitle
-			width: 100%
-			position: relative
 			display: flex
 			.second-text
-				display: flex
 				@include Fifaks
 				color: #fff
 				text-align: left
@@ -104,15 +102,15 @@
 				padding: 2vw 0 0 13vw
 				z-index: 999
 				&_border
-					display: flex
 					width: 0vw
 					content: ''
-					display: block
-					position: absolute
 					left: 0
 					top: 100%
 					border-bottom: .5vw solid #fff
 	.third-text_wrap
+		display: flex
+		position: absolute
+		top: 50%
 		.bubble_tea
 			display: flex
 			position: relative
@@ -143,11 +141,8 @@
 				background-repeat: no-repeat
 				z-index: 2
 		.advantage__subtitle
-			width: 100%
-			position: relative
 			display: flex
 			.third-text
-				display: flex
 				@include Fifaks
 				color: $second-color
 				font-size: 13vw
@@ -157,8 +152,6 @@
 				&_border
 					width: 0vw
 					content: ''
-					display: flex
-					position: absolute
 					right: 0
 					top: 100%
 					border-bottom: .5vw solid #F9DC2C
