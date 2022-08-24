@@ -94,7 +94,7 @@ mm.add('(min-width: 501px)', () => {
 		animation: right,
 		trigger: '.advantage',
 		start: 'top center',
-		easy: 'power3.out',
+		easy: 'power3',
 		end: '150% center',
 		scrub: true,
 		// markers: true,
