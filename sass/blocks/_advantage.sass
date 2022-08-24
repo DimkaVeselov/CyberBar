@@ -1,17 +1,20 @@
 .advantage
-	height: 100vh
+	height: auto
 	background-color: #000
 	position: relative
 	z-index: 99
+	display: flex
+	flex-direction: column
 	scroll-behavior: smooth
+	padding: 10vw 0 10vw 0
 	&__wrap-content
-		display: block
+		display: flex
 		width: 100%
 		height: auto
 	.first-text_wrap
 		padding-top: 5vw
 		.beverage_box
-			display: block
+			display: flex
 			position: relative
 			&::after
 				content: ''
