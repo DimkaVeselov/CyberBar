@@ -13,9 +13,8 @@
 		position: absolute
 		top: 20%
 		.beverage_box
-			display: flex
 			position: relative
-			display: flex
+			left: 57%
 			&::after
 				content: ''
 				display: flex
@@ -44,8 +43,9 @@
 				z-index: 2
 		.advantage__subtitle
 			display: flex
+			flex-direction: column
+			align-items: flex-end
 			.first-text
-				display: flex
 				@include Fifaks
 				color: $second-color
 				text-align: left
@@ -53,22 +53,17 @@
 				padding: 2vw 0 0 65vw
 				z-index: 999
 				&_border
-					display: flex
 					width: 0vw
 					content: ''
-					right: 0
-					top: 100%
 					border-bottom: .5vw solid #F9DC2C
 	.second-text_wrap
 		display: flex
 		position: absolute
 		top: 35%
 		.sandwich_mini
-			display: flex
 			position: relative
 			&::after
 				content: ''
-				display: flex
 				position: absolute
 				left: 17vw
 				top: 0
@@ -82,7 +77,6 @@
 				z-index: 1
 			&::before
 				content: ''
-				display: flex
 				position: absolute
 				top: 0.5vw
 				left: 17.5vw
@@ -94,6 +88,7 @@
 				z-index: 2
 		.advantage__subtitle
 			display: flex
+			flex-direction: column
 			.second-text
 				@include Fifaks
 				color: #fff
@@ -104,19 +99,15 @@
 				&_border
 					width: 0vw
 					content: ''
-					left: 0
-					top: 100%
 					border-bottom: .5vw solid #fff
 	.third-text_wrap
 		display: flex
 		position: absolute
 		top: 50%
 		.bubble_tea
-			display: flex
 			position: relative
 			&::after
 				content: ''
-				display: flex
 				position: absolute
 				top: -3vw
 				right: 13vw
@@ -130,7 +121,6 @@
 				z-index: 1
 			&::before
 				content: ''
-				display: flex
 				position: absolute
 				bottom: -2.5vw
 				right: 12.5vw
@@ -142,16 +132,16 @@
 				z-index: 2
 		.advantage__subtitle
 			display: flex
+			flex-direction: column
+			align-items: flex-end
 			.third-text
 				@include Fifaks
 				color: $second-color
 				font-size: 13vw
 				text-align: right
-				padding: 2vw 0 0 7vw
+				padding: 2vw 0 0 55vw
 				z-index: 999
 				&_border
 					width: 0vw
 					content: ''
-					right: 0
-					top: 100%
 					border-bottom: .5vw solid #F9DC2C
