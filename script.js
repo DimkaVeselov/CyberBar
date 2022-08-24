@@ -74,14 +74,14 @@ mm.add('(min-width: 501px)', () => {
 
 	right.fromTo(
 		'.first-text, .sandwich_mini, .third-text',
-		{ x: '100%' },
-		{ x: '-100%' }
+		{ x: '150%' },
+		{ x: '-150%' }
 	);
 
 	left.fromTo(
 		'.beverage_box, .second-text, .bubble_tea', 2,
-		{ x: '-100%' },
-		{ x: '100%' }
+		{ x: '-150%' },
+		{ x: '150%' }
 	);
 
 	border.fromTo(
