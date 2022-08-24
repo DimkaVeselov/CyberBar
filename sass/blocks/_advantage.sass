@@ -12,12 +12,14 @@
 		width: 100%
 		height: auto
 	.first-text_wrap
-		padding-top: 5vw
+		display: flex
 		.beverage_box
 			display: flex
 			position: relative
+			display: flex
 			&::after
 				content: ''
+				display: flex
 				position: absolute
 				top: -1vw
 				right: 23vw
@@ -31,7 +33,7 @@
 				z-index: 1
 			&::before
 				content: ""
-				display: block
+				display: flex
 				position: absolute
 				top: -0.5vw
 				right: 23.5vw
@@ -45,7 +47,9 @@
 			width: 100%
 			height: 100%
 			position: relative
+			display: flex
 			.first-text
+				display: flex
 				@include Fifaks
 				color: $second-color
 				text-align: left
@@ -53,6 +57,7 @@
 				padding: 2vw 2vw 0 48vw
 				z-index: 999
 				&_border
+					display: flex
 					width: 0vw
 					content: ''
 					display: block
@@ -61,12 +66,13 @@
 					top: 100%
 					border-bottom: .5vw solid #F9DC2C
 	.second-text_wrap
+		display: flex
 		.sandwich_mini
-			display: block
+			display: flex
 			position: relative
 			&::after
 				content: ''
-				display: block
+				display: flex
 				position: absolute
 				left: 17vw
 				top: 0
@@ -80,7 +86,7 @@
 				z-index: 1
 			&::before
 				content: ''
-				display: block
+				display: flex
 				position: absolute
 				top: 0.5vw
 				left: 17.5vw
@@ -92,9 +98,10 @@
 				z-index: 2
 		.advantage__subtitle
 			width: 100%
-			height: 100%
 			position: relative
+			display: flex
 			.second-text
+				display: flex
 				@include Fifaks
 				color: #fff
 				text-align: left
@@ -102,6 +109,7 @@
 				padding: 2vw 0 0 13vw
 				z-index: 999
 				&_border
+					display: flex
 					width: 0vw
 					content: ''
 					display: block
@@ -110,12 +118,13 @@
 					top: 100%
 					border-bottom: .5vw solid #fff
 	.third-text_wrap
+		display: flex
 		.bubble_tea
-			display: block
+			display: flex
 			position: relative
 			&::after
 				content: ''
-				display: block
+				display: flex
 				position: absolute
 				top: -3vw
 				right: 13vw
@@ -129,7 +138,7 @@
 				z-index: 1
 			&::before
 				content: ''
-				display: block
+				display: flex
 				position: absolute
 				bottom: -2.5vw
 				right: 12.5vw
@@ -141,9 +150,10 @@
 				z-index: 2
 		.advantage__subtitle
 			width: 100%
-			height: 100%
 			position: relative
+			display: flex
 			.third-text
+				display: flex
 				@include Fifaks
 				color: $second-color
 				font-size: 13vw
@@ -153,13 +163,8 @@
 				&_border
 					width: 0vw
 					content: ''
-					display: block
+					display: flex
 					position: absolute
 					right: 0
 					top: 100%
 					border-bottom: .5vw solid #F9DC2C
-@media screen and ( max-width: 999px	)
-	.advantage
-		.first-text_wrap
-			padding-top: 25%
-@media screen and ( max-width: 500px	)
