@@ -79,13 +79,13 @@ mm.add('(min-width: 501px)', () => {
 	);
 
 	left.fromTo(
-		'.beverage_box, .second-text, .bubble_tea',
+		'.beverage_box, .second-text, .bubble_tea', 2,
 		{ x: '-100%' },
 		{ x: '100%' }
 	);
 
 	border.fromTo(
-		'.first-text_border, .second-text_border, .third-text_border',
+		'.first-text_border, .second-text_border, .third-text_border', 2,
 		{ width: 0 },
 		{ width: '100vw' }
 	);
@@ -94,6 +94,7 @@ mm.add('(min-width: 501px)', () => {
 		animation: right,
 		trigger: '.advantage',
 		start: 'top center',
+		easy: 'power3.out',
 		end: '150% center',
 		scrub: true,
 		// markers: true,
@@ -103,6 +104,7 @@ mm.add('(min-width: 501px)', () => {
 		animation: left,
 		trigger: '.advantage',
 		start: 'top center',
+		easy: 'power3.out',
 		end: '150% center',
 		scrub: true,
 		// markers: true,
@@ -189,13 +191,13 @@ mm.add('(max-width: 501px)', () => {
 	const border = gsap.timeline();
 
 	right.fromTo(
-		'.first-text, .sandwich_mini, .third-text',
+		'.first-text, .sandwich_mini, .third-text', 3,
 		{ x: '100%' },
 		{ x: '-100%' }
 	);
 
 	left.fromTo(
-		'.beverage_box, .second-text, .bubble_tea',
+		'.beverage_box, .second-text, .bubble_tea', 3,
 		{ x: '-100%' },
 		{ x: '100%' }
 	);
@@ -230,7 +232,6 @@ mm.add('(max-width: 501px)', () => {
 		animation: border,
 		trigger: '.advantage',
 		start: 'top center',
-		easy: 'power3.out',
 		end: '+=200 center',
 		scrub: true,
 		// markers: true,
