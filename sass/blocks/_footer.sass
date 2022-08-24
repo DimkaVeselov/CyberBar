@@ -21,51 +21,53 @@
 		align-items: center
 		justify-content: space-between
 		padding: 4vw 0 0 10vw
-		a
-			margin-right: 1vw
-			transition: .4s
-			&:hover
-				transform: scale(1.2, 1.1)
-			img
-				width: 3vw
-		.mail
-			@include Inter
+		.link__wrap
 			display: flex
-			align-items: center
-			color: #039BE5
-			font-weight: 500
-			font-size: 1vw
-			margin: 0 2vw 0 0
-			&::before
-				content: ""
-				display: block
-				width: 2vw
-				height: 1vw
-				background: url(../icon/mail.svg) no-repeat
-				background-size: 2vw 1vw
+			a
+				margin-right: 1vw
 				transition: .4s
-			&:hover
-				transform: scale(1.1, 1)
-		.phone
-			@include Inter
-			width: 20vw
-			display: flex
-			align-items: center
-			color: #fff
-			font-weight: 500
-			font-size: 1vw
-			margin: 0
-			&::before
-				content: ""
-				display: block
-				width: 2vw
-				height: 2vw
-				background: url(../icon/phone.svg) no-repeat
-				background-position: 0% 50%
-				background-size: 2vw 1.5vw
-				transition: .4s
-			&:hover
-				transform: scale(1.1, 1)
+				&:hover
+					transform: scale(1.2, 1.1)
+				img
+					width: 3vw
+			.mail
+				@include Inter
+				display: flex
+				align-items: center
+				color: #039BE5
+				font-weight: 500
+				font-size: 1vw
+				margin: 0 2vw 0 0
+				&::before
+					content: ""
+					display: block
+					width: 2vw
+					height: 1vw
+					background: url(../icon/mail.svg) no-repeat
+					background-size: 2vw 1vw
+					transition: .4s
+				&:hover
+					transform: scale(1.1, 1)
+			.phone
+				@include Inter
+				width: 20vw
+				display: flex
+				align-items: center
+				color: #fff
+				font-weight: 500
+				font-size: 1vw
+				margin: 0
+				&::before
+					content: ""
+					display: block
+					width: 2vw
+					height: 2vw
+					background: url(../icon/phone.svg) no-repeat
+					background-position: 0% 50%
+					background-size: 2vw 1.5vw
+					transition: .4s
+				&:hover
+					transform: scale(1.1, 1)
 	.copyright
 		@include Inter
 		color: #fff
