@@ -44,11 +44,7 @@ mm.add('(min-width: 501px)', () => {
 	const upPhone = gsap.timeline();
 	const downPhone = gsap.timeline();
 
-	upPhone.fromTo(
-		'.down_phone',
-		{ y: 0 },
-		{ y: '-150%' }
-	);
+	upPhone.fromTo('.down_phone', { y: 0 }, { y: '-150%' });
 
 	ScrollTrigger.create({
 		animation: upPhone,
@@ -59,11 +55,7 @@ mm.add('(min-width: 501px)', () => {
 		// markers: true,
 	});
 
-	downPhone.fromTo(
-		'.up_phone',
-		{ y: 0 },
-		{ y: '150%' }
-	);
+	downPhone.fromTo('.up_phone', { y: 0 }, { y: '150%' });
 
 	ScrollTrigger.create({
 		animation: downPhone,
@@ -85,10 +77,10 @@ mm.add('(min-width: 501px)', () => {
 		{ x: '100%' },
 		{ x: '-100%' }
 	);
-	
+
 	left.fromTo(
 		'.beverage_box, .second-text, .bubble_tea',
-		{ x: '-100%'},
+		{ x: '-100%' },
 		{ x: '100%' }
 	);
 
@@ -169,7 +161,7 @@ mm.add('(max-width: 501px)', () => {
 	const upPhone = gsap.timeline();
 	const downPhone = gsap.timeline();
 
-	upPhone.fromTo('.down_phone', { y: 0 }, { y: '70%'});
+	upPhone.fromTo('.down_phone', { y: 0 }, { y: '70%' });
 
 	ScrollTrigger.create({
 		animation: upPhone,
@@ -180,7 +172,7 @@ mm.add('(max-width: 501px)', () => {
 		// markers: true,
 	});
 
-	downPhone.fromTo('.up_phone', { y: 0}, { y: '-70%'});
+	downPhone.fromTo('.up_phone', { y: 0 }, { y: '-70%' });
 
 	ScrollTrigger.create({
 		animation: downPhone,
