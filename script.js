@@ -86,8 +86,8 @@ mm.add('(min-width: 501px)', () => {
 
 	border.fromTo(
 		'.first-text_border, .second-text_border, .third-text_border', 2,
-		{ width: 0 },
-		{ width: '100vw' }
+		{ width: 0},
+		{ width: '150vw' }
 	);
 
 	ScrollTrigger.create({
