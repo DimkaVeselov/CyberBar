@@ -1,150 +1,162 @@
 .advantage
+	height: 100vh
 	background-color: #000
-	height: 100vw
 	position: relative
 	z-index: 99
 	scroll-behavior: smooth
-	&__wrap
-		height: 100vh
-		overflow: hidden
-		padding: 15% 0 0 0
-		&-text
+	&__wrap-content
+		display: block
+		width: 100%
+		height: auto
+	.first-text_wrap
+		padding-top: 5vw
+		.beverage_box
+			display: block
 			position: relative
-			color: $second-color
-			.beverage_box
+			&::after
+				content: ''
+				position: absolute
+				top: -1vw
+				right: 23vw
+				width: 5vw
+				height: 5vw
+				background-color: #151515
+				border: 1px solid #606060
+				border-radius: 10%
+				box-shadow: 0px 5px 20px rgba(250, 231, 55, 0.5)
+				transform: rotate(-15.60deg)
+				z-index: 1
+			&::before
+				content: ""
 				display: block
-				position: relative
-				&::after
+				position: absolute
+				top: -0.5vw
+				right: 23.5vw
+				width: 4vw
+				height: 5vw
+				background-image: url(../icon/beverage_box.svg)
+				background-size: 4vw 4vw
+				background-repeat: no-repeat
+				z-index: 2
+		.advantage__subtitle
+			width: 100%
+			height: 100%
+			position: relative
+			.first-text
+				@include Fifaks
+				color: $second-color
+				text-align: left
+				font-size: 13vw
+				padding: 2vw 2vw 0 48vw
+				z-index: 999
+				&_border
+					width: 0vw
 					content: ''
-					position: absolute
-					top: -1vw
-					right: 23vw
-					width: 5vw
-					height: 5vw
-					background-color: #151515
-					border: 1px solid #606060
-					border-radius: 10%
-					box-shadow: 0px 5px 20px rgba(250, 231, 55, 0.5)
-					transform: rotate(-15.60deg)
-					z-index: 1
-				&::before
-					content: ""
 					display: block
 					position: absolute
-					top: -0.5vw
-					right: 23.5vw
-					width: 4vw
-					height: 5vw
-					background-image: url(../icon/beverage_box.svg)
-					background-size: 4vw 4vw
-					background-repeat: no-repeat
-					z-index: 2
-			div
-				position: relative
-				.first-text
-					@include Fifaks
-					text-align: left
-					font-size: 13vw
-					padding: 2vw 2vw 0 48vw
-					z-index: 999
-					&_border
-						width: 0vw
-						content: ''
-						display: block
-						position: absolute
-						right: 0
-						top: 100%
-						border-bottom: .5vw solid #F9DC2C
-				.sandwich_mini
+					right: 0
+					top: 100%
+					border-bottom: .5vw solid #F9DC2C
+	.second-text_wrap
+		.sandwich_mini
+			display: block
+			position: relative
+			&::after
+				content: ''
+				display: block
+				position: absolute
+				left: 17vw
+				top: 0
+				width: 5vw
+				height: 5vw
+				background-color: #151515
+				border: 1px solid #606060
+				border-radius: 10%
+				box-shadow: 0px 5px 20px rgba(250, 231, 55, 0.5)
+				transform: rotate(15.07deg)
+				z-index: 1
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				top: 0.5vw
+				left: 17.5vw
+				width: 5vw
+				height: 5vw
+				background-image: url(../icon/sandwich_mini.svg)
+				background-size: 4vw 4vw
+				background-repeat: no-repeat
+				z-index: 2
+		.advantage__subtitle
+			width: 100%
+			height: 100%
+			position: relative
+			.second-text
+				@include Fifaks
+				color: #fff
+				text-align: left
+				font-size: 13vw
+				padding: 2vw 0 0 13vw
+				z-index: 999
+				&_border
+					width: 0vw
+					content: ''
 					display: block
-					position: relative
-					&::after
-						content: ''
-						display: block
-						position: absolute
-						left: 17vw
-						top: 0
-						width: 5vw
-						height: 5vw
-						background-color: #151515
-						border: 1px solid #606060
-						border-radius: 10%
-						box-shadow: 0px 5px 20px rgba(250, 231, 55, 0.5)
-						transform: rotate(15.07deg)
-						z-index: 1
-					&::before
-						content: ''
-						display: block
-						position: absolute
-						top: 0.5vw
-						left: 17.5vw
-						width: 5vw
-						height: 5vw
-						background-image: url(../icon/sandwich_mini.svg)
-						background-size: 4vw 4vw
-						background-repeat: no-repeat
-						z-index: 2
-				.second-text
-					@include Fifaks
-					color: #fff
-					text-align: left
-					font-size: 13vw
-					padding: 2vw 0 0 13vw
-					z-index: 999
-					&_border
-						width: 0vw
-						content: ''
-						display: block
-						position: absolute
-						left: 0
-						top: 100%
-						border-bottom: .5vw solid #fff
-				.bubble_tea
+					position: absolute
+					left: 0
+					top: 100%
+					border-bottom: .5vw solid #fff
+	.third-text_wrap
+		.bubble_tea
+			display: block
+			position: relative
+			&::after
+				content: ''
+				display: block
+				position: absolute
+				top: -3vw
+				right: 13vw
+				width: 5vw
+				height: 5vw
+				background-color: #151515
+				border: 1px solid #606060
+				border-radius: 10%
+				box-shadow: 0px 5px 20px rgba(250, 231, 55, 0.5)
+				transform: rotate(-15.41deg)
+				z-index: 1
+			&::before
+				content: ''
+				display: block
+				position: absolute
+				bottom: -2.5vw
+				right: 12.5vw
+				width: 5vw
+				height: 5vw
+				background-image: url(../icon/bubble_tea.svg)
+				background-size: 4vw 4vw
+				background-repeat: no-repeat
+				z-index: 2
+		.advantage__subtitle
+			width: 100%
+			height: 100%
+			position: relative
+			.third-text
+				@include Fifaks
+				color: $second-color
+				font-size: 13vw
+				text-align: right
+				padding: 2vw 0 0 7vw
+				z-index: 999
+				&_border
+					width: 0vw
+					content: ''
 					display: block
-					position: relative
-					&::after
-						content: ''
-						display: block
-						position: absolute
-						top: -3vw
-						right: 13vw
-						width: 5vw
-						height: 5vw
-						background-color: #151515
-						border: 1px solid #606060
-						border-radius: 10%
-						box-shadow: 0px 5px 20px rgba(250, 231, 55, 0.5)
-						transform: rotate(-15.41deg)
-						z-index: 1
-					&::before
-						content: ''
-						display: block
-						position: absolute
-						bottom: -2.5vw
-						right: 12.5vw
-						width: 5vw
-						height: 5vw
-						background-image: url(../icon/bubble_tea.svg)
-						background-size: 4vw 4vw
-						background-repeat: no-repeat
-						z-index: 2
-				.third-text
-					@include Fifaks
-					font-size: 13vw
-					text-align: right
-					padding: 2vw 0 0 7vw
-					z-index: 999
-					&_border
-						width: 0vw
-						content: ''
-						display: block
-						position: absolute
-						right: 0
-						top: 100%
-						border-bottom: .5vw solid #F9DC2C
-		&.advantage_second
-			margin: 3% 0
+					position: absolute
+					right: 0
+					top: 100%
+					border-bottom: .5vw solid #F9DC2C
 @media screen and ( max-width: 999px	)
-	.advantage__wrap
-		padding: 20% 0 0 0
+	.advantage
+		.first-text_wrap
+			padding-top: 25%
 @media screen and ( max-width: 500px	)
