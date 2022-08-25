@@ -1,14 +1,14 @@
 .header__wrap
 	background-color: $main-color
-	height: 100vh
+	height: 100vw
 	overflow: hidden
+	display: flex
 
 .header__nav
 	width: 100%
 	display: flex
 	justify-content: flex-end
 	padding: 3vw 15vw 0 0
-	position: relative
 	&-block
 		width: 16vw
 		img
@@ -17,7 +17,7 @@
 .header__content
 	position: fixed
 	left: 10vw
-	margin-top: 1vw
+	margin-top: 8vw
 	display: flex
 	align-items: center
 	justify-content: center
@@ -45,7 +45,7 @@
 			width: 19vw
 			margin-right: 5vw
 			transition: .5s
-			animation-delay: 2s
+			transition-delay: .25s
 			&.active
 				transform: rotate(360deg)
 				opacity: 0
@@ -68,10 +68,8 @@
 				opacity: 0
 		.sandwich
 			width: 23vw
-			transition: 1.5s
 			margin-right: 8vw
 			transition: 600ms
-			animation-delay: 4s
 			&.active
 				transform: rotate(200deg) scale(150, 150) translate(-3.3vw, 0.99999vw)
 @media screen and ( max-width: 500px	)

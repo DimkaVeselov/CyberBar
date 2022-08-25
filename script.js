@@ -8,8 +8,8 @@ window.addEventListener('DOMContentLoaded', () => {
 		ScrollTrigger.create({
 			trigger: '.header__wrap',
 			start: 'top',
-			easy: 'power1',
-			end: '250%',
+			easy: 'power3',
+			end: '600%',
 			// markers: true,
 			toggleClass: {
 				targets: '.left_animation-text, .right_animation-text ',
@@ -19,9 +19,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
 		ScrollTrigger.create({
 			trigger: '.header__wrap',
-			start: '5',
+			start: '100vw',
 			easy: 'power2',
-			end: '250%',
+			end: '600%',
 			// markers: true,
 			toggleClass: {
 				targets: '.cup ',
@@ -31,9 +31,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
 		ScrollTrigger.create({
 			trigger: '.header__wrap',
-			start: '135vw',
-			easy: 'power3',
-			end: '250%',
+			start: '110vw',
+			easy: 'power1',
+			end: '400%',
 			// markers: true,
 			toggleClass: {
 				targets: '.sandwich ',
@@ -48,7 +48,7 @@ window.addEventListener('DOMContentLoaded', () => {
 		const upPhone = gsap.timeline();
 		const downPhone = gsap.timeline();
 
-		upPhone.fromTo('.down_phone', 2, { y: 0 }, { y: '-150%' });
+		upPhone.fromTo('.down_phone', 4, { y: 0 }, { y: '-150%' });
 
 		ScrollTrigger.create({
 			animation: upPhone,
@@ -60,7 +60,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			// markers: true,
 		});
 
-		downPhone.fromTo('.up_phone', 2, { y: 0 }, { y: '150%' });
+		downPhone.fromTo('.up_phone', 4, { y: 0}, { y: '150%' });
 
 		ScrollTrigger.create({
 			animation: downPhone,
