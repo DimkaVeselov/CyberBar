@@ -138,11 +138,71 @@
 				cursor: pointer
 				box-shadow: 0px 5.19896px 15.39791px rgba(241, 224, 59, 0.25), 5px 41.9895px 83.9791px rgba(241, 224, 59, 0.25)
 @media screen and ( max-width: 500px	)
-	.order__title
-		width: 50%
-		margin: 0 auto
-		font-size: 9vw
-		text-align: left
-		line-height: 39px
-		span
-			font-size: 11vw
+	.order
+		overflow: hidden
+		&::before
+			top: 80vw
+			left: 70vw
+			width: 20vw
+			height: 18vw
+			background-size: 19vw
+		&::after
+			top: -12vw
+			left: 69vw
+			width: 27vw
+			height: 17vw
+			background-size: 28vw
+			transform: rotate(17deg)
+		.order__title
+			width: 50%
+			margin: 0 auto
+			font-size: 9vw
+			text-align: left
+			line-height: 12vw
+			span
+				font-size: 11vw
+		.order__card
+			justify-content: flex-start
+			align-items: flex-start
+			padding: 5vw 0
+		.first__card
+			margin-left: 10vw
+			img
+				width: 30vw
+			div
+				width: 55vw
+				margin-left: 3vw
+				align-items: flex-start
+				p
+					font-size: 6vw
+				button
+					width: 20vw
+					height: 13vw
+					font-size: 4.5vw
+		.second__card
+			margin-left: 7vw
+			img
+				width: 25vw
+			div
+				width: 55vw
+				margin-left: 9vw
+				align-items: flex-start
+				p
+					font-size: 5vw
+				button
+					width: 20vw
+					height: 13vw
+					font-size: 4.5vw
+		.third__card
+			img
+				width: 30vw
+			div
+				width: 55vw
+				margin-left: 6vw
+				align-items: flex-start
+				p
+					font-size: 5vw
+				button
+					width: 20vw
+					height: 13vw
+					font-size: 4.5vw
