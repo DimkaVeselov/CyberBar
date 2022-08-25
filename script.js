@@ -80,14 +80,14 @@ window.addEventListener('DOMContentLoaded', () => {
 
 		right.fromTo(
 			'.first-text, .sandwich_mini, .third-text',
-			{ x: '2000px', height: '100%' },
+			{ x: '2000px' },
 			{ x: '-3500px' }
 		);
 
 		left.fromTo(
 			'.beverage_box, .second-text, .bubble_tea',
 			2,
-			{ x: '-2000px', height: '100%' },
+			{ x: '-2000px' },
 			{ x: '3500px' }
 		);
 
@@ -102,7 +102,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			animation: right,
 			trigger: '.advantage',
 			start: 'top center',
-			easy: 'power3',
+			// easy: 'power3',
 			end: '150% center',
 			scrub: true,
 			// markers: true,
@@ -112,7 +112,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			animation: left,
 			trigger: '.advantage',
 			start: 'top center',
-			easy: 'power3',
+			// easy: 'power3',
 			end: '150% center',
 			scrub: true,
 			// markers: true,
@@ -122,7 +122,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			animation: border,
 			trigger: '.advantage',
 			start: 'top center',
-			easy: 'power1',
+			// easy: 'power1',
 			end: '150% center',
 			scrub: true,
 			// markers: true,
@@ -203,14 +203,14 @@ window.addEventListener('DOMContentLoaded', () => {
 		right.fromTo(
 			'.first-text, .sandwich_mini, .third-text',
 			3,
-			{ x: '1500px', height: '100%' },
+			{ x: '1500px' },
 			{ x: '-2500px' }
 		);
 
 		left.fromTo(
 			'.beverage_box, .second-text, .bubble_tea',
 			3,
-			{ x: '-1500px', height: '100%' },
+			{ x: '-1500px' },
 			{ x: '2500px' }
 		);
 
