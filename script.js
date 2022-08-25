@@ -1,11 +1,12 @@
 window.addEventListener('DOMContentLoaded', () => {
 	gsap.registerPlugin(ScrollTrigger);
 	const mm = window.gsap.matchMedia();
+	const scroll = ScrollTrigger.normalizeScroll(true);
 
 	//MEDIA 501px
 	mm.add('(min-width: 501px)', () => {
 		//HEADER
-		ScrollTrigger.create({
+		scroll.create({
 			trigger: '.header__wrap',
 			start: 'top',
 			easy: 'power1',
@@ -17,7 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			},
 		});
 
-		ScrollTrigger.create({
+		scroll.create({
 			trigger: '.header__wrap',
 			start: '5',
 			easy: 'power3',
@@ -30,7 +31,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			},
 		});
 
-		ScrollTrigger.create({
+		scroll.create({
 			trigger: '.header__wrap',
 			start: '135vw',
 			easy: 'power3',
@@ -51,7 +52,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 		upPhone.fromTo('.down_phone', { y: 0 }, { y: '-150%' });
 
-		ScrollTrigger.create({
+		scroll.create({
 			animation: upPhone,
 			trigger: '.phone__app',
 			start: 'top center',
@@ -63,7 +64,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 		downPhone.fromTo('.up_phone', { y: 0 }, { y: '150%' });
 
-		ScrollTrigger.create({
+		scroll.create({
 			animation: downPhone,
 			trigger: '.phone__app',
 			start: 'top center',
@@ -99,7 +100,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			{ width: '150vw' }
 		);
 
-		ScrollTrigger.create({
+		scroll.create({
 			animation: right,
 			trigger: '.advantage',
 			start: 'top center',
@@ -109,7 +110,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			// markers: true,
 		});
 
-		ScrollTrigger.create({
+		scroll.create({
 			animation: left,
 			trigger: '.advantage',
 			start: 'top center',
@@ -119,7 +120,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			// markers: true,
 		});
 
-		ScrollTrigger.create({
+		scroll.create({
 			animation: border,
 			trigger: '.advantage',
 			start: 'top center',
@@ -133,7 +134,7 @@ window.addEventListener('DOMContentLoaded', () => {
 	//MEDIA 500px
 	mm.add('(max-width: 501px)', () => {
 		//HEADER
-		ScrollTrigger.create({
+		scroll.create({
 			trigger: '.header__wrap',
 			start: 'top',
 			end: '250%',
@@ -144,7 +145,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			},
 		});
 
-		ScrollTrigger.create({
+		scroll.create({
 			trigger: '.header__wrap',
 			start: '75vw',
 			end: '250%',
@@ -155,7 +156,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			},
 		});
 
-		ScrollTrigger.create({
+		scroll.create({
 			trigger: '.header__wrap',
 			start: '135vw',
 			end: '250%',
@@ -174,7 +175,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 		upPhone.fromTo('.down_phone', { y: 0 }, { y: '70%' });
 
-		ScrollTrigger.create({
+		scroll.create({
 			animation: upPhone,
 			trigger: '.phone__app',
 			start: 'top center',
@@ -186,7 +187,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 		downPhone.fromTo('.up_phone', { y: 0 }, { y: '-70%' });
 
-		ScrollTrigger.create({
+		scroll.create({
 			animation: downPhone,
 			trigger: '.phone__app',
 			start: 'top center',
@@ -221,7 +222,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			{ width: '130vw' }
 		);
 
-		ScrollTrigger.create({
+		scroll.create({
 			animation: right,
 			trigger: '.advantage',
 			start: 'top center',
@@ -231,7 +232,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			// markers: true,
 		});
 
-		ScrollTrigger.create({
+		scroll.create({
 			animation: left,
 			trigger: '.advantage',
 			start: 'top center',
@@ -241,7 +242,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			// markers: true,
 		});
 
-		ScrollTrigger.create({
+		scroll.create({
 			animation: border,
 			trigger: '.advantage',
 			start: 'top center',
