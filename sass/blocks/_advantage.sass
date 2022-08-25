@@ -1,6 +1,4 @@
 .advantage
-	height: 100vh
-	min-height: 1200px
 	background-color: #000
 	position: relative
 	z-index: 99
@@ -12,13 +10,12 @@
 		min-height: 165px
 		height: 1px
 	.first-text_wrap
-		height: 25%
+		height: 33%
 		width: 100vw
 		display: flex
 		justify-content: flex-end
 		align-items: stretch
-		position: absolute
-		top: 15%
+		padding-top: 10vw
 		.beverage_box
 			position: relative
 			left: 57%
@@ -58,25 +55,16 @@
 				color: $second-color
 				text-align: left
 				font-size: 13vw
-				padding: 2vw 0 0 60vw
-				z-index: 999
-				height: 100%
-				position: absolute
+				padding: 2vw 0 0 0
 				&_border
-					position: relative
-					top: 15vw
-					display: flex
-					width: 0vw
-					content: ''
 					border-bottom: .5vw solid #F9DC2C
 	.second-text_wrap
-		height: 25%
+		height: 33%
 		width: 100vw
 		display: flex
 		justify-content: flex-start
 		align-items: stretch
-		position: absolute
-		top: 40%
+		padding-top: 5vw
 		.sandwich_mini
 			position: relative
 			&::after
@@ -113,25 +101,16 @@
 				color: #fff
 				text-align: left
 				font-size: 13vw
-				padding: 2vw 0 0 60vw
-				z-index: 999
-				height: 100%
-				position: absolute
+				padding: 2vw 0 0 0
 				&_border
-					position: relative
-					top: 15vw
-					display: flex
-					width: 0vw
-					content: ''
 					border-bottom: .5vw solid #fff
 	.third-text_wrap
-		height: 25%
+		height: 33%
 		width: 100vw
 		display: flex
 		justify-content: flex-end
-		align-items: stretch
-		position: absolute
-		top: 65%
+		padding-top: 5vw
+		padding-bottom: 10vw
 		.bubble_tea
 			position: relative
 			&::after
@@ -169,33 +148,25 @@
 				text-align: left
 				font-size: 13vw
 				padding: 2vw 0 0 60vw
-				z-index: 999
-				height: 100%
-				position: absolute
 				&_border
-					position: relative
-					top: 15vw
-					display: flex
-					width: 0vw
-					content: ''
 					border-bottom: .5vw solid #F9DC2C
-@media screen and ( max-width: 500px	)
-	.advantage
-		.first-text_wrap
-			top: 30%
-			.advantage__subtitle
-				top: 0
-				.first-text
-					font-size: 96px
-		.second-text_wrap
-			top: 40%
-			.advantage__subtitle
-				top: 0
-				.second-text
-					font-size: 96px
-		.third-text_wrap
-			top: 50%
-			.advantage__subtitle
-				top: 0
-				.third-text
-					font-size: 96px
+// @media screen and ( max-width: 500px	)
+// 	.advantage
+// 		.first-text_wrap
+// 			top: 30%
+// 			.advantage__subtitle
+// 				top: 0
+// 				.first-text
+// 					font-size: 96px
+// 		.second-text_wrap
+// 			top: 40%
+// 			.advantage__subtitle
+// 				top: 0
+// 				.second-text
+// 					font-size: 96px
+// 		.third-text_wrap
+// 			top: 50%
+// 			.advantage__subtitle
+// 				top: 0
+// 				.third-text
+// 					font-size: 96px
