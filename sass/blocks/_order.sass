@@ -7,18 +7,19 @@
 	&::before
 		content: ""
 		display: block
-		position: absolute
-		top: 29vw
-		left: 45vw
-		width: 11vw
+		position: relative
+		top: 45vw
+		left: 42vw
+		width: 20vw
 		height: 11vw
 		background: url(../img/chocolate.png) no-repeat
-		background-size: 11vw
+		background-size: 12vw
+		z-index: 1
 	&::after
 		content: ""
 		display: block
-		position: absolute
-		top: 72vw
+		position: relative
+		top: -9vw
 		left: 42vw
 		width: 20vw
 		height: 11vw
@@ -26,6 +27,7 @@
 		background-size: 21vw
 		z-index: 1
 	&__title
+		position: relative
 		width: 100vw
 		@include Inter
 		color: #fff
