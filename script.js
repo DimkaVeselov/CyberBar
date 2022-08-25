@@ -1,6 +1,5 @@
 window.addEventListener('DOMContentLoaded', () => {
 	gsap.registerPlugin(ScrollTrigger);
-	ScrollTrigger.normalizeScroll(true);
 	const mm = window.gsap.matchMedia();
 
 	//MEDIA 501px
@@ -204,14 +203,14 @@ window.addEventListener('DOMContentLoaded', () => {
 		right.fromTo(
 			'.first-text, .sandwich_mini, .third-text',
 			3,
-			{ x: '1500px' },
+			{ x: '1500px', height: '100%' },
 			{ x: '-2500px' }
 		);
 
 		left.fromTo(
 			'.beverage_box, .second-text, .bubble_tea',
 			3,
-			{ x: '-1500px' },
+			{ x: '-1500px', height: '100%' },
 			{ x: '2500px' }
 		);
 
