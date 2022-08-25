@@ -188,57 +188,57 @@ window.addEventListener('DOMContentLoaded', () => {
 		});
 
 		//text
-		const left = gsap.timeline();
-		const right = gsap.timeline();
-		const border = gsap.timeline();
+		// const left = gsap.timeline();
+		// const right = gsap.timeline();
+		// const border = gsap.timeline();
 
-		right.fromTo(
-			'.first-text, .sandwich_mini, .third-text',
-			3,
-			{ x: '100%' },
-			{ x: '-100%' }
-		);
+		// right.fromTo(
+		// 	'.first-text, .sandwich_mini, .third-text',
+		// 	3,
+		// 	{ x: '100%' },
+		// 	{ x: '-100%' }
+		// );
 
-		left.fromTo(
-			'.beverage_box, .second-text, .bubble_tea',
-			3,
-			{ x: '-100%' },
-			{ x: '100%' }
-		);
+		// left.fromTo(
+		// 	'.beverage_box, .second-text, .bubble_tea',
+		// 	3,
+		// 	{ x: '-100%' },
+		// 	{ x: '100%' }
+		// );
 
-		border.fromTo(
-			'.first-text_border, .second-text_border, .third-text_border',
-			{ width: 0 },
-			{ width: '100vw' }
-		);
+		// border.fromTo(
+		// 	'.first-text_border, .second-text_border, .third-text_border',
+		// 	{ width: 0 },
+		// 	{ width: '100vw' }
+		// );
 
-		ScrollTrigger.create({
-			animation: right,
-			trigger: '.advantage',
-			start: 'top center',
-			easy: 'power3.out',
-			end: '+=200  center',
-			scrub: true,
-			// markers: true,
-		});
+		// ScrollTrigger.create({
+		// 	animation: right,
+		// 	trigger: '.advantage',
+		// 	start: 'top center',
+		// 	easy: 'power3.out',
+		// 	end: '+=200  center',
+		// 	scrub: true,
+		// 	// markers: true,
+		// });
 
-		ScrollTrigger.create({
-			animation: left,
-			trigger: '.advantage',
-			start: 'top center',
-			easy: 'power3.out',
-			end: '+=200 center',
-			scrub: true,
-			// markers: true,
-		});
+		// ScrollTrigger.create({
+		// 	animation: left,
+		// 	trigger: '.advantage',
+		// 	start: 'top center',
+		// 	easy: 'power3.out',
+		// 	end: '+=200 center',
+		// 	scrub: true,
+		// 	// markers: true,
+		// });
 
-		ScrollTrigger.create({
-			animation: border,
-			trigger: '.advantage',
-			start: 'top center',
-			end: '+=200 center',
-			scrub: true,
-			// markers: true,
-		});
+		// ScrollTrigger.create({
+		// 	animation: border,
+		// 	trigger: '.advantage',
+		// 	start: 'top center',
+		// 	end: '+=200 center',
+		// 	scrub: true,
+		// 	// markers: true,
+		// });
 	});
 })
