@@ -1,5 +1,6 @@
 .advantage
 	height: 100vh
+	min-height: 1200px
 	background-color: #000
 	position: relative
 	z-index: 99
@@ -11,10 +12,13 @@
 		min-height: 165px
 		height: 1px
 	.first-text_wrap
-		height: 100%
+		height: 25%
+		width: 100vw
 		display: flex
+		justify-content: flex-end
+		align-items: stretch
 		position: absolute
-		top: 10%
+		top: 15%
 		.beverage_box
 			position: relative
 			left: 57%
@@ -48,26 +52,31 @@
 			display: flex
 			flex-direction: column
 			align-items: flex-end
-			position: absolute
+			position: relative
 			.first-text
 				@include Fifaks
 				color: $second-color
 				text-align: left
 				font-size: 13vw
-				padding: 2vw 0 0 65vw
+				padding: 2vw 0 0 60vw
 				z-index: 999
 				height: 100%
-				display: inline-block
+				position: absolute
 				&_border
+					position: relative
+					top: 15vw
 					display: flex
 					width: 0vw
 					content: ''
 					border-bottom: .5vw solid #F9DC2C
 	.second-text_wrap
-		height: 100%
+		height: 25%
+		width: 100vw
 		display: flex
+		justify-content: flex-start
+		align-items: stretch
 		position: absolute
-		top: 35%
+		top: 40%
 		.sandwich_mini
 			position: relative
 			&::after
@@ -97,26 +106,32 @@
 		.advantage__subtitle
 			display: flex
 			flex-direction: column
-			position: absolute
+			align-items: flex-end
+			position: relative
 			.second-text
 				@include Fifaks
 				color: #fff
 				text-align: left
 				font-size: 13vw
-				padding: 2vw 0 0 13vw
+				padding: 2vw 0 0 60vw
 				z-index: 999
 				height: 100%
-				display: inline-block
+				position: absolute
 				&_border
+					position: relative
+					top: 15vw
 					display: flex
 					width: 0vw
 					content: ''
 					border-bottom: .5vw solid #fff
 	.third-text_wrap
-		height: 100%
+		height: 25%
+		width: 100vw
 		display: flex
+		justify-content: flex-end
+		align-items: stretch
 		position: absolute
-		top: 60%
+		top: 65%
 		.bubble_tea
 			position: relative
 			&::after
@@ -135,7 +150,7 @@
 			&::before
 				content: ''
 				position: absolute
-				bottom: -2.5vw
+				top: -2.5vw
 				right: 12.5vw
 				width: 5vw
 				height: 5vw
@@ -147,17 +162,19 @@
 			display: flex
 			flex-direction: column
 			align-items: flex-end
-			position: absolute
+			position: relative
 			.third-text
 				@include Fifaks
 				color: $second-color
+				text-align: left
 				font-size: 13vw
-				text-align: right
-				padding: 2vw 0 0 50vw
+				padding: 2vw 0 0 60vw
 				z-index: 999
 				height: 100%
-				display: inline-block
+				position: absolute
 				&_border
+					position: relative
+					top: 15vw
 					display: flex
 					width: 0vw
 					content: ''
