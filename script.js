@@ -8,6 +8,7 @@ window.addEventListener('DOMContentLoaded', () => {
 		ScrollTrigger.create({
 			trigger: '.header__wrap',
 			start: '50vw',
+			easy: 'power1',
 			end: '250%',
 			// markers: true,
 			toggleClass: {
@@ -19,6 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
 		ScrollTrigger.create({
 			trigger: '.header__wrap',
 			start: '75vw',
+			easy: 'power2',
 			end: '250%',
 			// markers: true,
 			toggleClass: {
@@ -30,6 +32,7 @@ window.addEventListener('DOMContentLoaded', () => {
 		ScrollTrigger.create({
 			trigger: '.header__wrap',
 			start: '175vw',
+			easy: 'power3',
 			end: '250%',
 			// markers: true,
 			toggleClass: {
@@ -75,15 +78,15 @@ window.addEventListener('DOMContentLoaded', () => {
 
 		right.fromTo(
 			'.first-text, .sandwich_mini, .third-text',
-			{ x: '200%' },
-			{ x: '-200%' }
+			{ x: '2000px' },
+			{ x: '-3500px' }
 		);
 
 		left.fromTo(
 			'.beverage_box, .second-text, .bubble_tea',
 			2,
-			{ x: '-200%' },
-			{ x: '200%' }
+			{ x: '-2000px' },
+			{ x: '3500px' }
 		);
 
 		border.fromTo(
@@ -107,7 +110,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			animation: left,
 			trigger: '.advantage',
 			start: 'top center',
-			easy: 'power3.out',
+			easy: 'power3',
 			end: '150% center',
 			scrub: true,
 			// markers: true,
@@ -117,6 +120,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			animation: border,
 			trigger: '.advantage',
 			start: 'top center',
+			easy: 'power1',
 			end: '150% center',
 			scrub: true,
 			// markers: true,
@@ -188,57 +192,58 @@ window.addEventListener('DOMContentLoaded', () => {
 		});
 
 		//text
-		// const left = gsap.timeline();
-		// const right = gsap.timeline();
-		// const border = gsap.timeline();
+		const left = gsap.timeline();
+		const right = gsap.timeline();
+		const border = gsap.timeline();
 
-		// right.fromTo(
-		// 	'.first-text, .sandwich_mini, .third-text',
-		// 	3,
-		// 	{ x: '100%' },
-		// 	{ x: '-100%' }
-		// );
+		right.fromTo(
+			'.first-text, .sandwich_mini, .third-text',
+			3,
+			{ x: '1500px' },
+			{ x: '-2500px' }
+		);
 
-		// left.fromTo(
-		// 	'.beverage_box, .second-text, .bubble_tea',
-		// 	3,
-		// 	{ x: '-100%' },
-		// 	{ x: '100%' }
-		// );
+		left.fromTo(
+			'.beverage_box, .second-text, .bubble_tea',
+			3,
+			{ x: '-1500px' },
+			{ x: '2500px' }
+		);
 
-		// border.fromTo(
-		// 	'.first-text_border, .second-text_border, .third-text_border',
-		// 	{ width: 0 },
-		// 	{ width: '100vw' }
-		// );
+		border.fromTo(
+			'.first-text_border, .second-text_border, .third-text_border',
+			{ width: 0 },
+			{ width: '130vw' }
+		);
 
-		// ScrollTrigger.create({
-		// 	animation: right,
-		// 	trigger: '.advantage',
-		// 	start: 'top center',
-		// 	easy: 'power3.out',
-		// 	end: '+=200  center',
-		// 	scrub: true,
-		// 	// markers: true,
-		// });
+		ScrollTrigger.create({
+			animation: right,
+			trigger: '.advantage',
+			start: 'top center',
+			easy: 'power3',
+			end: '+=200  center',
+			scrub: true,
+			// markers: true,
+		});
 
-		// ScrollTrigger.create({
-		// 	animation: left,
-		// 	trigger: '.advantage',
-		// 	start: 'top center',
-		// 	easy: 'power3.out',
-		// 	end: '+=200 center',
-		// 	scrub: true,
-		// 	// markers: true,
-		// });
+		ScrollTrigger.create({
+			animation: left,
+			trigger: '.advantage',
+			start: 'top center',
+			easy: 'power3',
+			end: '+=200 center',
+			scrub: true,
+			// markers: true,
+		});
 
-		// ScrollTrigger.create({
-		// 	animation: border,
-		// 	trigger: '.advantage',
-		// 	start: 'top center',
-		// 	end: '+=200 center',
-		// 	scrub: true,
-		// 	// markers: true,
-		// });
+		ScrollTrigger.create({
+			animation: border,
+			trigger: '.advantage',
+			start: 'top center',
+			easy: 'power1'
+			end: '+=200 center',
+			scrub: true,
+			// markers: true,
+		});
 	});
 })
