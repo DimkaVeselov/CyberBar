@@ -7,7 +7,7 @@ window.addEventListener('DOMContentLoaded', () => {
 		//HEADER
 		ScrollTrigger.create({
 			trigger: '.header__wrap',
-			start: '50vw',
+			start: 'top',
 			easy: 'power1',
 			end: '250%',
 			// markers: true,
@@ -19,7 +19,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
 		ScrollTrigger.create({
 			trigger: '.header__wrap',
-			start: '75vw',
+			start: '5',
+			easy: 'power3',
 			easy: 'power2',
 			end: '250%',
 			// markers: true,
@@ -31,7 +32,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 		ScrollTrigger.create({
 			trigger: '.header__wrap',
-			start: '175vw',
+			start: '135vw',
 			easy: 'power3',
 			end: '250%',
 			// markers: true,
@@ -54,6 +55,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			animation: upPhone,
 			trigger: '.phone__app',
 			start: 'top center',
+			easy: 'power3',
 			end: '150% center',
 			scrub: true,
 			// markers: true,
@@ -65,6 +67,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			animation: downPhone,
 			trigger: '.phone__app',
 			start: 'top center',
+			easy: 'power3',
 			end: '150% center',
 			scrub: true,
 			// markers: true,
@@ -132,7 +135,7 @@ window.addEventListener('DOMContentLoaded', () => {
 		//HEADER
 		ScrollTrigger.create({
 			trigger: '.header__wrap',
-			start: '20vw',
+			start: 'top',
 			end: '250%',
 			// markers: true,
 			toggleClass: {
@@ -143,7 +146,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 		ScrollTrigger.create({
 			trigger: '.header__wrap',
-			start: '105vw',
+			start: '75vw',
 			end: '250%',
 			// markers: true,
 			toggleClass: {
@@ -154,7 +157,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 		ScrollTrigger.create({
 			trigger: '.header__wrap',
-			start: '175vw',
+			start: '135vw',
 			end: '250%',
 			// markers: true,
 			toggleClass: {
@@ -175,6 +178,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			animation: upPhone,
 			trigger: '.phone__app',
 			start: 'top center',
+			easy: 'power3',
 			end: '100% center',
 			scrub: true,
 			// markers: true,
@@ -186,6 +190,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			animation: downPhone,
 			trigger: '.phone__app',
 			start: 'top center',
+			easy: 'power3',
 			end: '100% center',
 			scrub: true,
 			// markers: true,
@@ -221,7 +226,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			trigger: '.advantage',
 			start: 'top center',
 			easy: 'power3',
-			end: '+=200  center',
+			end: 'bottom center',
 			scrub: true,
 			// markers: true,
 		});
@@ -231,7 +236,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			trigger: '.advantage',
 			start: 'top center',
 			easy: 'power3',
-			end: '+=200 center',
+			end: 'bottom center',
 			scrub: true,
 			// markers: true,
 		});
@@ -241,9 +246,9 @@ window.addEventListener('DOMContentLoaded', () => {
 			trigger: '.advantage',
 			start: 'top center',
 			easy: 'power1',
-			end: '+=200 center',
+			end: 'bottom center',
 			scrub: true,
 			// markers: true,
 		});
 	});
-})
+});
