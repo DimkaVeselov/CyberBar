@@ -48,7 +48,7 @@ window.addEventListener('DOMContentLoaded', () => {
 		const upPhone = gsap.timeline();
 		const downPhone = gsap.timeline();
 
-		upPhone.fromTo('.down_phone', { y: 0 }, { y: '-150%' });
+		upPhone.fromTo('.down_phone', 2, { y: 0 }, { y: '-150%' });
 
 		ScrollTrigger.create({
 			animation: upPhone,
@@ -60,7 +60,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			// markers: true,
 		});
 
-		downPhone.fromTo('.up_phone', { y: 0 }, { y: '150%' });
+		downPhone.fromTo('.up_phone', 2, { y: 0 }, { y: '150%' });
 
 		ScrollTrigger.create({
 			animation: downPhone,
@@ -79,13 +79,13 @@ window.addEventListener('DOMContentLoaded', () => {
 		const border = gsap.timeline();
 
 		right.fromTo(
-			'.first-text, .sandwich_mini, .third-text',
+			'.first-text, .sandwich_mini, .third-text', 2,
 			{ x: '2000px' },
 			{ x: '-3500px' }
 		);
 
 		left.fromTo(
-			'.beverage_box, .second-text, .bubble_tea',
+			'.beverage_box, .second-text, .bubble_tea', 
 			2,
 			{ x: '-2000px' },
 			{ x: '3500px' }
