@@ -240,7 +240,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			animation: border,
 			trigger: '.advantage',
 			start: 'top center',
-			easy: 'power1'
+			easy: 'power1',
 			end: '+=200 center',
 			scrub: true,
 			// markers: true,
