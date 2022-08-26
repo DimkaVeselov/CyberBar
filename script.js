@@ -184,7 +184,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			easy: 'power3',
 			end: '200% center',
 			scrub: true,
-			markers: true,
+			// markers: true,
 		});
 
 		ScrollTrigger.create({
