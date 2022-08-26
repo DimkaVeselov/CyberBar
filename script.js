@@ -34,7 +34,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			start: '110vw',
 			easy: 'power1',
 			end: '400%',
-			markers: true,
+			// markers: true,
 			toggleClass: {
 				targets: '.sandwich ',
 				className: 'active',
@@ -60,7 +60,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			// markers: true,
 		});
 
-		downPhone.fromTo('.up_phone', 4, { y: 0}, { y: '150%' });
+		downPhone.fromTo('.up_phone', 4, { y: 0 }, { y: '150%' });
 
 		ScrollTrigger.create({
 			animation: downPhone,
@@ -76,76 +76,48 @@ window.addEventListener('DOMContentLoaded', () => {
 
 		const left = gsap.timeline();
 		const right = gsap.timeline();
-		const border = gsap.timeline();
 
-		right.fromTo(
-			'.first-text, .sandwich_mini, .third-text', 2,
-			{ x: '2000px' },
-			{ x: '-3500px' }
-		);
+		right.fromTo('.advantage__right', 2, { x: '-275%' }, { x: '275%' });
 
-		left.fromTo(
-			'.beverage_box, .second-text, .bubble_tea', 
-			2,
-			{ x: '-2000px' },
-			{ x: '3500px' }
-		);
-
-		border.fromTo(
-			'.first-text_border, .second-text_border, .third-text_border',
-			2,
-			{ width: 0 },
-			{ width: '150vw' }
-		);
+		left.fromTo('.advantage__left', 2, { x: '275%' }, { x: '-275%' });
 
 		ScrollTrigger.create({
 			animation: right,
 			trigger: '.advantage',
 			start: 'top center',
-			// easy: 'power3',
-			end: '150% center',
-			scrub: true,
-			// markers: true,
+			easy: 'power3',
+			end: 'bottom center',
+			markers: true,
 		});
 
 		ScrollTrigger.create({
 			animation: left,
 			trigger: '.advantage',
 			start: 'top center',
-			// easy: 'power3',
-			end: '150% center',
-			scrub: true,
-			// markers: true,
-		});
-
-		ScrollTrigger.create({
-			animation: border,
-			trigger: '.advantage',
-			start: 'top center',
-			// easy: 'power1',
-			end: '150% center',
-			scrub: true,
+			easy: 'power3',
+			end: 'bottom center',
 			// markers: true,
 		});
 	});
 
 	//MEDIA 500px
-	mm.add('(max-width: 501px)', () => {
+	mm.add('(max-width: 500px)', () => {
 		//HEADER
 		ScrollTrigger.create({
 			trigger: '.header__wrap',
-			start: '5vw',
+			start: '15vw',
+			easy: 'power3',
 			end: '250%',
 			// markers: true,
 			toggleClass: {
-				targets: '.left_animation, .right_animation ',
+				targets: '.left_animation-text, .right_animation-text ',
 				className: 'active',
 			},
 		});
 
 		ScrollTrigger.create({
 			trigger: '.header__wrap',
-			start: '75vw',
+			start: '100vw',
 			end: '250%',
 			// markers: true,
 			toggleClass: {
@@ -156,8 +128,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
 		ScrollTrigger.create({
 			trigger: '.header__wrap',
-			start: '135vw',
-			end: '250%',
+			start: '210vw',
+			end: '350%',
 			// markers: true,
 			toggleClass: {
 				targets: '.sandwich ',
@@ -171,24 +143,24 @@ window.addEventListener('DOMContentLoaded', () => {
 		const upPhone = gsap.timeline();
 		const downPhone = gsap.timeline();
 
-		upPhone.fromTo('.down_phone', { y: 0 }, { y: '70%' });
+		upPhone.fromTo('.down_phone', 2, { y: 0 }, { y: '-200%' });
 
 		ScrollTrigger.create({
 			animation: upPhone,
 			trigger: '.phone__app',
-			start: 'top center',
+			start: '-=350 center',
 			easy: 'power3',
 			end: '100% center',
 			scrub: true,
 			// markers: true,
 		});
 
-		downPhone.fromTo('.up_phone', { y: 0 }, { y: '-70%' });
+		downPhone.fromTo('.up_phone', 2, { y: 0 }, { y: '-200%' });
 
 		ScrollTrigger.create({
 			animation: downPhone,
 			trigger: '.phone__app',
-			start: 'top center',
+			start: '-=350 center',
 			easy: 'power3',
 			end: '100% center',
 			scrub: true,
@@ -198,27 +170,10 @@ window.addEventListener('DOMContentLoaded', () => {
 		//text
 		const left = gsap.timeline();
 		const right = gsap.timeline();
-		const border = gsap.timeline();
 
-		right.fromTo(
-			'.first-text, .sandwich_mini, .third-text',
-			3,
-			{ x: '1500px' },
-			{ x: '-2500px' }
-		);
+		right.fromTo('.advantage__right', 2, { x: 0 }, { x: '250%' });
 
-		left.fromTo(
-			'.beverage_box, .second-text, .bubble_tea',
-			3,
-			{ x: '-1500px' },
-			{ x: '2500px' }
-		);
-
-		border.fromTo(
-			'.first-text_border, .second-text_border, .third-text_border',
-			{ width: 0 },
-			{ width: '130vw' }
-		);
+		left.fromTo('.advantage__left', 2, { x: 0 }, { x: '-250%' });
 
 		ScrollTrigger.create({
 			animation: right,
@@ -226,8 +181,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			start: 'top center',
 			easy: 'power3',
 			end: 'bottom center',
-			scrub: true,
-			// markers: true,
+			markers: true,
 		});
 
 		ScrollTrigger.create({
@@ -236,17 +190,6 @@ window.addEventListener('DOMContentLoaded', () => {
 			start: 'top center',
 			easy: 'power3',
 			end: 'bottom center',
-			scrub: true,
-			// markers: true,
-		});
-
-		ScrollTrigger.create({
-			animation: border,
-			trigger: '.advantage',
-			start: 'top center',
-			easy: 'power1',
-			end: 'bottom center',
-			scrub: true,
 			// markers: true,
 		});
 	});

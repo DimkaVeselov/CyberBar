@@ -26,25 +26,34 @@
 				object-fit: contain
 
 @media screen and ( max-width: 500px	)
-	.phone__app-wrap
-		flex-direction: column
-		.first__phone
-			order: 2
-			z-index: 2
-			margin: 0 auto
-			padding: 14vw 0
-			&-img
-				width: 60vw
-				margin-bottom: -35%
-		.second__phone
-			order: 1
-			z-index: 1
-			transition: 1s
-			&-img
-				width: 65vw
-		.third__phone
-			order: 3
-			z-index: 3
-			&-img
-				width: 65vw
-				padding-bottom: 80%
+	.phone__app
+		height: 100vh
+		.phone__app-wrap
+			flex-direction: column
+			.first__phone
+				order: 2
+				z-index: 2
+				margin: 0 auto
+				padding: 30vw 0 15vw 0
+				position: relative
+				bottom: 20%
+				&-img
+					width: 60vw
+					margin-bottom: -35%
+			.second__phone
+				order: 1
+				z-index: 1
+				position: relative
+				bottom: 0
+				padding: 5vw 0
+				&-img
+					width: 65vw
+			.third__phone
+				order: 3
+				z-index: 3
+				padding: 20vw 0 10vw 0
+				position: relative
+				bottom: 10%
+				&-img
+					width: 65vw
+					padding-bottom: 80%
