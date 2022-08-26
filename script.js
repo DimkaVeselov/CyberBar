@@ -3,18 +3,18 @@ window.addEventListener('DOMContentLoaded', () => {
 	const mm = window.gsap.matchMedia();
 
 	//MEDIA 501px
-	mm.add('(min-width: 501px)', () => {
+	mm.add('(min-width: 500px)', () => {
 		//HEADER
 		ScrollTrigger.create({
 			trigger: '.header__wrap',
 			start: '5vw',
 			easy: 'power3',
 			end: '350%',
-			// markers: true,
 			toggleClass: {
 				targets: '.left_animation-text, .right_animation-text ',
 				className: 'active',
 			},
+			// markers: true,
 		});
 
 		ScrollTrigger.create({
@@ -22,11 +22,11 @@ window.addEventListener('DOMContentLoaded', () => {
 			start: '65vw',
 			easy: 'power2',
 			end: '600%',
-			// markers: true,
 			toggleClass: {
 				targets: '.cup ',
 				className: 'active',
 			},
+			// markers: true,
 		});
 
 		ScrollTrigger.create({
@@ -34,11 +34,11 @@ window.addEventListener('DOMContentLoaded', () => {
 			start: '110vw',
 			easy: 'power1',
 			end: '400%',
-			// markers: true,
 			toggleClass: {
 				targets: '.sandwich ',
 				className: 'active',
 			},
+			// markers: true,
 		});
 
 		//CONTENT
@@ -48,7 +48,7 @@ window.addEventListener('DOMContentLoaded', () => {
 		const upPhone = gsap.timeline();
 		const downPhone = gsap.timeline();
 
-		upPhone.fromTo('.down_phone', 4, { y: 0 }, { y: '-150%' });
+		upPhone.fromTo('.down_phone', 4, { y: 0 }, { y: '-100%' });
 
 		ScrollTrigger.create({
 			animation: upPhone,
@@ -60,16 +60,16 @@ window.addEventListener('DOMContentLoaded', () => {
 			// markers: true,
 		});
 
-		downPhone.fromTo('.up_phone', 4, { y: 0 }, { y: '150%' });
+		downPhone.fromTo('.up_phone', { y: 0 }, { y: '20%'});
 
 		ScrollTrigger.create({
 			animation: downPhone,
 			trigger: '.phone__app',
-			start: 'top center',
+			start: '-=400 center',
 			easy: 'power3',
-			end: '150% center',
+			end: '250% center',
 			scrub: true,
-			// markers: true,
+			markers: true,
 		});
 
 		//text
@@ -77,9 +77,9 @@ window.addEventListener('DOMContentLoaded', () => {
 		const left = gsap.timeline();
 		const right = gsap.timeline();
 
-		right.fromTo('.advantage__right', 2, { x: '-275%' }, { x: '275%' });
+		right.fromTo('.advantage__right', 2, { x: '-375%' }, { x: '275%' });
 
-		left.fromTo('.advantage__left', 2, { x: '275%' }, { x: '-275%' });
+		left.fromTo('.advantage__left', 2, { x: '375%' }, { x: '-275%' });
 
 		ScrollTrigger.create({
 			animation: right,
@@ -87,7 +87,8 @@ window.addEventListener('DOMContentLoaded', () => {
 			start: 'top center',
 			easy: 'power3',
 			end: 'bottom center',
-			markers: true,
+			scrub: true,
+			// markers: true,
 		});
 
 		ScrollTrigger.create({
@@ -96,6 +97,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			start: 'top center',
 			easy: 'power3',
 			end: 'bottom center',
+			scrub: true,
 			// markers: true,
 		});
 	});
@@ -105,36 +107,36 @@ window.addEventListener('DOMContentLoaded', () => {
 		//HEADER
 		ScrollTrigger.create({
 			trigger: '.header__wrap',
-			start: '15vw',
+			start: '10vw',
 			easy: 'power3',
 			end: '250%',
-			// markers: true,
 			toggleClass: {
 				targets: '.left_animation-text, .right_animation-text ',
 				className: 'active',
 			},
+			// markers: true,
 		});
 
 		ScrollTrigger.create({
 			trigger: '.header__wrap',
-			start: '100vw',
+			start: '75vw',
 			end: '250%',
-			// markers: true,
 			toggleClass: {
 				targets: '.cup ',
 				className: 'active',
 			},
+			// markers: true,
 		});
 
 		ScrollTrigger.create({
 			trigger: '.header__wrap',
-			start: '210vw',
+			start: '170vw',
 			end: '350%',
-			// markers: true,
 			toggleClass: {
 				targets: '.sandwich ',
 				className: 'active',
 			},
+			// markers: true,
 		});
 		//CONTENT
 
@@ -171,17 +173,18 @@ window.addEventListener('DOMContentLoaded', () => {
 		const left = gsap.timeline();
 		const right = gsap.timeline();
 
-		right.fromTo('.advantage__right', 2, { x: 0 }, { x: '250%' });
+		right.fromTo('.advantage__right', 2, { x: '-250%' }, { x: '250%' });
 
-		left.fromTo('.advantage__left', 2, { x: 0 }, { x: '-250%' });
+		left.fromTo('.advantage__left', 2, { x: '250%' }, { x: '-250%' });
 
 		ScrollTrigger.create({
 			animation: right,
 			trigger: '.advantage',
 			start: 'top center',
 			easy: 'power3',
-			end: 'bottom center',
-			markers: true,
+			end: '200% center',
+			scrub: true,
+			// markers: true,
 		});
 
 		ScrollTrigger.create({
@@ -189,7 +192,8 @@ window.addEventListener('DOMContentLoaded', () => {
 			trigger: '.advantage',
 			start: 'top center',
 			easy: 'power3',
-			end: 'bottom center',
+			end: '200% center',
+			scrub: true,
 			// markers: true,
 		});
 	});
