@@ -7,9 +7,9 @@ window.addEventListener('DOMContentLoaded', () => {
 		//HEADER
 		ScrollTrigger.create({
 			trigger: '.header__wrap',
-			start: 'top',
+			start: '5vw',
 			easy: 'power3',
-			end: '600%',
+			end: '350%',
 			// markers: true,
 			toggleClass: {
 				targets: '.left_animation-text, .right_animation-text ',
@@ -19,7 +19,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 		ScrollTrigger.create({
 			trigger: '.header__wrap',
-			start: '100vw',
+			start: '65vw',
 			easy: 'power2',
 			end: '600%',
 			// markers: true,
@@ -34,7 +34,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			start: '110vw',
 			easy: 'power1',
 			end: '400%',
-			// markers: true,
+			markers: true,
 			toggleClass: {
 				targets: '.sandwich ',
 				className: 'active',
@@ -134,7 +134,7 @@ window.addEventListener('DOMContentLoaded', () => {
 		//HEADER
 		ScrollTrigger.create({
 			trigger: '.header__wrap',
-			start: 'top',
+			start: '5vw',
 			end: '250%',
 			// markers: true,
 			toggleClass: {
