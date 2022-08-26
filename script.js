@@ -60,7 +60,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			// markers: true,
 		});
 
-		downPhone.fromTo('.up_phone', { y: 0 }, { y: '20%'});
+		downPhone.fromTo('.up_phone', { y: 0 }, { y: '20%' });
 
 		ScrollTrigger.create({
 			animation: downPhone,
@@ -69,7 +69,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			easy: 'power3',
 			end: '250% center',
 			scrub: true,
-			markers: true,
+			// markers: true,
 		});
 
 		//text
@@ -77,9 +77,9 @@ window.addEventListener('DOMContentLoaded', () => {
 		const left = gsap.timeline();
 		const right = gsap.timeline();
 
-		right.fromTo('.advantage__right', 2, { x: '-375%' }, { x: '275%' });
+		right.fromTo('.advantage__right ', { x: '-375%' }, { x: '275%' });
 
-		left.fromTo('.advantage__left', 2, { x: '375%' }, { x: '-275%' });
+		left.fromTo('.advantage__left', { x: '375%' }, { x: '-275%' });
 
 		ScrollTrigger.create({
 			animation: right,
@@ -180,17 +180,17 @@ window.addEventListener('DOMContentLoaded', () => {
 		ScrollTrigger.create({
 			animation: right,
 			trigger: '.advantage',
-			start: 'top center',
+			start: '-=200 center',
 			easy: 'power3',
 			end: '200% center',
 			scrub: true,
-			// markers: true,
+			markers: true,
 		});
 
 		ScrollTrigger.create({
 			animation: left,
 			trigger: '.advantage',
-			start: 'top center',
+			start: '-=200 center',
 			easy: 'power3',
 			end: '200% center',
 			scrub: true,
