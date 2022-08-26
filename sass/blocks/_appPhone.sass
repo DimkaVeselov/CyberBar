@@ -1,25 +1,34 @@
 .phone__app
 	background-color: #F1E03B
 	display: flex
+	display: -webkit-flex
 	justify-content: center
-	position: relative
+	-webkit-justify-content: center
+	-webkit-box-pack: center
+	position: relati
 	&-wrap
 		display: flex
+		display: -webkit-flex
 		align-items: flex-start
+		-webkit-align-items: flex-start
+		-webkit-box-align: start
 		.first__phone
 			display: flex
+			display: -webkit-flex
 			position: relative
 			&-img
 				width: 24vw
 				object-fit: contain
 		.second__phone
 			display: flex
+			display: -webkit-flex
 			position: relative
 			&-img
 				width: 29vw
 				object-fit: contain
 		.third__phone
 			display: flex
+			display: -webkit-flex
 			position: relative
 			&-img
 				width: 24vw
@@ -30,8 +39,10 @@
 		height: 55vh
 		.phone__app-wrap
 			flex-direction: column
+			-webkit-flex-direction: column
 			.first__phone
 				order: 2
+				-webkit-order: 2
 				z-index: 2
 				margin: 0 auto
 				padding: 30vw 0 15vw 0
@@ -42,6 +53,7 @@
 					margin-bottom: -35%
 			.second__phone
 				order: 1
+				-webkit-order: 1
 				z-index: 1
 				position: relative
 				bottom: 0
@@ -50,6 +62,7 @@
 					width: 65vw
 			.third__phone
 				order: 3
+				-webkit-order: 3
 				z-index: 3
 				padding: 20vw 0 10vw 0
 				position: relative

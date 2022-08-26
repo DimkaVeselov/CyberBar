@@ -10,15 +10,21 @@
 		height: 100%
 		margin-bottom: 5vw
 		margin-top: 5vh
-		display: inline-flex
+		display: flex
+		display: -webkit-flex
 		flex-direction: column
+		-webkit-flex-direction: column
 	&__wrap-content
 		display: flex
+		display: -webkit-flex
 	.first-text_wrap
 		width: 100vw
 		display: flex
+		display: -webkit-flex
 		justify-content: flex-end
+		-webkit-justify-content: flex-end
 		align-items: stretch
+		-webkit-align-items: stretch
 		margin-top: 10vw
 		margin-top: 1vw
 		transition: 3s
@@ -49,13 +55,17 @@
 				background-repeat: no-repeat
 				z-index: 2
 		.advantage__subtitle
-			display: inline-flex
+			display: flex
+			display: -webkit-flex
 			flex-direction: column
+			-webkit-flex-direction: column
 			align-items: flex-end
+			-webkit-justify-content: flex-end
 			position: relative
 			z-index: 999
 			.first-text
-				display: inline-flex
+				display: flex
+				display: -webkit-flex
 				@include Fifaks
 				color: $second-color
 				text-align: left
@@ -69,8 +79,11 @@
 	.second-text_wrap
 		width: 100vw
 		display: flex
+		display: -webkit-flex
 		justify-content: flex-start
+		-webkit-justify-content: flex-start
 		align-items: stretch
+		-webkit-align-items: stretch
 		margin-top: 1vw
 		transition: 3s
 		.sandwich_mini
@@ -100,12 +113,15 @@
 				background-repeat: no-repeat
 				z-index: 2
 		.advantage__subtitle
-			display: inline-flex
+			display: flex
+			display: -webkit-flex
 			flex-direction: column
+			-webkit-flex-direction: column
 			position: relative
 			z-index: 999
 			.second-text
-				display: inline-flex
+				display: flex
+				display: -webkit-flex
 				@include Fifaks
 				color: #fff
 				text-align: left
@@ -119,7 +135,9 @@
 	.third-text_wrap
 		width: 100vw
 		display: flex
+		display: -webkit-flex
 		justify-content: flex-end
+		-webkit-justify-content: flex-end
 		margin-bottom: 10vw
 		margin-top: 1vw
 		transition: 3s
@@ -150,13 +168,15 @@
 				background-repeat: no-repeat
 				z-index: 2
 		.advantage__subtitle
-			display: inline-flex
+			display: flex
+			display: -webkit-flex
 			flex-direction: column
-			align-items: flex-end
+			-webkit-flex-direction: column
 			position: relative
 			z-index: 999
 			.third-text
-				display: inline-flex
+				display: flex
+				display: -webkit-flex
 				@include Fifaks
 				color: $second-color
 				text-align: left
