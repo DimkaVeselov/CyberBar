@@ -1,3 +1,11 @@
+window.onload = function () {
+	document.body.classList.add('loaded__hiding');
+	window.setTimeout(function () {
+		document.body.classList.add('loaded');
+		document.body.classList.remove('loaded');
+	}, 500);
+}
+
 window.addEventListener('DOMContentLoaded', () => {
 	gsap.registerPlugin(ScrollTrigger);
 	const mm = window.gsap.matchMedia();
