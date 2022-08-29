@@ -1,12 +1,13 @@
 .header__wrap
 	background-color: $main-color
-	height: 100vh
+	height: 125vh
 	overflow: hidden
 	display: flex
 	display: -webkit-flex
 
 .header__nav
 	width: 100%
+	height: 11%
 	display: flex
 	display: -webkit-flex
 	justify-content: flex-end
@@ -20,9 +21,16 @@
 .header__content
 	position: fixed
 	left: 10vw
-	margin-top: 8%
+	width: 78vw
+	height: 80%
+	display: flex
+	display: -webkit-flex
+	flex-direction: column
+	-webkit-flex-direction: column
 	&-cup
 		width: 84vw
+		margin-top: 10%
+		display: flex
 		.left_animation-text
 			@include Fifaks
 			display: block
@@ -37,10 +45,9 @@
 				transform: translateX(-100vw)
 				opacity: 0
 		.cup
-			position: absolute
-			top: 2vw
-			left: 50vw
-			right: 0
+			position: relative
+			top: 4vw
+			left: 0
 			width: 19vw
 			margin-right: 5vw
 			transition: .5s
@@ -48,7 +55,7 @@
 			&.active
 				transform: rotate(360deg)
 				opacity: 0
-				top: -40vw
+				top: -80vw
 				left: 100vw
 	&-sandwich
 		display: flex
@@ -85,20 +92,20 @@
 					width: 22vw
 		.header__content
 			width: 85vw
-			top: 20%
+			top: 15%
 			align-items: flex-end
 			-webkit-align-items: flex-end
 			&-cup
 				width: 82vw
-				margin-bottom: 15vw
+				flex-direction: column
 				.left_animation-text
 					font-size: 27vw
 			.cup
-				top: 29vw
+				top: 0
 				left: 0vw
 				width: 30vw
 				&.active
-					top: -65vw
+					top: -95vw
 					left: 80vw
 			&-sandwich
 				flex-direction: column-reverse
