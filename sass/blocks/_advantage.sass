@@ -66,15 +66,17 @@
 			.first-text
 				display: flex
 				display: -webkit-flex
-				height: 80%
+				height: 75%
 				@include Fifaks
 				color: $second-color
 				text-align: left
 				font-size: 13vw
+				padding-top: 2vw
 				&_border
 					width: 160vw
 					position: relative
 					right: -200vw
+					padding-top: 1vw
 					border-bottom: .5vw solid #F9DC2C
 	.second-text_wrap
 		width: 100vw
@@ -122,16 +124,17 @@
 			.second-text
 				display: flex
 				display: -webkit-flex
-				height: 80%
+				height: 75%
 				@include Fifaks
 				color: #fff
 				text-align: left
 				font-size: 13vw
 				&_border
 					width: 170vw
-					border-bottom: .5vw solid #fff
 					position: relative
 					right: 200vw
+					padding-top: 1vw
+					border-bottom: .5vw solid #fff
 	.third-text_wrap
 		width: 100vw
 		display: flex
@@ -177,7 +180,7 @@
 			.third-text
 				display: flex
 				display: -webkit-flex
-				height: 80%
+				height: 75%
 				@include Fifaks
 				color: $second-color
 				text-align: left
@@ -185,13 +188,14 @@
 				padding: 0 0 0 60vw
 				&_border
 					width: 120vw
-					border-bottom: .5vw solid #F9DC2C
 					position: relative
 					left: 110vw
+					border-bottom: .5vw solid #F9DC2C
+					padding-top: 1vw
 @media screen and ( max-width: 500px	)
 	.advantage
 		.first-text_wrap
-			height: 13vh
+			height: 130%
 			transition: 3s
 			.advantage__subtitle
 				height: 12vh

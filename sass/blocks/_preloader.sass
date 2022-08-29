@@ -24,6 +24,7 @@
 	.preloader
 		transition: .3s opacity
 		opacity: 0
+		display: none
 
 .loaded
 	.preloader
@@ -40,3 +41,8 @@
 			transform: translateY(2vw)
 		to
 			transform: translateY(-2vw)
+
+@media screen and ( max-width: 500px	)
+	.preloader__item
+		width: 30px
+		height: 30px
