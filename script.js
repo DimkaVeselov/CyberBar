@@ -3,7 +3,7 @@ window.onload = function () {
 	window.setTimeout(function () {
 		document.body.classList.add('loaded');
 		document.body.classList.remove('loaded');
-	}, 500);
+	}, 1500);
 }
 
 window.addEventListener('DOMContentLoaded', () => {
