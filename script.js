@@ -133,7 +133,7 @@ window.addEventListener('DOMContentLoaded', () => {
 				targets: '.cup ',
 				className: 'active',
 			},
-			markers: true,
+			// markers: true,
 		});
 
 		ScrollTrigger.create({
