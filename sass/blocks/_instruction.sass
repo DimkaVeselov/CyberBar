@@ -11,7 +11,6 @@
 	&__wrap-text
 		position: relative
 		width: 50vw
-		height: 40vh
 		margin: 0 auto
 		padding-bottom: 5vw
 		h2
@@ -31,8 +30,8 @@
 			width: 12vw
 		.bottle
 			position: absolute
-			top: 30vw
-			left: 15vw
+			top: 20vw
+			left: 10vw
 			width: 25vw
 
 .instruction__step
@@ -59,7 +58,6 @@
 	color: #fff
 
 .first-card
-	position: relative
 	width: 27vw
 	height: 31vw
 	flex-direction: column
@@ -86,16 +84,11 @@
 		@include Inter
 		font-size: 2vw
 		padding: 2vw 6vw 3vw 2vw
-	&::after
-		content: ''
-		position: absolute
-		top: 25vw
-		left: 12vw
-		width: 13vw
-		height: 13vw
-		background: url('../img/heart.png') no-repeat
-		background-size: 13vw
-		z-index: 999
+	img
+		position: relative
+		width: 15vw
+		top: 0
+		left: 10vw
 
 .second-card
 	width: 27vw
@@ -159,7 +152,8 @@
 @media screen and ( max-width: 500px	)
 	.instruction
 		&__wrap-text
-			width: 76vw
+			width: 100vw
+			text-align: center
 			h2
 				font-size: 10vw
 				height: 100%
@@ -167,12 +161,13 @@
 					font-size: 13vw
 					vertical-align: text-top
 			.smile
-				width: 18vw
+				width: 25vw
 				top: 25vw
+				left: 73vw
 			.bottle
-				top: 80vw
-				left: 20vw
-				width: 46vw
+				top: 68vw
+				left: 23vw
+				width: 70vw
 		&__step-wrap
 			flex-direction: column
 			-webkit-flex-direction: column
@@ -185,7 +180,7 @@
 					margin-left: 5vw
 					.number__first-card
 						width: 20vw
-						height: 25%
+						height: 100%
 						margin: 3vw 3vw 1vw 3vw
 						padding: 0 5vw
 						font-size: 11vw
@@ -207,8 +202,8 @@
 					margin-left: 5vw
 					margin-top: 0
 					.number__second-card
-						width: 20vw
-						height: 25%
+						width: 18vw
+						height: 13vw
 						margin: 3vw 3vw 0vw 3vw
 						padding: 0 4vw
 						font-size: 11vw
@@ -231,8 +226,8 @@
 					margin-top: 40vw
 					margin-left: 45vw
 					.number__third-card
-						width: 20vw
-						height: 25%
+						width: 18vw
+						height: 13vw
 						margin: 3vw 3vw 0vw 3vw
 						padding: 0 4vw
 						font-size: 11vw
@@ -243,5 +238,5 @@
 						padding: 2vw 6vw 3vw 3vw
 					img
 						width: 25vw
-						top: -11vw
+						top: -7vw
 						left: 22vw
