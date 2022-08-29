@@ -63,6 +63,11 @@
 	flex-direction: column
 	-webkit-flex-direction: column
 	.number__first-card
+		position: relative
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
 		display: flex
 		display: -webkit-flex
 		width: 11vw
@@ -82,7 +87,7 @@
 	img
 		position: relative
 		width: 15vw
-		top: 1vw
+		top: 0
 		left: 10vw
 
 .second-card
@@ -141,23 +146,25 @@
 		padding: 2vw 6vw 3vw 2vw
 	img
 		position: relative
-		width: 15vw
-		top: -6vw
-		left: 10vw
+		width: 14vw
+		top: -8vw
+		left: 11vw
 @media screen and ( max-width: 500px	)
 	.instruction
 		&__wrap-text
 			width: 76vw
 			h2
 				font-size: 10vw
+				height: 100%
 				span
-					font-size: 12vw
+					font-size: 13vw
+					vertical-align: text-top
 			.smile
 				width: 18vw
 				top: 25vw
 			.bottle
 				top: 80vw
-				left: 12vw
+				left: 20vw
 				width: 46vw
 		&__step-wrap
 			flex-direction: column
@@ -173,14 +180,16 @@
 						width: 18vw
 						height: 13vw
 						margin: 3vw 3vw 0vw 3vw
-						padding: 1.5vw 4vw
+						padding: 0 4vw
 						font-size: 11vw
+						align-items: center
+						-webkit-align-items: center
 					.subtitle
 						font-size: 4vw
 						padding: 2vw 6vw 3vw 3vw
 					img
 						width: 25vw
-						top: 5vw
+						top: 3vw
 						left: 20vw
 			.second-step
 				order: 3
@@ -194,14 +203,16 @@
 						width: 18vw
 						height: 13vw
 						margin: 3vw 3vw 0vw 3vw
-						padding: 1.5vw 4vw
+						padding: 0 4vw
 						font-size: 11vw
+						align-items: center
+						-webkit-align-items: center
 					.subtitle
 						font-size: 4vw
 						padding: 2vw 6vw 3vw 3vw
 					img
-						width: 40vw
-						top: -5vw
+						width: 42vw
+						top: -8vw
 						left: 15vw
 			.third-step
 				order: 2
@@ -216,12 +227,14 @@
 						width: 18vw
 						height: 13vw
 						margin: 3vw 3vw 0vw 3vw
-						padding: 1.5vw 4vw
+						padding: 0 4vw
 						font-size: 11vw
+						align-items: center
+						-webkit-align-items: center
 					.subtitle
 						font-size: 4vw
 						padding: 2vw 6vw 3vw 3vw
 					img
 						width: 25vw
-						top: -7vw
-						left: 21vw
+						top: -11vw
+						left: 22vw
