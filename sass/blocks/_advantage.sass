@@ -3,11 +3,10 @@
 	width: 100%
 	background-color: #000
 	overflow: hidden
-	position: relative
 	z-index: 999
 	.advantage__wrap
 		width: 100%
-		margin-bottom: 15vw
+		margin-bottom: 15vh
 		margin-top: 15vh
 		display: flex
 		flex-direction: column
@@ -22,7 +21,6 @@
 		height: 100%
 	.first-text_wrap
 		width: 100vw
-		transition: 3s
 		.beverage_box
 			position: relative
 			&::after
@@ -63,7 +61,6 @@
 				@include Fifaks
 				color: $second-color
 				font-size: 13vw
-				padding: 1vw 0 0 0
 				margin: 0 0 0 65vw
 				&_border
 					width: 160vw
@@ -73,7 +70,6 @@
 	.second-text_wrap
 		width: 100vw
 		margin-top: 3vh
-		transition: 3s
 		.sandwich_mini
 			position: relative
 			&::after
@@ -115,7 +111,6 @@
 				color: #fff
 				text-align: left
 				font-size: 13vw
-				padding: 1vw 0 0 0
 				margin: 0 0 0 -4vw
 				&_border
 					width: 170vw
@@ -125,7 +120,6 @@
 	.third-text_wrap
 		width: 100vw
 		margin-top: 3vh
-		transition: 3s
 		.bubble_tea
 			position: relative
 			&::after
@@ -167,7 +161,6 @@
 				color: $second-color
 				text-align: left
 				font-size: 13vw
-				padding: 1vw 0 0 0
 				margin: 0 0 0 55vw
 				&_border
 					width: 120vw
@@ -175,28 +168,9 @@
 					left: 85v
 					border-bottom: .5vw solid #F9DC2C
 @media screen and ( max-width: 500px	)
-	.advantage
-		.first-text_wrap
-			height: 130%
-			transition: 3s
-			.advantage__subtitle
-				height: 12vh
-				.first-text
-					height: 12vh
-					font-size: 23vw
-		.second-text_wrap
-			height: 13vh
-			transition: 3s
-			.advantage__subtitle
-				height: 12vh
-				.second-text
-					height: 12vh
-					font-size: 23vw
-		.third-text_wrap
-			height: 13vh
-			transition: 3s
-			.advantage__subtitle
-				height: 12vh
-				.third-text
-					height: 12vh
-					font-size: 23vw
+	.first-text
+		font-size: 23vw
+	.second-text
+		font-size: 23vw
+	.third-text
+		font-size: 23vw
