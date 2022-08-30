@@ -24,7 +24,6 @@
 				@include Fifaks
 				font-size: 9vw
 				color: #FAE838
-				position: relative
 				vertical-align: middle
 		.smile
 			position: absolute
@@ -40,7 +39,7 @@
 .instruction__step
 	display: flex
 	display: -webkit-flex
-	height: 100%
+	align-items: stretch
 	&-wrap
 		display: flex
 		display: -webkit-flex
@@ -64,24 +63,21 @@
 	flex-direction: column
 	-webkit-flex-direction: column
 	.number__first-card
-		margin: 1vh 16vw 0vh 2vw
+		margin: 1vh 16vw 2vh 2vw
 		padding: 0.5vh 2vw
 		background-color: #151515
 		border-radius: 15%
 		@include Fifaks
 		font-size: 6vw
 		color: #fff
-		line-height: 1.1
-		text-align: center
-		vertical-align: text-bottom
 	.subtitle
 		@include Inter
 		font-size: 2vw
-		padding: 2vw 6vw 3vw 2vw
+		padding: 0 6vw 0 2vw
 	img
 		position: relative
 		width: 15vw
-		top: 1vw
+		top: 6vw
 		left: 10vw
 
 .second-card
@@ -92,24 +88,21 @@
 	margin-bottom: 10vw
 	margin-top: 55vw
 	.number__second-card
-		margin: 1vh 16vw 0vh 2vw
+		margin: 1vh 16vw 2vh 2vw
 		padding: 0.5vh 2vw
 		background-color: #fff
 		border-radius: 15%
 		@include Fifaks
 		font-size: 6vw
 		color: #000
-		line-height: 1.1
-		text-align: center
-		vertical-align: text-bottom
 	.subtitle
 		@include Inter
 		font-size: 2vw
-		padding: 2vw 6vw 3vw 2vw
+		padding: 0 6vw 0 2vw
 	img
 		position: relative
 		width: 24vw
-		top: -6vw
+		top: -1vw
 		left: 7vw
 
 .third-card
@@ -120,24 +113,21 @@
 	margin-bottom: 25vw
 	margin-top: 20vw
 	.number__third-card
-		margin: 1vh 16vw 0vh 2vw
+		margin: 1vh 16vw 2vh 2vw
 		padding: 0.5vh 2vw
 		background-color: #fae838
 		border-radius: 15%
 		@include Fifaks
 		font-size: 6vw
 		color: #000
-		line-height: 1.1
-		text-align: center
-		vertical-align: text-bottom
 	.subtitle
 		@include Inter
 		font-size: 2vw
-		padding: 2vw 6vw 3vw 2vw
+		padding: 0 6vw 0 2vw
 	img
 		position: relative
 		width: 15vw
-		top: -7vw
+		top: -1vw
 		left: 11vw
 @media screen and ( max-width: 500px	)
 	.instruction
