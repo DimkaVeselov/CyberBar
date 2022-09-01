@@ -1,175 +1,146 @@
 .advantage
-	height: 100%
-	width: 100%
 	background-color: #000
 	overflow: hidden
 	z-index: 999
+	padding: 9vw 0
 	.advantage__wrap
-		width: 100%
-		margin-bottom: 15vh
-		margin-top: 15vh
 		display: flex
 		flex-direction: column
 		justify-content: space-between
-		align-items: center
-		align-content: center
-	&__wrap-content
-		display: flex
-		display: -webkit-flex
 		align-items: stretch
-		line-height: 0
-		height: 100%
-	.first-text_wrap
-		width: 100vw
-		.beverage_box
-			position: relative
-			&::after
-				content: ''
-				position: absolute
-				top: -3vw
-				left: 75vw
-				width: 5vw
-				height: 5vw
-				background-color: #151515
-				border: 1px solid #606060
-				border-radius: 10%
-				box-shadow: 0px 5px 20px rgba(250, 231, 55, 0.5)
-				transform: rotate(-15.60deg)
-				z-index: 1
-			&::before
-				content: ""
-				position: absolute
-				top: -2.5vw
-				left: 75.5vw
-				width: 4vw
-				height: 5vw
-				background-image: url(../icon/beverage_box.svg)
-				background-size: 4vw 4vw
-				background-repeat: no-repeat
-				z-index: 2
-		.advantage__subtitle
-			display: flex
-			align-items: flex-end
-			flex-direction: column
-			justify-content: center
-			align-content: center
-			position: relative
-			z-index: 999
-			line-height: 1
-			.first-text
-				width: 100vw
-				@include Fifaks
-				color: $second-color
-				font-size: 13vw
-				margin: 0 0 0 65vw
-				-webkit-appearance: none
-				&_border
-					width: 160vw
-					position: relative
-					right: -75vw
-					border-bottom: .5vw solid #F9DC2C
-	.second-text_wrap
-		width: 100vw
-		margin-top: 3vh
-		.sandwich_mini
-			position: relative
-			&::after
-				content: ''
-				position: absolute
-				left: 17vw
-				top: 0
-				width: 5vw
-				height: 5vw
-				background-color: #151515
-				border: 1px solid #606060
-				border-radius: 10%
-				box-shadow: 0px 5px 20px rgba(250, 231, 55, 0.5)
-				transform: rotate(15.07deg)
-				z-index: 1
-			&::before
-				content: ''
-				position: absolute
-				top: 0.5vw
-				left: 17.5vw
-				width: 5vw
-				height: 5vw
-				background-image: url(../icon/sandwich_mini.svg)
-				background-size: 4vw 4vw
-				background-repeat: no-repeat
-				z-index: 2
-		.advantage__subtitle
-			display: flex
-			align-items: flex-start
-			flex-direction: column
-			justify-content: center
-			align-content: center
-			position: relative
-			z-index: 999
-			line-height: 1
-			.second-text
-				width: 100vw
-				@include Fifaks
-				color: #fff
-				text-align: left
-				font-size: 13vw
-				margin: 0 0 0 -4vw
-				-webkit-appearance: none
-				&_border
-					width: 170vw
-					position: relative
-					right: 175vw
-					border-bottom: .5vw solid #fff
-	.third-text_wrap
-		width: 100vw
-		margin-top: 3vh
-		.bubble_tea
-			position: relative
-			&::after
-				content: ''
-				position: absolute
-				top: 0
-				left: 80vw
-				width: 5vw
-				height: 5vw
-				background-color: #151515
-				border: 1px solid #606060
-				border-radius: 10%
-				box-shadow: 0px 5px 20px rgba(250, 231, 55, 0.5)
-				transform: rotate(342deg)
-				z-index: 1
-			&::before
-				content: ''
-				position: absolute
-				top: 0.5vw
-				left: 80.5vw
-				width: 5vw
-				height: 5vw
-				background-image: url(../icon/bubble_tea.svg)
-				background-size: 4vw 4vw
-				background-repeat: no-repeat
-				z-index: 2
-		.advantage__subtitle
-			display: flex
-			align-items: flex-end
-			flex-direction: column
-			justify-content: center
-			align-content: center
-			position: relative
-			z-index: 999
-			line-height: 1
-			.third-text
-				width: 100vw
-				@include Fifaks
-				color: $second-color
-				text-align: left
-				font-size: 13vw
-				margin: 0 0 0 55vw
-				-webkit-appearance: none
-				&_border
-					width: 120vw
-					position: relative
-					left: 85v
-					border-bottom: .5vw solid #F9DC2C
+		align-content: center
+		.first-text_wrap
+			.beverage_box
+				position: relative
+				&::after
+					content: ''
+					position: absolute
+					top: -3vw
+					left: -11vw
+					width: 5vw
+					height: 5vw
+					background-color: #151515
+					border: 1px solid #606060
+					border-radius: 10%
+					box-shadow: 0px 5px 20px rgba(250, 231, 55, 0.5)
+					transform: rotate(-15.60deg)
+					z-index: 1
+				&::before
+					content: ""
+					position: absolute
+					top: -2.5vw
+					left: -10.5vw
+					width: 4vw
+					height: 5vw
+					background-image: url(../icon/beverage_box.svg)
+					background-size: 4vw 4vw
+					background-repeat: no-repeat
+					z-index: 2
+			.advantage__subtitle
+				display: flex
+				align-items: flex-end
+				flex-direction: column
+				justify-content: center
+				align-content: center
+				.first-text
+					@include Fifaks
+					color: $second-color
+					font-size: 13vw
+					margin: 0 0 0 65vw
+					&_border
+						width: 160vw
+						position: relative
+						right: -195vw
+						border-bottom: .5vw solid #F9DC2C
+		.second-text_wrap
+			margin-top: 3vh
+			.sandwich_mini
+				position: relative
+				&::after
+					content: ''
+					position: absolute
+					left: 73vw
+					top: 0
+					width: 5vw
+					height: 5vw
+					background-color: #151515
+					border: 1px solid #606060
+					border-radius: 10%
+					box-shadow: 0px 5px 20px rgba(250, 231, 55, 0.5)
+					transform: rotate(15.07deg)
+					z-index: 1
+				&::before
+					content: ''
+					position: absolute
+					top: 0.5vw
+					left: 73.5vw
+					width: 5vw
+					height: 5vw
+					background-image: url(../icon/sandwich_mini.svg)
+					background-size: 4vw 4vw
+					background-repeat: no-repeat
+					z-index: 2
+			.advantage__subtitle
+				display: flex
+				align-items: flex-end
+				flex-direction: column
+				justify-content: center
+				align-content: center
+				.second-text
+					@include Fifaks
+					color: #fff
+					text-align: left
+					font-size: 13vw
+					padding: 0 235vw 0 0
+					&_border
+						width: 170vw
+						position: relative
+						right: 185vw
+						border-bottom: .5vw solid #fff
+		.third-text_wrap
+			margin-top: 3vh
+			.bubble_tea
+				position: relative
+				&::after
+					content: ''
+					position: absolute
+					top: 0
+					left: -11vw
+					width: 5vw
+					height: 5vw
+					background-color: #151515
+					border: 1px solid #606060
+					border-radius: 10%
+					box-shadow: 0px 5px 20px rgba(250, 231, 55, 0.5)
+					transform: rotate(342deg)
+					z-index: 1
+				&::before
+					content: ''
+					position: absolute
+					top: 0.5vw
+					left: -10.5vw
+					width: 5vw
+					height: 5vw
+					background-image: url(../icon/bubble_tea.svg)
+					background-size: 4vw 4vw
+					background-repeat: no-repeat
+					z-index: 2
+			.advantage__subtitle
+				display: flex
+				align-items: flex-end
+				flex-direction: column
+				justify-content: center
+				align-content: center
+				.third-text
+					@include Fifaks
+					color: $second-color
+					text-align: left
+					font-size: 13vw
+					&_border
+						width: 120vw
+						position: relative
+						left: 95vw
+						border-bottom: .5vw solid #F9DC2C
 @media screen and ( max-width: 500px	)
 	.first-text
 		font-size: 23vw
