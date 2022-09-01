@@ -15,7 +15,7 @@ mm.add('(min-width: 501px)', () => {
 	ScrollTrigger.create({
 		trigger: '.header__wrap',
 		start: '9vw',
-		easy: 'power3',
+		easy: 'power3.out',
 		end: '350%',
 		toggleClass: {
 			targets: '.left_animation-text, .right_animation-text ',
@@ -27,7 +27,7 @@ mm.add('(min-width: 501px)', () => {
 	ScrollTrigger.create({
 		trigger: '.header__wrap',
 		start: '100vw',
-		easy: 'power2',
+		easy: 'power2.out',
 		end: '600%',
 		toggleClass: {
 			targets: '.cup ',
@@ -39,7 +39,7 @@ mm.add('(min-width: 501px)', () => {
 	ScrollTrigger.create({
 		trigger: '.header__wrap',
 		start: '200vw',
-		easy: 'power1',
+		easy: 'power1.out',
 		end: '400%',
 		toggleClass: {
 			targets: '.sandwich ',
@@ -61,7 +61,7 @@ mm.add('(min-width: 501px)', () => {
 		animation: upPhone,
 		trigger: '.phone__app',
 		start: 'top center',
-		easy: 'power3',
+		easy: 'power3.out',
 		end: '150% center',
 		scrub: true,
 		// markers: true,
@@ -73,7 +73,7 @@ mm.add('(min-width: 501px)', () => {
 		animation: downPhone,
 		trigger: '.phone__app',
 		start: '-=400 center',
-		easy: 'power3',
+		easy: 'power3.out',
 		end: '250% center',
 		scrub: true,
 		// markers: true,
@@ -92,7 +92,7 @@ mm.add('(min-width: 501px)', () => {
 		animation: right,
 		trigger: '.advantage',
 		start: 'top center',
-		easy: 'power3',
+		easy: 'power4.inOut',
 		end: 'bottom center',
 		scrub: true,
 		// markers: true,
@@ -102,7 +102,7 @@ mm.add('(min-width: 501px)', () => {
 		animation: left,
 		trigger: '.advantage',
 		start: 'top center',
-		easy: 'power3',
+		easy: 'power4.inOut',
 		end: 'bottom center',
 		scrub: true,
 		// markers: true,
