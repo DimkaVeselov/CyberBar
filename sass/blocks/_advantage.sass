@@ -4,6 +4,8 @@
 	overflow: hidden
 	z-index: 999
 	padding: 7vw 0
+	@media screen and ( max-width: 500px	)
+		padding: 12vw 0
 	.advantage__wrap
 		height: 100%
 		display: flex
@@ -40,22 +42,17 @@
 					background-repeat: no-repeat
 					z-index: 2
 			.advantage__subtitle
-				display: flex
-				align-items: flex-end
-				flex-direction: column
-				justify-content: center
-				align-content: center
 				height: 14vw
 				.first-text
 					@include Fifaks
 					color: $second-color
 					font-size: 13vw
-					margin: 0 0 0 65vw
-					height: 100%
+					height: 13vw
+					margin-left: 58vw
 					&_border
 						width: 160vw
 						position: relative
-						right: -195vw
+						right: -120vw
 						border-bottom: .5vw solid #F9DC2C
 		.second-text_wrap
 			height: 100%
@@ -87,23 +84,18 @@
 					background-repeat: no-repeat
 					z-index: 2
 			.advantage__subtitle
-				display: flex
-				align-items: flex-end
-				flex-direction: column
-				justify-content: center
-				align-content: center
 				height: 14vw
 				.second-text
 					@include Fifaks
 					color: #fff
 					text-align: left
 					font-size: 13vw
-					padding: 0 235vw 0 0
-					height: 100%
+					margin: 0 65vw 0 0
+					height: 13vw
 					&_border
 						width: 170vw
 						position: relative
-						right: 185vw
+						right: 230vw
 						border-bottom: .5vw solid #fff
 		.third-text_wrap
 			height: 100%
@@ -135,27 +127,16 @@
 					background-repeat: no-repeat
 					z-index: 2
 			.advantage__subtitle
-				display: flex
-				align-items: flex-end
-				flex-direction: column
-				justify-content: center
-				align-content: center
 				height: 14vw
 				.third-text
 					@include Fifaks
 					color: $second-color
 					text-align: left
 					font-size: 13vw
-					height: 100%
+					height: 13vw
+					margin: 0 0 0 55vw
 					&_border
 						width: 120vw
 						position: relative
-						left: 95vw
+						left: 140vw
 						border-bottom: .5vw solid #F9DC2C
-@media screen and ( max-width: 500px	)
-	.first-text
-		font-size: 23vw
-	.second-text
-		font-size: 23vw
-	.third-text
-		font-size: 23vw
