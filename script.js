@@ -1,3 +1,9 @@
+window.viewportUnitsBuggyfill.init({
+	force: true,
+	refreshDebounceWait: 250,
+	hacks: window.viewportUnitsBuggyfillHacks,
+});
+
 window.onload = function () {
 	document.body.classList.add('loaded__hiding');
 	window.setTimeout(function () {
