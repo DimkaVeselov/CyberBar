@@ -2,9 +2,7 @@
 	background-color: $main-color
 	overflow: hidden
 	display: flex
-	display: -webkit-flex
 	flex-direction: column
-	-webkit-flex-direction: column
 	position: relative
 	z-index: 999
 	height: 100%
@@ -25,44 +23,30 @@
 				color: #FAE838
 		.smile
 			position: relative
-			top: 7vw
-			left: 55vw
-			width: 12vw
+			top: -16vw
+			left: 45vw
+			width: 15vw
 		.bottle
 			position: relative
-			top: 20vw
-			left: 10vw
+			top: 7vw
+			left: -8vw
 			width: 25vw
 
-.instruction__step
+.instruction__step-wrap
 	display: flex
-	display: -webkit-flex
-	align-items: stretch
-	&-wrap
-		display: flex
-		display: -webkit-flex
-		justify-content: center
-		-webkit-justify-content: cent
-		gap: 1vw
-
-.instruction__step-card
-	display: flex
-	display: -webkit-flex
-	background: #fae838
-	border-radius: 5%
-
-.black
-	background: #151515
-	color: #fff
+	justify-content: center
+	gap: 1vw
 
 .first-card
 	width: 27vw
 	height: 31vw
+	display: flex
 	flex-direction: column
-	-webkit-flex-direction: column
+	justify-content: center
+	align-items: center
+	background: #fae838
+	border-radius: 5%
 	.number__first-card
-		width: auto
-		height: 22%
 		margin: 1vh 16vw 2vh 2vw
 		padding: 1vh 1vw
 		background-color: #151515
@@ -80,18 +64,20 @@
 		position: relative
 		width: 15vw
 		top: 6vw
-		left: 10vw
+		left: 4vw
 
 .second-card
 	width: 27vw
 	height: 31vw
+	display: flex
 	flex-direction: column
-	-webkit-flex-direction: column
+	justify-content: center
+	align-items: center
+	background: #fae838
+	border-radius: 5%
 	margin-bottom: 10vw
 	margin-top: 55vw
 	.number__second-card
-		width: auto
-		height: 22%
 		margin: 1vh 16vw 2vh 2vw
 		padding: 1vh 1vw
 		background-color: #fff
@@ -104,23 +90,25 @@
 	.subtitle
 		@include Inter
 		font-size: 2vw
-		padding: 0 6vw 0 2vw
+		padding: 0 8vw 0 0
 	img
 		position: relative
-		width: 24vw
-		top: -1vw
-		left: 7vw
+		width: 20vw
+		top: 2vw
+		left: 5vw
 
 .third-card
 	width: 27vw
 	height: 31vw
+	display: flex
 	flex-direction: column
-	-webkit-flex-direction: column
+	justify-content: center
+	align-items: center
+	background: #151515
+	border-radius: 5%
 	margin-bottom: 25vw
 	margin-top: 20vw
 	.number__third-card
-		width: auto
-		height: 22%
 		margin: 1vh 16vw 2vh 2vw
 		padding: 1vh 1vw
 		background-color: #fae838
@@ -132,13 +120,14 @@
 		-webkit-appearance: none
 	.subtitle
 		@include Inter
+		color: #fff
 		font-size: 2vw
 		padding: 0 6vw 0 2vw
 	img
 		position: relative
 		width: 15vw
 		top: -1vw
-		left: 11vw
+		left: 4vw
 @media screen and ( max-width: 500px	)
 	.instruction
 		&__wrap-text
