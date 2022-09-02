@@ -45,14 +45,12 @@
 	height: 31vw
 	display: flex
 	flex-direction: column
-	justify-content: center
 	align-items: center
 	background: #fae838
 	border-radius: 5%
-	line-height: 1.5em
 	.number__first-card
-		margin: 1vh 16vw 2vh 2vw
-		padding: 1.5vw 1vw 4vh 2vw
+		margin: 5vh 16vw 9vh 2vw
+		padding: 0vw 1vw 2vh 1vw
 		background-color: #151515
 		border-radius: 15%
 		@include Pokemon
@@ -63,26 +61,25 @@
 		font-size: 2vw
 		padding: 0 6vw 0 2vw
 	img
-		position: relative
+		position: absolute
 		width: 15vw
-		top: 6vw
-		left: 4vw
+		margin-top: 2vw
+		margin-left: -3vw
+		animation: heart 1s infinite ease-in-out
 
 .second-card
 	width: 27vw
 	height: 31vw
 	display: flex
 	flex-direction: column
-	justify-content: center
 	align-items: center
 	background: #fae838
 	border-radius: 5%
 	margin-bottom: 10vw
 	margin-top: 55vw
-	line-height: 1.5em
 	.number__second-card
-		margin: 1vh 16vw 2vh 2vw
-		padding: 1.5vw 1vw 4vh 2vw
+		margin: 5vh 16vw 9vh 2vw
+		padding: 0vw 1vw 2vh 1vw
 		background-color: #fff
 		border-radius: 15%
 		@include Pokemon
@@ -91,28 +88,26 @@
 	.subtitle
 		@include Inter
 		font-size: 2vw
-		padding: 0 8vw 0 0
+		padding: 0 11vw 0 0
 	img
-		position: relative
-		width: 20vw
-		top: 2vw
-		left: 5vw
+		position: absolute
+		width: 23vw
+		margin-left: -6vw
+		margin-top: -4vw
 
 .third-card
 	width: 27vw
 	height: 31vw
 	display: flex
 	flex-direction: column
-	justify-content: center
 	align-items: center
 	background: #151515
 	border-radius: 5%
 	margin-bottom: 25vw
 	margin-top: 20vw
-	line-height: 1.5em
 	.number__third-card
-		margin: 1vh 14vw 2vh 2vw
-		padding: 1.5vw 1vw 4vh 2vw
+		margin: 5vh 16vw 9vh 2vw
+		padding: 0vw 1vw 2vh 1vw
 		background-color: #fae838
 		border-radius: 15%
 		@include Pokemon
@@ -124,10 +119,10 @@
 		font-size: 2vw
 		padding: 0 6vw 0 2vw
 	img
-		position: relative
+		position: absolute
 		width: 15vw
-		top: -1vw
-		left: 4vw
+		margin-top: -5vw
+		margin-left: -3vw
 @media screen and ( max-width: 500px	)
 	.instruction
 		&__wrap-text
@@ -158,6 +153,7 @@
 					width: 50vw
 					height: 60vw
 					margin-left: 5vw
+					gap: 4vw
 					.number__first-card
 						margin: 2vh 29vw 0vh 0vw
 						padding: 1vw 2vw 2vw 2vw
@@ -166,9 +162,8 @@
 						font-size: 4vw
 						padding: 2vw 6vw 3vw 3vw
 					img
-						width: 25vw
-						top: 8vw
-						left: 9vw
+						width: 30vw
+						margin-left: -8vw
 			.second-step
 				order: 3
 				.second-card
@@ -176,6 +171,7 @@
 					height: 60vw
 					margin-left: 5vw
 					margin-top: 0
+					gap: 4vw
 					.number__second-card
 						margin: 2vh 27vw 0vh 0vw
 						padding: 1vw 2vw 2vw 2vw
@@ -184,9 +180,9 @@
 						font-size: 4vw
 						padding: 2vw 18vw 3vw 0vw
 					img
-						width: 38vw
-						top: 1vw
-						left: 10vw
+						width: 45vw
+						margin-top: -13vw
+						margin-left: -13vw
 			.third-step
 				order: 2
 				.third-card
@@ -204,5 +200,9 @@
 						padding: 2vw 6vw 3vw 3vw
 					img
 						width: 26vw
-						top: -4vw
-						left: 9vw
+
+@keyframes heart
+	from
+		transform: scale(0.9)
+	to
+		transform: scale(1)
