@@ -3,7 +3,7 @@ window.onload = function () {
 	window.setTimeout(function () {
 		document.body.classList.add('loaded');
 		document.body.classList.remove('loaded');
-	}, 300);
+	}, 200);
 };
 
 gsap.registerPlugin(ScrollTrigger);
@@ -14,7 +14,7 @@ mm.add('(min-width: 501px)', () => {
 	//HEADER
 	ScrollTrigger.create({
 		trigger: '.header__wrap',
-		start: '9vw',
+		start: '5vw',
 		easy: 'power3.out',
 		end: '350%',
 		toggleClass: {
@@ -26,7 +26,7 @@ mm.add('(min-width: 501px)', () => {
 
 	ScrollTrigger.create({
 		trigger: '.header__wrap',
-		start: '100vw',
+		start: '98vw',
 		easy: 'power2.out',
 		end: '600%',
 		toggleClass: {
@@ -38,7 +38,7 @@ mm.add('(min-width: 501px)', () => {
 
 	ScrollTrigger.create({
 		trigger: '.header__wrap',
-		start: '200vw',
+		start: '195vw',
 		easy: 'power1.out',
 		end: '400%',
 		toggleClass: {
@@ -114,9 +114,9 @@ mm.add('(max-width: 500px)', () => {
 	//HEADER
 	ScrollTrigger.create({
 		trigger: '.header__wrap',
-		start: '10vw',
-		easy: 'power3',
-		end: '250%',
+		start: 'top',
+		easy: 'power2',
+		end: '150%',
 		toggleClass: {
 			targets: '.left_animation-text, .right_animation-text ',
 			className: 'active',
@@ -126,8 +126,8 @@ mm.add('(max-width: 500px)', () => {
 
 	ScrollTrigger.create({
 		trigger: '.header__wrap',
-		start: '100vw',
-		end: '250%',
+		start: '95vw',
+		end: '300%',
 		toggleClass: {
 			targets: '.cup ',
 			className: 'active',
@@ -137,8 +137,8 @@ mm.add('(max-width: 500px)', () => {
 
 	ScrollTrigger.create({
 		trigger: '.header__wrap',
-		start: '190vw',
-		end: '350%',
+		start: '165vw',
+		end: '250%',
 		toggleClass: {
 			targets: '.sandwich ',
 			className: 'active',
