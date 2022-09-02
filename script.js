@@ -26,7 +26,7 @@ mm.add('(min-width: 501px)', () => {
 
 	ScrollTrigger.create({
 		trigger: '.header__wrap',
-		start: '105vw',
+		start: '100vw',
 		easy: 'power2.out',
 		end: '600%',
 		toggleClass: {
@@ -38,7 +38,7 @@ mm.add('(min-width: 501px)', () => {
 
 	ScrollTrigger.create({
 		trigger: '.header__wrap',
-		start: '195vw',
+		start: '199vw',
 		easy: 'power1.out',
 		end: '400%',
 		toggleClass: {
@@ -61,7 +61,7 @@ mm.add('(min-width: 501px)', () => {
 		animation: upPhone,
 		trigger: '.phone__app',
 		start: 'top center',
-		easy: 'power3.easeIn',
+		easy: 'power4.easeIn',
 		end: '150% center',
 		scrub: true,
 		// markers: true,
@@ -73,7 +73,7 @@ mm.add('(min-width: 501px)', () => {
 		animation: downPhone,
 		trigger: '.phone__app',
 		start: '-=500 top',
-		easy: 'power3.out',
+		easy: 'power1.easeIn',
 		end: '150% top',
 		scrub: true,
 		// markers: true,
