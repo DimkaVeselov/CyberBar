@@ -14,7 +14,7 @@ mm.add('(min-width: 501px)', () => {
 	//HEADER
 	ScrollTrigger.create({
 		trigger: '.header__wrap',
-		start: '5vw',
+		start: 'top',
 		easy: 'power3.out',
 		end: '350%',
 		toggleClass: {
@@ -26,7 +26,7 @@ mm.add('(min-width: 501px)', () => {
 
 	ScrollTrigger.create({
 		trigger: '.header__wrap',
-		start: '98vw',
+		start: '105vw',
 		easy: 'power2.out',
 		end: '600%',
 		toggleClass: {
@@ -55,28 +55,28 @@ mm.add('(min-width: 501px)', () => {
 	const upPhone = gsap.timeline();
 	const downPhone = gsap.timeline();
 
-	upPhone.fromTo('.down_phone', 4, { y: 0 }, { y: '-100%' });
+	upPhone.fromTo('.down_phone', 5, { y: 0 }, { y: '-50%' });
 
 	ScrollTrigger.create({
 		animation: upPhone,
 		trigger: '.phone__app',
 		start: 'top center',
-		easy: 'power3.out',
+		easy: 'power3.easeIn',
 		end: '150% center',
 		scrub: true,
 		// markers: true,
 	});
 
-	downPhone.fromTo('.up_phone', { y: 0 }, { y: '20%' });
+	downPhone.fromTo('.up_phone', { y: 0 }, { y: '150%' });
 
 	ScrollTrigger.create({
 		animation: downPhone,
 		trigger: '.phone__app',
-		start: '-=400 center',
+		start: '-=500 top',
 		easy: 'power3.out',
-		end: '250% center',
+		end: '150% top',
 		scrub: true,
-		// markers: true,
+		markers: true,
 	});
 
 	//text
@@ -92,7 +92,7 @@ mm.add('(min-width: 501px)', () => {
 		animation: right,
 		trigger: '.advantage',
 		start: 'top center',
-		easy: 'power4.inOut',
+		easy: 'power1.easeIn',
 		end: 'bottom center',
 		scrub: true,
 		// markers: true,
@@ -102,7 +102,7 @@ mm.add('(min-width: 501px)', () => {
 		animation: left,
 		trigger: '.advantage',
 		start: 'top center',
-		easy: 'power4.inOut',
+		easy: 'power1.easeIn',
 		end: 'bottom center',
 		scrub: true,
 		// markers: true,
