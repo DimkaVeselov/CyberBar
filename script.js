@@ -76,7 +76,7 @@ mm.add('(min-width: 501px)', () => {
 		easy: 'power3.out',
 		end: '150% top',
 		scrub: true,
-		markers: true,
+		// markers: true,
 	});
 
 	//text
