@@ -47,11 +47,10 @@
 				flex-direction: column
 				.first-text
 					display: block
-					@include Fifaks
+					@include Pokemon
 					color: $second-color
 					font-size: 9vw
 					margin-left: 58vw
-					height: 100%
 					width: auto
 					&_border
 						display: block
@@ -94,12 +93,11 @@
 				flex-direction: column
 				.second-text
 					display: block
-					@include Fifaks
+					@include Pokemon
 					color: #fff
 					text-align: left
 					font-size: 9vw
 					margin-right: 65vw
-					height: 100%
 					width: auto
 					&_border
 						display: block
@@ -142,12 +140,11 @@
 				flex-direction: column
 				.third-text
 					display: block
-					@include Fifaks
+					@include Pokemon
 					color: $second-color
 					text-align: left
 					font-size: 9vw
 					margin-left: 55vw
-					height: 100%
 					width: auto
 					&_border
 						display: block
@@ -158,3 +155,5 @@
 @media screen and ( max-width: 500px	)
 	.advantage
 		padding: 12vw 0
+		.advantage__wrap
+			height: 30vh

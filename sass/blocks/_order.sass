@@ -8,7 +8,7 @@
 		content: ""
 		display: block
 		position: relative
-		top: 43vw
+		top: 48vw
 		left: 42vw
 		width: 20vw
 		height: 11vw
@@ -28,39 +28,32 @@
 		z-index: 1
 	&__title
 		width: 100%
-		height: auto
 		display: flex
 		justify-content: center
 		align-items: center
 		align-content: center
+		margin-bottom: 5vw
 		h2
 			@include Inter
 			color: #fff
 			text-align: center
 			font-size: 7vw
-			line-height: 97.9%
 		span
-			@include Fifaks
+			@include Pokemon
 			color: #FAE838
-			font-size: 8vw
+			font-size: 6vw
 			margin-left: 2.5vw
-			display: block
-			line-height: 97.9%
+			margin-bottom: 2vw
+			letter-spacing: -0.8vw
 	&__card-wrap
 		display: flex
-		display: -webkit-flex
 		flex-direction: column
-		-webkit-flex-direction: column
 		align-items: center
-		-webkit-align-items: center
 	&__card
 		width: 100%
 		display: flex
-		display: -webkit-flex
 		justify-content: space-around
-		-webkit-justify-content: space-around
 		align-items: center
-		-webkit-align-items: center
 		padding: 2vw 0
 		border-width: 2px 0
 		border-style: solid
@@ -69,14 +62,9 @@
 		div
 			width: 30vw
 			display: flex
-			display: -webkit-flex
 			flex-direction: column
-			flex-direction: column
-			-webkit-flex-direction: column
 			align-items: flex-end
-			-webkit-align-content: flex-end
 			justify-content: center
-			-webkit-justify-content: center
 		img
 			width: 23vw
 			object-fit: cover
@@ -103,14 +91,9 @@
 		div
 			width: 30vw
 			display: flex
-			display: -webkit-flex
 			flex-direction: column
-			flex-direction: column
-			-webkit-flex-direction: column
 			align-items: flex-end
-			-webkit-align-content: flex-end
 			justify-content: center
-			-webkit-justify-content: center
 		img
 			width: 21vw
 			object-fit: cover
@@ -137,14 +120,10 @@
 		div
 			width: 30vw
 			display: flex
-			display: -webkit-flex
 			flex-direction: column
 			flex-direction: column
-			-webkit-flex-direction: column
 			align-items: flex-end
-			-webkit-align-content: flex-end
 			justify-content: center
-			-webkit-justify-content: center
 		img
 			width: 23vw
 			object-fit: cover
@@ -165,13 +144,12 @@
 			margin: 3vw 5vw 0 0
 			transition: .4s
 			&:hover
-				cursor: pointer
 				box-shadow: 0px 5.19896px 15.39791px rgba(241, 224, 59, 0.25), 5px 41.9895px 83.9791px rgba(241, 224, 59, 0.25)
 @media screen and ( max-width: 500px	)
 	.order
 		overflow: hidden
 		&::before
-			top: 76vw
+			top: 79vw
 			left: 75vw
 			width: 20vw
 			height: 18vw
@@ -187,14 +165,15 @@
 			width: 50%
 			margin: 0 auto 10vw
 			flex-direction: column
-			line-height: 1
+			align-items: flex-start
+			h2
+				font-size: 9vw
 			span
-				font-size: 8.5vw
+				font-size: 6.5vw
+				margin: 0
 		.order__card
 			justify-content: flex-start
-			-webkit-justify-content: flex-start
 			align-items: flex-start
-			-webkit-align-items: flex-start
 			padding: 5vw 0
 			&-wrap
 				margin-bottom: 10%
@@ -206,7 +185,6 @@
 				width: 55vw
 				margin-left: 3vw
 				align-items: flex-start
-				-webkit-align-items: flex-start
 				p
 					font-size: 6vw
 				button
@@ -221,7 +199,6 @@
 				width: 55vw
 				margin-left: 9vw
 				align-items: flex-start
-				-webkit-align-items: flex-start
 				p
 					font-size: 5vw
 				button
@@ -235,7 +212,6 @@
 				width: 55vw
 				margin-left: 6vw
 				align-items: flex-start
-				-webkit-align-items: flex-start
 				p
 					font-size: 5vw
 				button
