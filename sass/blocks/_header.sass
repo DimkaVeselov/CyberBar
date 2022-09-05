@@ -1,6 +1,6 @@
 .header__wrap
 	background-color: $main-color
-	height: 133vh
+	height: 135vh
 	overflow: hidden
 	display: flex
 	flex-direction: column
@@ -38,19 +38,21 @@
 			&.active
 				transform: translateX(-100vw)
 				opacity: 0
-		.cup
-			position: relative
-			top: 4vw
-			left: 0
-			width: 100%
-			margin-right: 5vw
-			transition: .5s
-			transition-delay: .25s
-			&.active
-				transform: rotate(360deg)
-				opacity: 0
-				top: -80vw
-				left: 100vw
+		.cup__wrap
+			height: 0
+			.cup
+				position: relative
+				top: 4vw
+				left: 0
+				width: 100%
+				margin-right: 5vw
+				transition: .5s
+				transition-delay: .25s
+				&.active
+					transform: rotate(360deg)
+					opacity: 0
+					top: -80vw
+					left: 100vw
 	&-sandwich
 		display: flex
 		align-items: center
@@ -74,7 +76,6 @@
 				transform: rotate(200deg) scale(185, 185) translate(-3.3vw, 0.99999vw)
 @media screen and ( max-width: 500px	)
 	.header__wrap
-		height: 135vh
 		.header__nav
 			padding: 3vw 0 0 0
 			&-block
@@ -93,13 +94,15 @@
 				.left_animation-text
 					font-size: 17vw
 					margin: 0 0 0 5vw
-			.cup
-				top: 0
-				left: 0vw
-				width: 30vw
-				&.active
-					top: -95vw
-					left: 80vw
+			.cup__wrap
+				height: 23vw
+				.cup
+					top: 0
+					left: 0vw
+					width: 30vw
+					&.active
+						top: -95vw
+						left: 80vw
 			&-sandwich
 				width: 100vw
 				flex-direction: column-reverse

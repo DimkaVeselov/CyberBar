@@ -3,6 +3,7 @@
 	height: 100%
 	position: relative
 	z-index: 999
+	overflow-x: hidden
 	&::before
 		content: ""
 		display: block
@@ -14,6 +15,7 @@
 		background: url(../img/chocolate.png) no-repeat
 		background-size: 12vw
 		z-index: 1
+		animation: 1s linear infinite alternate chokolate
 	&::after
 		content: ""
 		display: block
@@ -215,3 +217,12 @@
 					width: 20vw
 					height: 13vw
 					font-size: 4.5vw
+
+
+@keyframes chokolate
+	0%
+		transform: rotate(5deg)
+	50%
+		transform: rotate(-5deg)
+	100%
+		transform: rotate(5deg)
