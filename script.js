@@ -97,7 +97,7 @@
 					ScrollTrigger.create({
 						trigger: '.header__wrap',
 						start: '205vw',
-						end: '250%',
+						end: '200%',
 						easy: 'power1.easeIn',
 						toggleClass: { targets: '.sandwich ', className: 'active' },
 					});
