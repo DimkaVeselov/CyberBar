@@ -8,19 +8,19 @@
 		display: flex
 		justify-content: space-evenly
 		align-items: center
-	&__img-bg
-		.smile__money
-			width: 30vw
-			position: absolute
-			img
-				width: 100%
-				margin: -21vw 0vw 0vw -11vw
-		.smile__exploding
-			width: 24vw
-			position: absolute
-			img
-				width: 100%
-				margin: -40vw 0vw 0vw 66vw
+		.sale__img-bg
+			.smile__money-wrap
+				width: 30vw
+				position: absolute
+				.smile__money
+					width: 100%
+					margin: -21vw 0vw 0vw -11vw
+			.smile__exploding-wrap
+				width: 24vw
+				position: absolute
+				.smile__exploding
+					width: 100%
+					margin: -40vw 0vw 0vw 66vw
 	&__app
 		width: 30vw
 		display: flex
@@ -77,20 +77,20 @@
 			bottom: -2vw
 			background: url(../img/Woooooow_left.png) no-repeat
 			background-size: contain
-	img
-		width: 100%
-		position: relative
-		z-index: 999
+		.phone__img
+			width: 100%
+			position: relative
+			z-index: 999
 @media screen and ( max-width: 500px	)
 	.sale
-		&__img-bg
-			.smile__money
+		.sale__img-bg
+			.smile__money-wrap
 				width: 47vw
-				img
+				.smile__money
 					margin: -50vw 0vw 0vw -9vw
-			.smile__exploding
+			.smile__exploding-wrap
 				width: 47vw
-				img
+				.smile__exploding
 					margin: 4vw 0 0 53vw
 					z-index: 999
 		&__app
