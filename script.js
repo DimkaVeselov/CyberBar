@@ -104,7 +104,7 @@
 				const e = gsap.timeline(),
 					t = gsap.timeline(),
 					r =
-						(e.fromTo('.down_phone', 2, { y: 0 }, { y: '-200%' }),
+						(e.fromTo('.down_phone', 4, { y: 0 }, { y: '-200%' }),
 						ScrollTrigger.create({
 							animation: e,
 							trigger: '.phone__app',
@@ -113,7 +113,7 @@
 							end: '100% center',
 							scrub: !0,
 						}),
-						t.fromTo('.up_phone', 2, { y: 0 }, { y: '-200%' }),
+						t.fromTo('.up_phone', 4, { y: 0 }, { y: '-200%' }),
 						ScrollTrigger.create({
 							animation: t,
 							trigger: '.phone__app',
