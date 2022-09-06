@@ -18,6 +18,7 @@
 					targets: '.left_animation-text, .right_animation-text ',
 					className: 'active',
 				},
+				preventOverlaps : true
 			}),
 				ScrollTrigger.create({
 					trigger: '.header__wrap',
@@ -25,6 +26,7 @@
 					easy: 'power2.out',
 					end: '600%',
 					toggleClass: { targets: '.cup ', className: 'active' },
+					preventOverlaps : true
 				}),
 				ScrollTrigger.create({
 					trigger: '.header__wrap',
@@ -32,11 +34,12 @@
 					easy: 'power1.easeIn',
 					end: '400%',
 					toggleClass: { targets: '.sandwich ', className: 'active' },
+					preventOverlaps : true
 				});
 			const e = gsap.timeline(),
 				t = gsap.timeline(),
 				r =
-					(e.fromTo('.down_phone', { y: 0 }, { y: '-25%' }),
+					(e.fromTo('.down_phone', { y: 0 }, { y: '-50%' }),
 					ScrollTrigger.create({
 						animation: e,
 						trigger: '.phone__app',
@@ -44,6 +47,7 @@
 						easy: 'power1.easeIn',
 						end: '150% center',
 						scrub: !0,
+						preventOverlaps : true
 					}),
 					t.fromTo('.up_phone', { y: 0 }, { y: '150%' }),
 					ScrollTrigger.create({
@@ -53,26 +57,31 @@
 						easy: 'power1.easeIn',
 						end: '150% top',
 						scrub: !0,
+						preventOverlaps : true
 					}),
 					gsap.timeline()),
 				a = gsap.timeline();
-			a.fromTo('.advantage__right ', 10, { x: '-250%' }, { x: '675%' }),
-				r.fromTo('.advantage__left', 10, { x: '250%' }, { x: '-675%' }),
+			a.fromTo('.advantage__right ', { x: '-350%' }, { x: '475%' }),
+				r.fromTo('.advantage__left', { x: '175%' }, { x: '-650%' }),
 				ScrollTrigger.create({
 					animation: a,
 					trigger: '.advantage',
-					start: 'top center',
-					easy: 'power1.easeIn',
-					end: 'bottom center',
+					duration: 3,
+					start: '-=75vw top',
+					easy: 'none',
+					end: '150% center',
 					scrub: !0,
+					preventOverlaps: true,
 				}),
 				ScrollTrigger.create({
 					animation: r,
 					trigger: '.advantage',
-					start: 'top center',
-					easy: 'power1.easeIn',
-					end: 'bottom center',
+					duration: 3,
+					start: '-=75vw top',
+					easy: 'none',
+					end: '150% center',
 					scrub: !0,
+					preventOverlaps: true,
 				});
 		}),
 			e.add('(max-width: 500px)', () => {
@@ -115,6 +124,7 @@
 							easy: 'power1.easeIn',
 							end: '100% center',
 							scrub: !0,
+							preventOverlaps : true
 						}),
 						t.fromTo('.up_phone', { y: 0 }, { y: '-200%' }),
 						ScrollTrigger.create({
@@ -124,26 +134,29 @@
 							easy: 'power1.easeIn',
 							end: '100% center',
 							scrub: !0,
+							preventOverlaps : true
 						}),
 						gsap.timeline()),
 					a = gsap.timeline();
-				a.fromTo('.advantage__right', 4, { x: '-200%' }, { x: '675%' }),
-					r.fromTo('.advantage__left', 4, { x: '200%' }, { x: '-675%' }),
+				a.fromTo('.advantage__right', 4, { x: '-150%' }, { x: '675%' }),
+					r.fromTo('.advantage__left', 4, { x: '150%' }, { x: '-675%' }),
 					ScrollTrigger.create({
 						animation: a,
 						trigger: '.advantage',
 						start: '-=200 center',
-						easy: 'power1.easeIn',
+						easy: 'none',
 						end: '200% center',
 						scrub: !0,
+						preventOverlaps : true
 					}),
 					ScrollTrigger.create({
 						animation: r,
 						trigger: '.advantage',
 						start: '-=200 center',
-						easy: 'power1.easeIn',
+						easy: 'none',
 						end: '200% center',
 						scrub: !0,
+						preventOverlaps : true
 					});
 			});
 	});
