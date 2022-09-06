@@ -49,8 +49,8 @@
 				width: 100%
 				margin-right: 5vw
 				transition: .5s
-				transition-delay: .25s
-				z-index:2
+				transition-delay: .5s
+				z-index: 2
 				&.active
 					transform: rotate(360deg)
 					opacity: 0
@@ -77,10 +77,11 @@
 		.sandwich
 			width: 23vw
 			margin-right: 8vw
-			transition: 750ms
+			transition: 950ms
+			transition-delay: .1s
 			z-index: 3
 			&.active
-				transform: rotate(200deg) scale(185, 185) translate(-3.3vw, 0.99999vw)
+				transform: rotate(-250deg) scale(170, 170) translate(-3vw, 0.6vw)
 @media screen and ( max-width: 500px	)
 	.header__wrap
 		.header__nav
@@ -121,4 +122,4 @@
 				width: 80vw
 				margin-right: 17vw
 				&.active
-					transform: rotate(200deg) scale(120, 120) translate(-8.28vw, 1.99999vw)
+					transform: rotate(-270deg) scale(155, 155) translate(-8.28vw, 1.99999vw)
