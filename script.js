@@ -93,7 +93,6 @@
 						start: '115vw',
 						end: '300%',
 						easy: 'power1.easeIn',
-						markers: true,
 						toggleClass: { targets: '.cup ', className: 'active' },
 						scrub: !0,
 					}),
@@ -102,7 +101,6 @@
 						start: '245vw',
 						end: '200%',
 						easy: 'power1.easeIn',
-						markers: true,
 						toggleClass: { targets: '.sandwich ', className: 'active' },
 						scrub: !0,
 					});
