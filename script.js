@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			},
 		});
 
-		phone.fromTo('.down_phone, .up_phone', 5, { y: '-50%' }, { y: '-200%' });
+		phone.fromTo('.down_phone, .up_phone', 5, { y: '-50%' }, { y: '-250%' });
 
 		const advantageRight = gsap.timeline({
 			scrollTrigger: {
@@ -142,7 +142,6 @@ document.addEventListener('DOMContentLoaded', function () {
 				easy: 'power2.easeIn',
 				end: 'bottom center',
 				scrub: 1,
-				markers: true,
 			},
 		});
 
@@ -155,7 +154,6 @@ document.addEventListener('DOMContentLoaded', function () {
 				easy: 'power2.easeIn',
 				end: 'bottom center',
 				scrub: 1,
-				markers: true
 			},
 		});
 
