@@ -89,16 +89,18 @@
 				}),
 					ScrollTrigger.create({
 						trigger: '.header__wrap',
-						start: '105vw',
+						start: '115vw',
 						end: '300%',
 						easy: 'power2.easeIn',
+						markers: true,
 						toggleClass: { targets: '.cup ', className: 'active' },
 					}),
 					ScrollTrigger.create({
 						trigger: '.header__wrap',
-						start: '205vw',
+						start: '245vw',
 						end: '200%',
 						easy: 'power1.easeIn',
+						markers: true,
 						toggleClass: { targets: '.sandwich ', className: 'active' },
 					});
 				const e = gsap.timeline(),
@@ -124,8 +126,8 @@
 						}),
 						gsap.timeline()),
 					a = gsap.timeline();
-				a.fromTo('.advantage__right', { x: '-200%' }, { x: '375%' }),
-					r.fromTo('.advantage__left', { x: '200%' }, { x: '-375%' }),
+				a.fromTo('.advantage__right', { x: '-200%' }, { x: '675%' }),
+					r.fromTo('.advantage__left', { x: '200%' }, { x: '-675%' }),
 					ScrollTrigger.create({
 						animation: a,
 						trigger: '.advantage',
