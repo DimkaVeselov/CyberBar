@@ -43,45 +43,46 @@ document.addEventListener('DOMContentLoaded', function () {
 		const upPhone = gsap.timeline({
 			scrollTrigger: {
 				trigger: '.phone__app',
-				start: 'top bottom',
+				start: 'top center',
 				end: 'bottom center',
-				easy: 'power3.easeIn',
+				easy: 'power1',
 				preventOverlaps: true,
 				scrub: 2,
 			},
 		});
 
-		upPhone.fromTo('.down_phone', 3, { y: '50%' }, { y: '-225%' });
+		upPhone.fromTo('.down_phone', 6, { y: 0 }, { y: '-125%' });
 
 		const downPhone = gsap.timeline({
 			scrollTrigger: {
 				trigger: '.phone__app',
-				start: 'top center',
+				start: '-=200 top',
 				end: 'bottom center',
-				easy: 'power3.easeIn',
+				easy: 'power1',
 				scrub: 2,
+				markers: true
 			},
 		});
 
-		downPhone.fromTo('.up_phone', { y: 0 }, { y: '100%' });
+		downPhone.fromTo('.up_phone', 6, { y: 0 }, { y: '125%' });
 
 		const advantageRight = gsap.timeline({
 			scrollTrigger: {
 				trigger: '.advantage',
 				start: 'top',
-				easy: 'power1.easeIn',
+				easy: 'power1',
 				end: 'bottom',
 				scrub: 2,
 			},
 		});
 
-		advantageRight.fromTo('.advantage__right', 3, { x: '-300%' }, { x: '450%' });
+		advantageRight.fromTo('.advantage__right', 6, { x: '-300%' }, { x: '450%' });
 
 		const advantageLeft = gsap.timeline({
 			scrollTrigger: {
 				trigger: '.advantage',
 				start: 'top',
-				easy: 'power1.easeIn',
+				easy: 'power1',
 				end: 'bottom',
 				scrub: 2,
 			},
@@ -92,6 +93,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 
 	mm.add('(max-width: 500px)', () => {
+
 		ScrollTrigger.create({
 			trigger: '.header__wrap',
 			start: 'top',
@@ -127,7 +129,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			scrollTrigger: {
 				trigger: '.phone__app',
 				start: 'top center',
-				easy: 'power2.easeIn',
+				easy: 'power1',
 				end: 'bottom center',
 				scrub: 2
 			},
@@ -139,9 +141,10 @@ document.addEventListener('DOMContentLoaded', function () {
 			scrollTrigger: {
 				trigger: '.advantage',
 				start: 'top center',
-				easy: 'power2.easeIn',
-				end: 'bottom center',
+				easy: 'power1',
+				end: '300% center',
 				scrub: 1,
+				markers: true
 			},
 		});
 
@@ -151,9 +154,10 @@ document.addEventListener('DOMContentLoaded', function () {
 			scrollTrigger: {
 				trigger: '.advantage',
 				start: 'top center',
-				easy: 'power2.easeIn',
-				end: 'bottom center',
+				easy: 'power1',
+				end: '300% center',
 				scrub: 1,
+				markers: true
 			},
 		});
 
