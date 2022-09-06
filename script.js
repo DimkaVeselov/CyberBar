@@ -36,7 +36,7 @@
 			const e = gsap.timeline(),
 				t = gsap.timeline(),
 				r =
-					(e.fromTo('.down_phone', 5, { y: '10%' }, { y: '-100%' }),
+					(e.fromTo('.down_phone', { y: 0 }, { y: '-100%' }),
 					ScrollTrigger.create({
 						animation: e,
 						trigger: '.phone__app',
@@ -56,8 +56,8 @@
 					}),
 					gsap.timeline()),
 				a = gsap.timeline();
-			a.fromTo('.advantage__right ', { x: '-375%' }, { x: '275%' }),
-				r.fromTo('.advantage__left', { x: '375%' }, { x: '-275%' }),
+			a.fromTo('.advantage__right ', { x: '-275%' }, { x: '275%' }),
+				r.fromTo('.advantage__left', { x: '275%' }, { x: '-275%' }),
 				ScrollTrigger.create({
 					animation: a,
 					trigger: '.advantage',
@@ -104,7 +104,7 @@
 				const e = gsap.timeline(),
 					t = gsap.timeline(),
 					r =
-						(e.fromTo('.down_phone', 4, { y: 0 }, { y: '-200%' }),
+						(e.fromTo('.down_phone', { y: 0 }, { y: '-200%' }),
 						ScrollTrigger.create({
 							animation: e,
 							trigger: '.phone__app',
@@ -113,7 +113,7 @@
 							end: '100% center',
 							scrub: !0,
 						}),
-						t.fromTo('.up_phone', 4, { y: 0 }, { y: '-200%' }),
+						t.fromTo('.up_phone', { y: 0 }, { y: '-200%' }),
 						ScrollTrigger.create({
 							animation: t,
 							trigger: '.phone__app',
@@ -124,13 +124,13 @@
 						}),
 						gsap.timeline()),
 					a = gsap.timeline();
-				a.fromTo('.advantage__right', 2, { x: '-250%' }, { x: '250%' }),
-					r.fromTo('.advantage__left', 2, { x: '250%' }, { x: '-250%' }),
+				a.fromTo('.advantage__right', { x: '-200%' }, { x: '200%' }),
+					r.fromTo('.advantage__left', { x: '200%' }, { x: '-275%' }),
 					ScrollTrigger.create({
 						animation: a,
 						trigger: '.advantage',
 						start: '-=200 center',
-						easy: 'power3.easeIn',
+						easy: 'power1.easeIn',
 						end: '200% center',
 						scrub: !0,
 					}),
@@ -138,7 +138,7 @@
 						animation: r,
 						trigger: '.advantage',
 						start: '-=200 center',
-						easy: 'power3.easeIn',
+						easy: 'power1.easeIn',
 						end: '200% center',
 						scrub: !0,
 					});
