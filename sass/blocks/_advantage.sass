@@ -3,8 +3,7 @@
 	background-color: #000
 	overflow: hidden
 	z-index: 999
-	padding: 8vw 0 8vw 0
-	scroll-behavior: smooth
+	padding: 9vw 0 9vw 0
 	.advantage__wrap
 		height: 100%
 		display: flex
@@ -17,11 +16,12 @@
 			margin-bottom: 3vw
 			.beverage_box
 				position: relative
+				width: auto
 				&::after
 					content: ''
 					position: absolute
 					top: -1vw
-					left: -31vw
+					left: 67vw
 					width: 5vw
 					height: 5vw
 					background-color: #151515
@@ -34,7 +34,7 @@
 					content: ""
 					position: absolute
 					top: -0.5vw
-					left: -30.5vw
+					left: 67.5vw
 					width: 4vw
 					height: 5vw
 					background-image: url(../icon/beverage_box.svg)
@@ -50,11 +50,11 @@
 					@include Pokemon
 					color: $second-color
 					font-size: 9vw
-					margin-left: 75vw
+					margin-right: 58vw
 					&_border
 						display: block
 						width: 180vw
-						margin-left: 280vw
+						margin-left: -145vw
 						border-bottom: .5vw solid #F9DC2C
 		.second-text_wrap
 			height: 100%
@@ -62,10 +62,11 @@
 			margin-bottom: 3vw
 			.sandwich_mini
 				position: relative
+				width: auto
 				&::after
 					content: ''
 					position: absolute
-					right: -29.5vw
+					right: -15.5vw
 					top: 0vw
 					width: 5vw
 					height: 5vw
@@ -79,7 +80,7 @@
 					content: ''
 					position: absolute
 					top: 0.5vw
-					right: -30vw
+					right: -16vw
 					width: 5vw
 					height: 5vw
 					background-image: url(../icon/sandwich_mini.svg)
@@ -96,11 +97,11 @@
 					color: #fff
 					text-align: left
 					font-size: 9vw
-					margin-right: 80vw
+					margin-left: 60vw
 					&_border
 						display: block
 						width: 170vw
-						margin-left: -230vw
+						margin-left: 55vw
 						border-bottom: .5vw solid #fff
 		.third-text_wrap
 			height: 100%
@@ -108,11 +109,12 @@
 			margin-bottom: 3vw
 			.bubble_tea
 				position: relative
+				width: auto
 				&::after
 					content: ''
 					position: absolute
 					top: 0vw
-					left: -11vw
+					left: 85vw
 					width: 5vw
 					height: 5vw
 					background-color: #151515
@@ -125,7 +127,7 @@
 					content: ''
 					position: absolute
 					top: .5vw
-					left: -10.5vw
+					left: 85.5vw
 					width: 5vw
 					height: 5vw
 					background-image: url(../icon/bubble_tea.svg)
@@ -142,11 +144,11 @@
 					color: $second-color
 					text-align: left
 					font-size: 9vw
-					margin-left: 70vw
+					margin-left: -40vw
 					&_border
 						display: block
 						width: 160vw
-						margin-left: 190vw
+						margin-left: -45vw
 						border-bottom: .5vw solid #F9DC2C
 
 @media screen and ( max-width: 500px	)
