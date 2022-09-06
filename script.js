@@ -124,8 +124,8 @@
 						}),
 						gsap.timeline()),
 					a = gsap.timeline();
-				a.fromTo('.advantage__right', { x: '-200%' }, { x: '200%' }),
-					r.fromTo('.advantage__left', { x: '200%' }, { x: '-275%' }),
+				a.fromTo('.advantage__right', { x: '-200%' }, { x: '375%' }),
+					r.fromTo('.advantage__left', { x: '200%' }, { x: '-375%' }),
 					ScrollTrigger.create({
 						animation: a,
 						trigger: '.advantage',
