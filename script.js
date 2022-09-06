@@ -36,7 +36,7 @@
 			const e = gsap.timeline(),
 				t = gsap.timeline(),
 				r =
-					(e.fromTo('.down_phone', { y: 0 }, { y: '-100%' }),
+					(e.fromTo('.down_phone', { y: 0 }, { y: '-25%' }),
 					ScrollTrigger.create({
 						animation: e,
 						trigger: '.phone__app',
@@ -56,8 +56,8 @@
 					}),
 					gsap.timeline()),
 				a = gsap.timeline();
-			a.fromTo('.advantage__right ', { x: '-275%' }, { x: '275%' }),
-				r.fromTo('.advantage__left', { x: '275%' }, { x: '-275%' }),
+			a.fromTo('.advantage__right ', 10, { x: '-250%' }, { x: '675%' }),
+				r.fromTo('.advantage__left', 10, { x: '250%' }, { x: '-675%' }),
 				ScrollTrigger.create({
 					animation: a,
 					trigger: '.advantage',

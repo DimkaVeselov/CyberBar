@@ -3,7 +3,7 @@
 	background-color: #000
 	overflow: hidden
 	z-index: 999
-	padding: 8vw 0
+	padding: 6vw 0 8vw 0
 	.advantage__wrap
 		height: 100%
 		display: flex
@@ -20,7 +20,7 @@
 					content: ''
 					position: absolute
 					top: -1vw
-					left: -11vw
+					left: -31vw
 					width: 5vw
 					height: 5vw
 					background-color: #151515
@@ -33,7 +33,7 @@
 					content: ""
 					position: absolute
 					top: -0.5vw
-					left: -10.5vw
+					left: -30.5vw
 					width: 4vw
 					height: 5vw
 					background-image: url(../icon/beverage_box.svg)
@@ -46,16 +46,14 @@
 				flex-direction: column
 				backface-visibility: hidden
 				.first-text
-					display: block
 					@include Pokemon
 					color: $second-color
 					font-size: 9vw
-					margin-left: 58vw
-					width: auto
+					margin-left: 80vw
 					&_border
 						display: block
 						width: 160vw
-						margin-left: 115vw
+						margin-left: 290vw
 						border-bottom: .5vw solid #F9DC2C
 		.second-text_wrap
 			height: 100%
@@ -66,7 +64,7 @@
 				&::after
 					content: ''
 					position: absolute
-					left: 73vw
+					right: -29.5vw
 					top: 0vw
 					width: 5vw
 					height: 5vw
@@ -80,7 +78,7 @@
 					content: ''
 					position: absolute
 					top: 0.5vw
-					left: 73.5vw
+					right: -30vw
 					width: 5vw
 					height: 5vw
 					background-image: url(../icon/sandwich_mini.svg)
@@ -93,17 +91,15 @@
 				flex-direction: column
 				backface-visibility: hidden
 				.second-text
-					display: block
 					@include Pokemon
 					color: #fff
 					text-align: left
 					font-size: 9vw
-					margin-right: 64vw
-					width: auto
+					margin-right: 85vw
 					&_border
 						display: block
 						width: 170vw
-						margin-left: -206vw
+						margin-left: -240vw
 						border-bottom: .5vw solid #fff
 		.third-text_wrap
 			height: 100%
@@ -141,17 +137,15 @@
 				flex-direction: column
 				backface-visibility: hidden
 				.third-text
-					display: block
 					@include Pokemon
 					color: $second-color
 					text-align: left
 					font-size: 9vw
-					margin-left: 50vw
-					width: auto
+					margin-left: 75vw
 					&_border
 						display: block
 						width: 120vw
-						margin-left: 120vw
+						margin-left: 200vw
 						border-bottom: .5vw solid #F9DC2C
 
 @media screen and ( max-width: 500px	)
