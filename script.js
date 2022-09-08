@@ -124,18 +124,20 @@ document.addEventListener('DOMContentLoaded', function () {
 			scrub: true,
 		});
 
-		gsap.to('.sandwich ', 3, {
+		gsap.to('.sandwich ', 5, {
 			scrollTrigger: {
 				trigger: '.header__content',
 				start: '207vw',
 				end: '40%',
+				ease: 'power1.easeInOut',
 				scrub: true,
 			},
 			keyframes: [
+				{scale: '15 15'},
 				{ scale: '45 45', rotation: 381 },
-				{ scale: '160 160', x: '38vw', y: '-1000%' },
+				{ scale: '160 160', x: '38vw', y: '-960%' },
 			],
-		});
+		}, 0.5);
 
 		const phone = gsap.timeline({
 			scrollTrigger: {
