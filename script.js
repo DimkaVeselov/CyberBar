@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			},
 			keyframes: [
 				{scale: '15 15'},
-				{ scale: '45 45', rotation: 381 },
+				{ scale: '55 55', rotation: 381 },
 				{ scale: '160 160', x: '38vw', y: '-960%' },
 			],
 		}, 0.5);
@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			},
 		});
 
-		phone.fromTo('.down_phone, .up_phone', { y: '70%' }, { y: '-250%' });
+		phone.fromTo('.down_phone, .up_phone', { y: '50%' }, { y: '-250%' });
 
 		const advantageRight = gsap.timeline({
 			scrollTrigger: {
