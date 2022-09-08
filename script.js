@@ -33,55 +33,62 @@ document.addEventListener('DOMContentLoaded', function () {
 			},
 		});
 
-		gsap.to('.sandwich ', {
+		gsap.to('.sandwich ', 3, {
 			scrollTrigger: {
-				trigger: '.header__wrap',
+				trigger: '.header__content',
 				start: '207vw',
-				end: '100%',
-				easy: 'power4. easeInOut',
+				end: '60%',
+				easy: 'power2. easeInOut',
 				scrub: true,
 			},
 			keyframes: [
-				{ scale: '20 20', rotation: 110 },
-				{ scale: '270 270', y: '-350%', x: '150%' },
+				{ scale: '20 20', rotation: 381 },
+				{ scale: '55 55' },
+				{ scale: '140 140', x: '38vw', y: '-1060%' },
 			],
 		});
 
 		const upPhone = gsap.timeline({
 			scrollTrigger: {
-				trigger: '.phone__app',
+				trigger: '.phone__app-wrap',
 				start: 'top center',
 				end: '150% center',
-				easy: 'power1.easeOut',
+				easy: 'power1.easeInOut',
 				scrub: true,
 			},
 		});
 
-		upPhone.fromTo('.down_phone', 6, { y: 0 }, { y: '-125%' }, 0.5);
+		upPhone.fromTo('.down_phone', 6, { y: 0 }, { y: '-140%' }, 0.5);
 
 		const downPhone = gsap.timeline({
 			scrollTrigger: {
-				trigger: '.phone__app',
+				trigger: '.phone__app-wrap',
 				start: '-=200 top',
 				end: 'bottom center',
-				easy: 'power1.easeOut',
+				easy: 'power1.easeInOut',
 				scrub: true,
+				pin: true,
 			},
 		});
 
-		downPhone.fromTo('.up_phone', 6, { y: 0 }, { y: '125%' }, 0.5);
+		downPhone.fromTo('.up_phone', 6, { y: 0 }, { y: '140%' }, 0.5);
 
 		const advantageRight = gsap.timeline({
 			scrollTrigger: {
 				trigger: '.advantage',
 				start: 'top',
-				easy: 'power1.easeOut',
+				easy: 'power1.ease',
 				end: '170%',
 				scrub: true,
 			},
 		});
 
-		advantageRight.fromTo('.advantage__right', 6, { x: '-285%' }, { x: '450%' });
+		advantageRight.fromTo(
+			'.advantage__right',
+			6,
+			{ x: '-285%' },
+			{ x: '450%' },
+		);
 
 		const advantageLeft = gsap.timeline({
 			scrollTrigger: {
@@ -93,12 +100,10 @@ document.addEventListener('DOMContentLoaded', function () {
 			},
 		});
 
-		advantageLeft.fromTo('.advantage__left', 6, { x: '250%' }, { x: '-450%'});
-
+		advantageLeft.fromTo('.advantage__left', 6, { x: '250%' }, { x: '-450%' });
 	});
 
 	mm.add('(max-width: 500px)', () => {
-
 		ScrollTrigger.create({
 			trigger: '.header__wrap',
 			start: 'top',
@@ -121,13 +126,20 @@ document.addEventListener('DOMContentLoaded', function () {
 			scrub: true,
 		});
 
-		ScrollTrigger.create({
-			trigger: '.header__wrap',
-			start: '245vw',
-			end: '200%',
-			easy: 'none',
-			toggleClass: { targets: '.sandwich ', className: 'active' },
-			scrub: true,
+		gsap.to('.sandwich ', 3, {
+			scrollTrigger: {
+				trigger: '.header__content',
+				start: '207vw',
+				end: '60%',
+				easy: 'power2. easeInOut',
+				scrub: true,
+				markers: true,
+			},
+			keyframes: [
+				// { scale: '20 20', },
+				{ scale: '55 55', rotation: 381 },
+				{ scale: '170 170', x: '38vw', y: '-1160%' },
+			],
 		});
 
 		const phone = gsap.timeline({
@@ -140,7 +152,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			},
 		});
 
-		phone.fromTo('.down_phone, .up_phone', 5, { y: '-50%' }, { y: '-250%' });
+		phone.fromTo('.down_phone, .up_phone', 5, { y: '-70%' }, { y: '-250%' });
 
 		const advantageRight = gsap.timeline({
 			scrollTrigger: {
@@ -152,7 +164,12 @@ document.addEventListener('DOMContentLoaded', function () {
 			},
 		});
 
-		advantageRight.fromTo('.advantage__right', 6, { x: '-300%' }, { x: '375%' });
+		advantageRight.fromTo(
+			'.advantage__right',
+			6,
+			{ x: '-300%' },
+			{ x: '375%' },
+		);
 
 		const advantageLeft = gsap.timeline({
 			scrollTrigger: {
