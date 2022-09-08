@@ -102,6 +102,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 
 	mm.add('(max-width: 500px)', () => {
+
 		ScrollTrigger.create({
 			trigger: '.header__wrap',
 			start: 'top',
@@ -127,12 +128,12 @@ document.addEventListener('DOMContentLoaded', function () {
 			scrollTrigger: {
 				trigger: '.header__content',
 				start: '207vw',
-				end: '60%',
+				end: '40%',
 				scrub: true,
 			},
 			keyframes: [
 				{ scale: '45 45', rotation: 381 },
-				{ scale: '160 160', x: '38vw', y: '-950%' },
+				{ scale: '160 160', x: '38vw', y: '-1000%' },
 			],
 		});
 
