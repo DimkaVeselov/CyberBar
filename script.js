@@ -50,33 +50,34 @@ document.addEventListener('DOMContentLoaded', function () {
 		const upPhone = gsap.timeline({
 			scrollTrigger: {
 				trigger: '.phone__app-wrap',
-				start: 'top center',
-				end: '150% center',
+				start: '-=100 center',
+				end: '100% center',
 				easy: 'power1.easeInOut',
 				scrub: true,
+				markers: true
 			},
 		});
 
-		upPhone.fromTo('.down_phone', { y: 0 }, { y: '-140%' }, 0.5);
+		upPhone.fromTo('.down_phone', 3, { y: 0 }, { y: '-140%' });
 
 		const downPhone = gsap.timeline({
 			scrollTrigger: {
 				trigger: '.phone__app-wrap',
-				start: '-=200 top',
-				end: 'bottom center',
+				start: '-=250 top',
+				end: '100% center',
 				easy: 'power1.easeInOut',
 				scrub: true,
-				pin: true,
+				markers: true,
 			},
 		});
 
-		downPhone.fromTo('.up_phone', { y: 0 }, { y: '140%' }, 0.5);
+		downPhone.fromTo('.up_phone', 3, { y: 0 }, { y: '165%' });
 
 		const advantageRight = gsap.timeline({
 			scrollTrigger: {
 				trigger: '.advantage',
 				start: 'top',
-				easy: 'power1.ease',
+				easy: 'power1.easeInOut',
 				end: '170%',
 				scrub: true,
 			},
@@ -103,12 +104,12 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 
 	mm.add('(max-width: 500px)', () => {
+
 		ScrollTrigger.create({
 			trigger: '.header__wrap',
 			start: 'top',
 			easy: 'power2.easeIn',
 			end: '150%',
-			easy: 'power3.easeIn',
 			toggleClass: {
 				targets: '.left_animation-text, .right_animation-text ',
 				className: 'active',
@@ -147,7 +148,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			},
 		});
 
-		phone.fromTo('.down_phone, .up_phone', { y: 0 }, { y: '-250%' });
+		phone.fromTo('.down_phone, .up_phone', { y: '-30%' }, { y: '-250%' });
 
 		const advantageRight = gsap.timeline({
 			scrollTrigger: {
