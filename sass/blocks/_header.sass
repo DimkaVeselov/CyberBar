@@ -1,6 +1,6 @@
 .header__wrap
 	background-color: $main-color
-	height: 140vw
+	height: 160vw
 	overflow: hidden
 	display: flex
 	flex-direction: column
@@ -34,7 +34,7 @@
 			letter-spacing: 0.079em
 			text-shadow: 0px -4.35354px 97.9546px #A0A337, 0px 39.0128px 468.154px #EBE213
 			margin-right: 5vw
-			transition: .5s
+			transition: 1.5s
 			z-index: 1
 			backface-visibility: hidden
 			&.active
@@ -48,7 +48,7 @@
 				left: 0
 				width: 100%
 				margin-right: 5vw
-				transition: .5s
+				transition: 1.5s
 				z-index: 2
 				&.active
 					transform: rotate(360deg)
@@ -66,7 +66,7 @@
 			letter-spacing: 0.079em
 			line-height: 112%
 			text-shadow: 0px -4.35354px 97.9546px #A0A337, 0px 39.0128px 468.154px #EBE213
-			transition: 1s
+			transition: 1.5s
 			z-index: 1
 			opacity: 1
 			backface-visibility: hidden
@@ -76,10 +76,7 @@
 		.sandwich
 			width: 23vw
 			margin-right: 8vw
-			transition: 650ms
 			z-index: 3
-			&.active
-				transform: rotate(-250deg) scale(170, 170) translate(-3vw, 0.6vw)
 @media screen and ( max-width: 500px	)
 	.header__wrap
 		height: 180vh

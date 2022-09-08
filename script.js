@@ -19,76 +19,81 @@ document.addEventListener('DOMContentLoaded', function () {
 				targets: '.left_animation-text, .right_animation-text ',
 				className: 'active',
 			},
-			scrub: 2,
+			scrub: true,
 		});
 
-		ScrollTrigger.create({
-			trigger: '.header__wrap',
-			start: '105vw',
-			easy: 'power2.out',
-			end: '600%',
-			toggleClass: { targets: '.cup ', className: 'active' },
-			scrub: 2,
+		gsap.timeline({
+			scrollTrigger: {
+				trigger: 'header__wrap',
+				start: '105vw',
+				end: '600%',
+				ease: 'power1. easeInOut',
+				toggleClass: { targets: '.cup ', className: 'active' },
+				scrub: true,
+			},
 		});
 
-		ScrollTrigger.create({
-			trigger: '.header__wrap',
-			start: '207vw',
-			easy: 'none',
-			end: '400%',
-			toggleClass: { targets: '.sandwich ', className: 'active' },
-			scrub: 2,
+		gsap.to('.sandwich ', {
+			scrollTrigger: {
+				trigger: '.header__wrap',
+				start: '207vw',
+				end: '100%',
+				easy: 'power4. easeInOut',
+				scrub: true,
+			},
+			keyframes: [
+				{ scale: '20 20', rotation: 110 },
+				{ scale: '270 270', y: '-350%', x: '150%' },
+			],
 		});
 
 		const upPhone = gsap.timeline({
 			scrollTrigger: {
 				trigger: '.phone__app',
 				start: 'top center',
-				end: 'bottom center',
-				easy: 'power1',
-				preventOverlaps: true,
-				scrub: 2,
+				end: '150% center',
+				easy: 'power1.easeOut',
+				scrub: true,
 			},
 		});
 
-		upPhone.fromTo('.down_phone', 6, { y: 0 }, { y: '-125%' });
+		upPhone.fromTo('.down_phone', 6, { y: 0 }, { y: '-125%' }, 0.5);
 
 		const downPhone = gsap.timeline({
 			scrollTrigger: {
 				trigger: '.phone__app',
 				start: '-=200 top',
 				end: 'bottom center',
-				easy: 'power1',
-				scrub: 2,
-				markers: true
+				easy: 'power1.easeOut',
+				scrub: true,
 			},
 		});
 
-		downPhone.fromTo('.up_phone', 6, { y: 0 }, { y: '125%' });
+		downPhone.fromTo('.up_phone', 6, { y: 0 }, { y: '125%' }, 0.5);
 
 		const advantageRight = gsap.timeline({
 			scrollTrigger: {
 				trigger: '.advantage',
 				start: 'top',
-				easy: 'power1',
-				end: 'bottom',
-				scrub: 2,
+				easy: 'power1.easeOut',
+				end: '170%',
+				scrub: true,
 			},
 		});
 
-		advantageRight.fromTo('.advantage__right', 6, { x: '-300%' }, { x: '450%' });
+		advantageRight.fromTo('.advantage__right', 6, { x: '-285%' }, { x: '450%' });
 
 		const advantageLeft = gsap.timeline({
 			scrollTrigger: {
 				trigger: '.advantage',
 				start: 'top',
-				easy: 'power1',
-				end: 'bottom',
-				scrub: 2,
+				easy: 'power1.easeOut',
+				end: '170%',
+				scrub: true,
 			},
 		});
 
-		advantageLeft.fromTo('.advantage__left', 3, { x: '250%' }, { x: '-450%'});
+		advantageLeft.fromTo('.advantage__left', 6, { x: '250%' }, { x: '-450%'});
 
 	});
 
@@ -104,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				targets: '.left_animation-text, .right_animation-text ',
 				className: 'active',
 			},
-			scrub: 2,
+			scrub: true,
 		});
 
 		ScrollTrigger.create({
@@ -113,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			end: '300%',
 			easy: 'power1.easeIn',
 			toggleClass: { targets: '.cup ', className: 'active' },
-			scrub: 2,
+			scrub: true,
 		});
 
 		ScrollTrigger.create({
@@ -122,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			end: '200%',
 			easy: 'none',
 			toggleClass: { targets: '.sandwich ', className: 'active' },
-			scrub: 2,
+			scrub: true,
 		});
 
 		const phone = gsap.timeline({
@@ -131,7 +136,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				start: 'top center',
 				easy: 'power1',
 				end: 'bottom center',
-				scrub: 2
+				scrub: true,
 			},
 		});
 
@@ -143,8 +148,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				start: 'top center',
 				easy: 'power1',
 				end: '300% center',
-				scrub: 1,
-				markers: true
+				scrub: true,
 			},
 		});
 
@@ -156,8 +160,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				start: 'top center',
 				easy: 'power1',
 				end: '300% center',
-				scrub: 1,
-				markers: true
+				scrub: true,
 			},
 		});
 
