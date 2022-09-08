@@ -4,6 +4,7 @@
 	overflow: hidden
 	display: flex
 	flex-direction: column
+	align-items: center
 
 .header__nav
 	width: 100%
@@ -16,13 +17,10 @@
 			width: 13vw
 
 .header__content
-	position: fixed
-	left: 10vw
 	width: 78vw
 	height: 100%
 	display: flex
 	flex-direction: column
-	margin-top: 5vw
 	&-cup
 		width: 84vw
 		display: flex
@@ -34,7 +32,7 @@
 			letter-spacing: 0.079em
 			text-shadow: 0px -4.35354px 97.9546px #A0A337, 0px 39.0128px 468.154px #EBE213
 			margin-right: 5vw
-			transition: 1.5s
+			transition: 1s
 			z-index: 1
 			backface-visibility: hidden
 			&.active
@@ -48,7 +46,7 @@
 				left: 0
 				width: 100%
 				margin-right: 5vw
-				transition: 1.5s
+				transition: 1s
 				z-index: 2
 				&.active
 					transform: rotate(360deg)
@@ -58,7 +56,7 @@
 	&-sandwich
 		display: flex
 		align-items: center
-		justify-content: space-between
+		justify-content: space-evenly
 		.right_animation-text
 			@include Pokemon
 			color: #FAE737
@@ -66,7 +64,7 @@
 			letter-spacing: 0.079em
 			line-height: 112%
 			text-shadow: 0px -4.35354px 97.9546px #A0A337, 0px 39.0128px 468.154px #EBE213
-			transition: 1.5s
+			transition: 1s
 			z-index: 1
 			opacity: 1
 			backface-visibility: hidden
@@ -74,12 +72,10 @@
 				transform: translateX(80vw)
 				opacity: 0
 		.sandwich
-			width: 23vw
-			margin-right: 8vw
-			z-index: 3
+			width: 30vw
 @media screen and ( max-width: 500px	)
 	.header__wrap
-		height: 180vh
+		height: 200vh
 		.header__nav
 			padding: 3vw 0 0 0
 			&-block
@@ -103,10 +99,10 @@
 				.cup
 					top: 0
 					left: 0vw
-					width: 30vw
+					width: 40vw
 					&.active
 						top: -95vw
-						left: 80vw
+						left: 100vw
 			&-sandwich
 				width: 100vw
 				flex-direction: column-reverse
@@ -117,5 +113,3 @@
 			.sandwich
 				width: 80vw
 				margin-right: 17vw
-				&.active
-					transform: rotate(-270deg) scale(155, 155) translate(-8.28vw, 1.99999vw)
