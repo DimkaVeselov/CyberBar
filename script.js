@@ -3,7 +3,7 @@ window.onload = function () {
 		window.setTimeout(function () {
 			document.body.classList.add('loaded'),
 				document.body.classList.remove('loaded');
-		}, 200);
+		}, 150);
 };
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -134,8 +134,9 @@ document.addEventListener('DOMContentLoaded', function () {
 				scrub: true,
 			},
 			keyframes: [
-				{ scale: '55 55', rotation: 381 },
-				{ scale: '170 170', x: '38vw', y: '-1160%' },
+				{scale: '15 15'},
+				{ scale: '45 45', rotation: 381 },
+				{ scale: '160 160', x: '38vw', y: '-1160%' },
 			],
 		});
 
