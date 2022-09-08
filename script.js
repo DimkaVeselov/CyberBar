@@ -54,7 +54,6 @@ document.addEventListener('DOMContentLoaded', function () {
 				end: '100% center',
 				easy: 'power1.easeInOut',
 				scrub: true,
-				markers: true
 			},
 		});
 
@@ -67,7 +66,6 @@ document.addEventListener('DOMContentLoaded', function () {
 				end: '100% center',
 				easy: 'power1.easeInOut',
 				scrub: true,
-				markers: true,
 			},
 		});
 
@@ -104,7 +102,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 
 	mm.add('(max-width: 500px)', () => {
-
 		ScrollTrigger.create({
 			trigger: '.header__wrap',
 			start: 'top',
@@ -134,7 +131,6 @@ document.addEventListener('DOMContentLoaded', function () {
 				scrub: true,
 			},
 			keyframes: [
-				{scale: '15 15'},
 				{ scale: '45 45', rotation: 381 },
 				{ scale: '160 160', x: '38vw', y: '-1160%' },
 			],
