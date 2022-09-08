@@ -36,9 +36,9 @@
 					top: -0.5vw
 					left: 67.5vw
 					width: 4vw
-					height: 5vw
+					height: 4vw
 					background-image: url(../icon/beverage_box.svg)
-					background-size: 4vw 4vw
+					background-size: contain
 					background-repeat: no-repeat
 					z-index: 2
 			.advantage__subtitle
@@ -67,7 +67,7 @@
 					content: ''
 					position: absolute
 					right: -15.5vw
-					top: 0vw
+					top: 0.5vw
 					width: 5vw
 					height: 5vw
 					background-color: #151515
@@ -79,12 +79,12 @@
 				&::before
 					content: ''
 					position: absolute
-					top: 0.5vw
-					right: -16vw
-					width: 5vw
-					height: 5vw
+					top: 1vw
+					right: -15vw
+					width: 4vw
+					height: 4vw
 					background-image: url(../icon/sandwich_mini.svg)
-					background-size: 4vw 4vw
+					background-size: contain
 					background-repeat: no-repeat
 					z-index: 2
 			.advantage__subtitle
@@ -128,10 +128,10 @@
 					position: absolute
 					top: .5vw
 					left: 85.5vw
-					width: 5vw
-					height: 5vw
+					width: 4vw
+					height: 4vw
 					background-image: url(../icon/bubble_tea.svg)
-					background-size: 4vw 4vw
+					background-size: contain
 					background-repeat: no-repeat
 					z-index: 2
 			.advantage__subtitle
@@ -156,3 +156,38 @@
 		padding: 12vw 0
 		.advantage__wrap
 			height: 35vh
+			margin-bottom: 5vw
+			.first-text_wrap
+				.beverage_box
+					&::after
+						width: 8vw
+						height: 8vw
+					&::before
+						width: 7vw
+						height: 7vw
+				.advantage__subtitle
+					.first-text
+						font-size: 12vw
+			.second-text_wrap
+				.sandwich_mini
+					&::after
+						width: 8vw
+						height: 8vw
+					&::before
+						width: 7vw
+						height: 7vw
+				.advantage__subtitle
+					.second-text
+						font-size: 12vw
+			.third-text_wrap
+				.bubble_tea
+					&::after
+						width: 8vw
+						height: 8vw
+					&::before
+						width: 7vw
+						height: 7vw
+				.advantage__subtitle
+					.third-text
+						font-size: 12vw
+					
