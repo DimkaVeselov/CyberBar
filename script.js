@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			},
 		});
 
-		phone.fromTo('.down_phone, .up_phone', 5, { y: '20%' }, { y: '-250%' });
+		phone.fromTo('.down_phone, .up_phone', 5, { y: 0 }, { y: '-250%' });
 
 		const advantageRight = gsap.timeline({
 			scrollTrigger: {
